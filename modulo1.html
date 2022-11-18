@@ -1,0 +1,1303 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Modulo 1</title>
+    </head>
+    <body>
+        <header>
+            <h1>Módulo 1</h1>
+        </header>
+        <section>
+            <h2>Keywords, operadores de búsqueda de Google</h2>
+            <table>
+                <tr>
+                    <th>OPERADOR</th>
+                    <th>EJEMPLO</th>
+                    <th>QUÉ HACE</th>
+                </tr>
+                <tr>
+                    <th>OR</th>
+                        <td>Pelota OR palo OR paso</td>
+                        <td>Te muestra resultados que contengan cualquiera de las palabras que hayas incluido.</td>
+                </tr>
+                    <tr>
+                        <th>AND</th>
+                        <td>JavaScript and Sintaxis</td>
+                        <td>Busca páginas que incluya los dos términos especificados.</td>
+                    </tr>
+                    <tr>
+                        <th>" "</th>
+                        <td>"Github flow" o "Subversion"</td>
+                        <td>Te muestra resultados donde aparece el término o los términos exactos que hayas añadido entre los ".</td>
+                    </tr>
+                    <tr>
+                        <th>-</th>
+                        <td>Fullstack -MEAN</td>
+                        <td>Te muestra resultados donde se excluya la palabra que hayas puesto detrás del -.</td>
+                    </tr>
+                    <tr>
+                        <th>*</th>
+                        <td>"SCRUM *meeting"</td>
+                        <td>Un comodín que puede coincidir con cualquier palabra en la búsqueda.</td>
+                    </tr>
+                    <tr>
+                        <th>#..#</th>
+                        <td>Celular 20000..50000 pesos </td>
+                        <td>Te muestra resultados donde donde se añade un intervalo de números que tú especificas.</td>
+                    </tr>
+                    <tr>
+                        <th>(  )</th>
+                        <td>("redes sociales" OR "plataformas sociales") -Twitter</td>
+                        <td>Te permite combinar operadores. En el ejemplo buscarás redes sociales o plataformas sociales, pero excluyendo Twitter de los resultados.</td>
+                    </tr>
+                    <tr>
+                        <th>AROUND</th>
+                        <td>Trucos around(3) Instagram</td>
+                        <td>Resultados donde aparecen las dos palabras especificadas, pero con el número que determines de términos entre ellas.</td>
+                    </tr>
+                    <tr>
+                        <th>EN</th>
+                        <td>300 dólares en euros</td>
+                        <td>Sirve para convertir unidades de un mismo tipo de medida.</td>
+                    </tr>
+                    <tr>
+                        <th>MAP</th>
+                        <td>map:BuenosAires</td>
+                        <td>La búsqueda te devuelve resultados con mapas del sitio donde le digas.</td>
+                    </tr>
+                    <tr>
+                        <th>DEFINE</th>
+                        <td>define:Lunfardo</td>
+                        <td>Busca la definición de una palabra que no conozcas</td>
+                    </tr>
+                    <tr>
+                        <th>SITE</th>
+                        <td>Cursos site:www.argentina.gob.ar</td>
+                        <td>Te busca los resultados dentro de una web que hayas especificado.</td>
+                    </tr>
+                    <tr>
+                        <th>INFO</th>
+                        <td>info:www.argentina.gob.ar/</td>
+                        <td>Te muestra resultados donde se ofrezca información sobre una página web.</td>
+                    </tr>
+                    <tr>
+                        <th>RELATED</th>
+                        <td>related:www.argentina.gob.ar/</td>
+                        <td>Te muestra en los resultados otras páginas similares a la que has escrito.</td>
+                    </tr>
+                    <tr>
+                        <th>LINK</th>
+                        <td>Teléfonos link:https://developer.mozilla.org/</td>
+                        <td>Te muestra en los resultados páginas que tienen enlaces a la web que hayas especificado.</td>
+                    </tr>
+                    <tr>
+                        <th>CACHÉ</th>
+                        <td>cache:https://developer.mozilla.org/</td>
+                        <td>Te muestra la copia de la página que hay en el caché de Google.</td>
+                    </tr>
+                    <tr>
+                        <th>FILETYPE</th>
+                        <td>filetype:pdf presupuestos 2021</td>
+                        <td>Busca resultados que contengan archivos con el formato que hayas especificado</td>
+                    </tr>
+                    <tr>
+                        <th>ALLINTEXT O INTEXT</th>
+                        <td>allintext:"desarrollador fullstack"</td>
+                        <td>Encuentra páginas que incluyan en su texto algunos o todos los términos que hayas incluido en el comando.</td>
+                    </tr>
+                    <tr>
+                        <th>ALLINTITLE O INTITLE</th>
+                        <td>allintitle:recursos desarrollador web</td>
+                        <td>Te muestra páginas que tengan algunos o todos los términos que hayas incluido en el comando en su título</td>
+                    </tr>
+                    <tr>
+                        <th>INURL O ALLINURL</th>
+                        <td>inurl:"apple iphone" allinurl:"apple sfera"</td>
+                        <td>Te muestra páginas con algunos o todos los términos que hayas incluido en el comando</td>
+                    </tr>
+                    <tr>
+                        <th>ALLINANCHOR O INANCHOR</th>
+                        <td>allinanchor:"desarrollador fullstack"</td>
+                        <td>Resultados con páginas donde se incluya un enlace con un texto anclado donde se incluya uno o varios términos especificados.</td>
+                    </tr>
+                    <tr>
+                        <th>STOCKS</th>
+                        <td>stocks:Facebook</td>
+                        <td>Busca el estado actual de la empresa que busques en bolsa.</td>
+                    </tr>
+                    <tr>
+                        <th>WEATHER</th>
+                        <td>weather:Rosario,ar</td>
+                        <td>El tiempo en la ciudad elegida. Mira que después del nombre de la ciudad puedes poner una coma y el país para ser más concreto.</td>
+                    </tr>
+                    <tr>
+                        <th>TIME</th>
+                        <td>time:Nueva York</td>
+                        <td>Te muestra la hora en la localidad que decidas.</td>
+                    </tr>
+                    <tr>
+                        <th>MOVIE</th>
+                        <td>movie:Avengers</td>
+                        <td>Te muestra resultados relacionados con una película que establezcas.</td>
+                    </tr>
+                    <tr>
+                        <th>@</th>
+                        <td>@ArgentinaPrograma</td>
+                        <td>Busca etiquetas sociales asociadas con Twitter.</td>
+                    </tr>
+                    <tr>
+                        <th>#</th>
+                        <td>#ArgentinaPrograma</td>
+                        <td>Busca términos publicados con hastags en redes sociales que tengan sistema de hashtags.</td>
+                    </tr>
+            </table>
+        </section>
+        <section>
+            <h2>Glosario de recursos útiles</h2>
+            <lista>
+                <div>
+                    <h5>Herramientas CSS:</h5>
+                    <p><a href="https://cssgradient.io/">CSS Gradient</a></p>
+                    <p><a href="https://csslayout.io/">CSS Layout</a></p>
+                    <p><a href="https://getwaves.io/">Getwaves</a></p>
+                    <p><a href="https://webgradients.com/">WebGradients</a></p>
+                    <p><a href="https://cubic-bezier.com/#.17,.67,.83,.67">Cubic-bezier</a></p>
+                    <p><a href="https://www.css3.me/">CSS3</a></p>
+                    <p><a href="https://cssminifier.com/">CSS-Minifier</a></p>
+                </div>
+                <div>
+                    <h5>Herramientas Bootstrap:</h5>
+                    <p><a href="https://icons.getbootstrap.com/">Icons.getbootstrap</a></p>
+                    <p><a href="https://themes.getbootstrap.com/">Themes.getbootstrap</a></p>
+                    <p><a href="https://bootswatch.com/">Bootswatch</a></p>
+                    <p><a href="https://getbootstrap.com/">Getbootstrap</a></p>
+                </div>
+                <div>
+                    <h5>Herramientas HTML:</h5>
+                    <p><a href="https://html-minifier.com/">HTML-minifier</a></p>
+                    <p><a href="https://htmlcolorcodes.com/es/">HTML ColorCode</a></p>
+                    <p><a href="https://www.w3schools.com/">W3schools</a></p>
+                </div>
+                <div>
+                    <h5>Herramientas e Imágenes Alta resolución:</h5>
+                    <p><a href="https://www.freepik.es/">Freepik</a></p>
+                    <p><a href="https://www.pexels.com/es-es/">Pexels</a></p>
+                    <p><a href="https://motionarray.com/">MotionArray</a></p>
+                    <p><a href="https://undraw.co/">UnDraw</a></p>
+                    <p><a href="https://unsplash.com/">UnSplash</a></p>
+                    <p><a href="https://www.freeimages.com/es">FreeImages</a></p>
+                    <p><a href="https://pixabay.com/es/">Pixabay</a></p>
+                    <p><a href="https://thenounproject.com/">Thenounproject</a></p>
+                    <p><a href="https://tinypng.com/">Tinypng</a></p>
+                    <p><a href="https://www.manypixels.co/">Manypixels</a></p>
+                    <p><a href="https://www.humaaans.com/">Humaans</a></p>
+                    <p><a href="https://uigradients.com/#CocoaaIce">Uigradients</a></p>
+                    <p><a href="https://www.flaticon.es/">Flaticon</a></p>
+                    <p><a href="https://boxicons.com/">Boxicons</a></p>
+                </div>
+                <div>
+                    <h5>Herramientas FrontEnd:</h5>
+                    <p><a href="https://codepen.io/">Codepen</a></p>
+                    <p><a href="https://modernizr.com/">Modernizr</a></p>
+                    <p><a href="https://browsershots.org/">BrowserShots</a></p>
+                    <p><a href="https://cdnjs.com/">CDNJS</a></p>
+                    <p><a href="https://archive.org/web/">Waybackmachine</a></p>
+                    <p><a href="https://dummyimage.com/">Dummyimage</a></p>
+                    <p><a href="https://www.colorzilla.com/">Colorzilla</a></p>
+                    <p><a href="https://caniuse.com/">Caniuse</a></p>
+                    <p><a href="http://www.spritecow.com/">Spritecow</a></p>
+                    <p><a href="https://www.figma.com/">Figma</a></p>
+                    <p><a href="https://www.minifier.org/">JavasScript-minifier</a></p>
+                </div>
+                <div>
+                    <h5>Fuentes:</h5>
+                    <p><a href="https://fonts.google.com/">fonts.google</a></p>
+                    <p><a href="https://es.lipsum.com/">Es.lipsum</a></p>
+                    <p><a href="https://fontawesome.com/">FontAwesome</a></p>
+                </div>
+                <div>
+                    <h5>Editores de código:</h5>
+                    <p><a href="https://code.visualstudio.com/">VScode</a></p>
+                </div>
+                <div>
+                    <h5>VCS:</h5>
+                    <p><a href="https://subversion.apache.org/">Subversión</a></p>
+                    <p><a href="https://www.mercurial-scm.org/">Mercurial</a></p>
+                    <p><a href="https://git-scm.com/">Git</a></p>
+                    <p><a href="https://github.com/">Github</a></p>
+                    <p><a href="https://about.gitlab.com/">Gitlab</a></p>
+                    <p><a href="https://bitbucket.org/">Bitbucket</a></p>
+                </div>
+                <div>
+                    <h5>Programas para VCS:</h5>
+                    <p><a href="https://desktop.github.com/">Github-desktop</a></p>
+                    <p><a href="https://www.gitkraken.com/">Git-kraken</a></p>
+                </div>
+                <div>
+                    <h5>Sistema de persistencia:</h5>
+                    <p><a href="https://www.sqlite.org/index.html">SQLite</a></p>
+                    <p><a href="https://mariadb.org/">MariaDb</a></p>
+                    <p><a href="https://www.mongodb.com/es">MongoDb</a></p>
+                    <p><a href="https://www.oracle.com/ar/index.html">Oracle</a></p>
+                    <p><a href="https://www.postgresql.org/">PostgreSQL</a></p>
+                    <p><a href="https://redis.io/">Redis</a></p>
+                    <p><a href="https://www.mysql.com/">MySQL</a></p>
+                    <p><a href="https://aws.amazon.com/es/dynamodb/">DynamoDb</a></p>
+                    <p><a href="https://aws.amazon.com/es/rds/">AmazonRelationDataBaseService</a></p>
+                </div>
+                <div>
+                    <h5>Navegadores:</h5>
+                    <p><a href="https://www.google.com/intl/es-419/chrome/">Chrome</a></p>
+                    <p><a href="https://brave.com/es/">Brave</a></p>
+                    <p><a href="https://www.google.com/intl/es-419/chrome/canary/">Chrome Canary</a></p>
+                    <p><a href="https://www.chromium.org/">Chromium</a></p>
+                    <p><a href="https://www.mozilla.org/es-AR/firefox/developer/">Firefox Developer Edition</a></p>
+                </div>
+                <div>
+                    <h5>Servicios web:</h5>
+                    <p>Rest API</p>
+                    <p>Graphql API – Serverless Firebase</p>
+                    <p>AWS Amplify</p>
+                    <p>Cloudinary</p>
+                </div>
+                <div>
+                    <h5>Desarrollo API:</h5>
+                    <p><a href="https://www.postman.com/product/graphql-client/">Postman</a></p>
+                    <p><a href="https://marketplace.visualstudio.com/items?itemName=humao.rest-client">Rest Client de VSCode</a></p>
+                </div>
+                <div>
+                    <h5>Servicios cloud:</h5>
+                    <p><a href="https://azure.microsoft.com/es-es/">Azure</a></p>
+                    <p><a href="https://aws.amazon.com/es/">Amazon Web Services</a></p>
+                    <p><a href="https://cloud.google.com/"><oogleCloud</a></p>
+                    <p><a href="https://www.docker.com/">Docker - para empaquetar</a></p>
+                </div>
+                <div>
+                    <h5>CMS:</h5>
+                    <p><a href="https://wordpress.com/es/">Wordpress</a></p>
+                    <p><a href="https://woocommerce.com/">Woocommerce</a></p>
+                    <p><a href="https://magento.com/">Magento</a></p>
+                    <p><a href="https://www.blogger.com/about/">Blogger</a></p>
+                    <p><a href="https://ghost.org/">Ghost</a></p>
+                </div>
+                <div>
+                    <h5>Framework de Backend:</h5>
+                    <p>GO (Gorilla, Buffalo, goji)</p>
+                    <p>Python (django, flask)</p>
+                    <p>Typescript/JavaScript/Node (Loopback, Nest, Next.js, Nuxts.js)</p>
+                </div>
+                <div>
+                    <h5>Servers:</h5>
+                    <p><a href="https://www.nginx.com/">Nginx</a></p>
+                    <p><a href="https://www.apache.org/">Apache</a></p>
+                    <p><a href="https://www.iis.net/">Windowsiis</a></p>
+                    <p><a href="http://tomcat.apache.org/">Tomcat</a></p>
+                </div>
+                <div>
+                    <h5>Mobiledev:</h5>
+                    <p>ionic (angular react vim )</p>
+                    <p>react native + expo, flutter</p>
+                </div>
+            </lista>
+        </section>
+        <section>
+            <h2>Arquitectura web</h2>
+            <h3>Breve reseña</h3>
+            <p>A partir del desarrollo de ARPANET en 1969 empieza un crecimiento vertiginoso del uso de la internet. En 1990 Tim Berners-Lee creó la WWW, la "WorldWideWeb" que realizó la primera conexión desde un navegador a un servidor web mientras trabajaba en el CERN, desarrollando así, las tres tecnologías fundamentales de la web que son:</p>
+            <p>HTML (Hyper Text Markup Lenguage). Lenguaje de marcado o etiquedo que se emplea para escribir los documentos o página web.</p>
+            <p>URL (Universal Resource Locator). El localizador de recursos uniforme, sistema de localizacion o direccionamiento de los documentos web.</p>
+            <p>HTTP (HyperText Transfer Protocol) El lenguaje con el que se comunica el navegador con el servidor web y el que se emplea para transmitir los documentos web.</p>
+            <p>Se trata de una arquitectura cliente-servidor, en la que cada dispositivo electrónico en la red (internet, intranet o extranet) actua como cliente o servidor lo que implica la comunicación entre procesos hacen peticiones (clientes) y procesos que responden a esas peticiones (servidores). Esta comunicación es posible gracias al protocolo HTTP.</p>
+            <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232192/mod_page/content/11/servidor%20web.png" alt="">
+            <p>En 1994 (1 de octubre) Tim Berners-Lee abandona el CERN y funda la W3C, en inglés, "World Wide Web Consortium", organismo internacional que propone recomendaciones y estandares web que aseguran el crecimiento de la World Wide Web.</p>
+            <ul>
+                <li>En 1991 surge HTTP definido como "protocolo de red para sistemas de información hipermedias distribuidos".</li>
+                <li>Muy próximo aparece HTML 1, es el lenguaje de marcado predominante de las páginas web.</li>
+                <li>En 1995, Netscape creó JavaScript, un lenguaje de secuencias de comandos basado en prototipos y "orientado a objetos". El objetivo de este lenguaje de programación fue darle capacidad de ejecucción al cliente de esta arquitectura web, es decir, al navegador.</li>
+                <li>En 1998 aparecen las hojas de estilo, en su versión 2. Se denominaron CSS, del inglés, "Cascading Style Sheets", que es un lenguaje de hojas de estilo empleado para describir la semántica de un documento, en este caso un documento web.</li>
+            </ul>
+            <h3>Arquitecturas de las aplicaciones web</h3>
+            <p>Las aplicaciones web se basan en una arquitectura cliente/servidor. Es decir que, por un lado está el cliente (navegador) y por otro lado el servidor. Existen diferentes variantes de la arquitectura básica según como se implemente, pero es lo importante mencionar que en tecnología la mayoría de las estructuras está compuesta por capas.</p>
+            <p>A continuación, enumeramos algunas de las arquitecturas más comunes:</p>
+            <h5>Variantes de arquitectura</h5>
+            <p>Servidor web + base de datos en un mismo servidor (2 niveles o capas). En este caso el servidor gestiona tanto la lógica de negocio como la lógica de los datos y los datos.</p>
+            <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232193/mod_page/content/21/serverwebybd.png" alt="">
+            <p>Servidor web y de datos separados (3 niveles). En este caso se separa la lógica de negocio a la de datos en diferentes servidores.</p>
+            <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232193/mod_page/content/21/serverwebybdseparado.png" alt="">
+            <p>Servidor web + servidor de aplicaciones + base de datos en un mismo servidor (4 niveles).</p>
+            <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232193/mod_page/content/21/Recurso%2044.png" alt="">
+            <p>Como vemos, la arquitectura web tiene un patrón de diseño en capas (arquitectura distribuida), y cada capa puede estar en un servidor diferente y aun así se pueden interconectar. El objetivo de separar las distintas funcionalidades en distintos servidores es aumentar la escalabilidad y el rendimiento. Por ejemplo, el servidor web al ofrecer servicios de http deberá tener una buena conexión a internet mientras que el servidor de base de datos requerirá tener una buena capacidad de almacenamiento y procesamiento.</p>
+            <p>Un grupo de páginas web dinámicas se conceptualiza como Front End (pensadas para que el cliente acceda) y el otro grupo de páginas dinámicas web como Back End (pensadas para el procesamiento y acceso de datos), además de que la base de datos puede existir en otro servidor. Esto da lugar a un concepto muy importante en POO, el DESACOPLAMIENTO, en este caso el diseño del Front End, Back End y base de datos puede desacoplarse.</p>
+            <p>Ahora veamos distintos escenarios de arquitecturas web, debemos tener presente que nos referimos a como se dividen o distribuyen los distintos componentes de una aplicación en una red, en algunos casos dependiendo de su complejidad del desarrollo necesita ser distribuida en varios servidores. La complejidad es determinada por las necesidades de la problemática que se pretende resolver o el diseño de la aplicación. Hagamos un repaso por las distintas arquitecturas que se nos pueden presentar en la siguiente imagen.</p>
+            <h5>Arquitectura</h5>
+            <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/1/core_h5p/content/734/images/file-612d44b793de2.png" alt="">
+            <p>En el escenario 1: Vemos una <u>página web con contenido estática</u>, es decir, no tiene conexión con ningun servidor, significa que no actualiza su información y solo se puede navegar dentro de la misma página. Para crearla se utilizó HTML, CSS y JavaScript.</p>
+            <p>En el escenario 2: Vemos una arquitectura centralizada (todo está ubicado en el mismo sitio), contiene varias <u>páginas web con contenido estática</u>, a esto le llamamos sitio web estático, como en el caso anterior tampoco tiene conexión con otro servidor lo que significa que solo se puede navegar entre las mismas páginas. Para crearla se utilizó HTML, CSS y JavaScript.</p>
+            <p>En el escenario 3: Vemos una aplicación web o web dinámica, en este caso ademas de utilizar HTML, CSS y JavaScript se utilizaron lenguajes de programación para poder hacer intercambios de información con las distintas capas de la aplicación, hacer cálculos, crear nueva información en la base de datos, actualizarla o conectar con otros sistemas mediante API. Esta arquitectura tiene la siguiente separacion conceptual o de arquitectura:</p>
+            <ul>
+                <li>Front End: Es el nombre conceptual que se la da al código programado o <u>la parte de la aplicación web que ve un usuario cuando entra desde el navegador a nuestra aplicación.</u> Por ejemplo cuando entras a una página como Mercado Libre, lo que se ve es el Front End.</li> 
+                <li>Back End: Es el nombre conceptual que se le da al código programado o <u>la parte de la aplicación web <i>que no se ve a simple vista pero ejecuta acciones que pide el usuario desde el Front End</i></u>, es decir, al realizar una búsqueda de un producto determinado dentro de la web de Mercado Libre, el encargado de buscar el producto es el Back End y el encargado de mostrar el producto encontrado al usuario es el Front End.</li>
+                <li>Conexión a BD: Es el nombre que se le da a la conexión con la base de datos. Allí se guardan todos los productos en el caso de Mercado Libre, de esta manera facilita el almacenamiento y búsqueda de los datos. Más adelante profundizaremos más sobre bases de datos.</li>
+                <li>Apis: Por el momento diremos que las Apis nos permiten conectarnos con otros sistemas o bien que otros sistemas se conecten con el nuestro, más adelante vamos a profundizar en el tema.</li>
+            </ul>
+            <p>En el escenario 4: Vemos una plataforma digital o un ecosistema, en este caso podemos ver que consiste en muchos sistemas que trabajan en conjunto, colaborando para resolver una necesidad o problema. En el ejemplo de Mercado Libre, se dedica a vender online, pero también tiene que cobrar y hacer envios. Por eso han desarrollado aplicaciones independientes pero que saben como comunicarse a otros sistemas para pedir o enviar datos para realizar alguna tarea. De esta manera las aplicaciones pueden dar solución integral, comprar, pagas y enviar el producto sin tener que salir de la página. Esta arquitectura es más compleja porque son varios los sistemas que componen el ecosistema, pero si miras con atención el grafico, notaras que existen los mismos elementos que describimos anterior, revisemos:</p>
+            <ul>
+                <li>Front End: Parte de la aplicación web que ve un usuario al entrar.</li> 
+                <li>Back End: Parte de la aplicación web que no se ve y que realiza las acciones en el servidor web.</li>
+                <li>Conexión a BD: En este caso se representa con un icono de una base de datos.</li>
+                <li>Apis: Parte de la aplicación que permite conectarse a otras aplicaciones y que otras aplicaciones se conecten con nuestro sistema.</li>
+            </ul>
+            <h5>Arquitectura distribuida</h5>
+            <p>Para comenzar, tengamos presente que hemos visto que una aplicación web tiene varios conceptos como arquitectura cliente servidor, Front End, Back End, Base de datos y Apis. Pero qué pasa cuando una aplicación sabemos que va a recibir muchas consultas de nuestro cliente.</p>
+            <p>Para poder dar respuesta a ello y antes de entender qué es una arquitectura distribuida hagamos el ejercicio de organizar cada concepto en su lugar y veamos como podemos distribuir nuestra aplicación.</p>
+            <p>Supongamos que nos juntamos varios compañeros del curso y tenemos un sistema web o aplicación web con la arquitectura cliente/servidor, en ella debemos organizar los conceptos que ya vimos como Front End, Back End, Base de datos y Apis. Esta organización quedaría de esta manera:</p>
+            <h6>Arquitectura cliente/servidor</h6>
+            <p>Cliente:</p>
+            <ul>
+                <li>Front End: El código o programación que muestre información al navegador web llamado cliente.</li>
+            </ul>
+            <p>Servidor:</p>
+            <ul>
+                <li>Back End: El código o programación que ejecutan las acciones en el servidor y conecta con la base de datos.</li>
+                <li>Base de datos o DB: Donde se almacena la información.</li>
+                <li>Api: es quien nos permite conectar a los otros sistemas.</li>
+            </ul>
+            <h6>¿Qué es una arquitectura centralizada?</h6>
+            <p>Es cuando tenemos todos los elementos de nuestra aplicación web de arquitectura de cliente/servidor en un solo lugar, equipo o servidor, es decir, tener el Back End, Front End, base de datos y APIs en el mismo equipo. Esto hace que en el caso de una falla del equipo toda nuestra aplicación también fallará.</p>
+            <h6>¿Qué es la arquitectura distribuida?</h6>
+            <p>Es tener la posibilidad y capacidad de separar nuestro sistema en distintos servidores de la red (sea red local o internet). Ya sabemos que cuando hablamos de arquitecturas estamos refiriéndonos a una estrategia de cómo construir nuestro sistema dependiendo de lo grande que sea, de las funcionalidades que tenga, esto es mas bien una forma de pensar en cómo escalar nuestro sistema para que soporte más usuarios o más transacciones.</p>
+            <p>¿Pero cómo te das cuenta cuando una aplicación es distribuida?</p>
+            <p>En este punto depende de que estés mirando el proyecto o la aplicación, te compartimos solo 2 enfoques:</p>
+            <ul>
+                <li>Como usuario: No te darías cuenta porque si el sistema está distribuido funciona como un conjunto único y sincronizado.</li>
+                <li>Como programador: Cuando te asignen un rpoyecto o cliente en base a preguntas concretas podrás ir conociendo cómo se implementó o distribuyó el sistema, pero te compartimos algunas formas en las que puedes entender que estás frente a una arquitectura distribuida:</li>
+                <ol>
+                    <li>Por el líder del proyecto: Cuando se comienza a trabajar en un proyecto generalmente el líder del mismo hace una explicación del tipo de aplicación con la que se está trabajando, ademas de indicarnos en qué parte del proyecto estaremos trabajando.</li>
+                    <li>Por el perfil asignado: Cuando nos asignan el trabajo en una empresa nos especifican si trabajaremos en el Front End, en el Back End, o en ambos Full Stack, de esa manera podemos inferir que la arquitectura es distribuida, igualmente siempre es mejor preguntar para estar seguros.</li>
+                    <li>Por un diagrama: Generalmente se utilizan diagramas de aplicación para documentar un sistema, en el que se puede ver la separación del sistema y si esta distribuido en 1 o varios servidores.</li>
+                </ol>
+            </ul>
+            <p>En los siguientes diagramas o esquemas de una aplicación que fue creada y pensada en forma distribuida separando el código en Front End, Back End. Podemos ver cómo se puede ir escalando o distribuyendo en distintos servidores y que en cualquier caso seguirá funcionando.</p>
+            <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/1/core_h5p/content/734/images/file-612d44da3d6e7.png" alt="">
+            <p>Analicemos juntos los escenarios de la imagen anterior:</p>
+            <p>Escenario 1: En este caso podemos ver que la aplicación está separada en Front End, Back End y bases de datos, estando en el mismo servidor. Notemos que la aplicación fue diseñada de forma modular o separada (para poder distribuirla) todas las partes del sistema están en un mismo servidor, es decir, en caso de falla del servidor afecta a todo el sistema.</p>
+            <p>Escenario 2: En este caso podemos ver que se ha separado la base de datos y el sistema sigue funcionando porque el desarrollador Back End escribió el código pensando en una arquitectura distribuida. Pero la parte del Front End y Back End aun están en un mismo servidor.</p>
+            <p>Escenario 3: En este caso podemos ver que cada parte del sistema Front End, Back End y Base de datos esta en un servidor diferente. Con esto comenzamos a ver los beneficios del deiseño con arquitectura distribuida en los sistemas.</p>
+            <p>Escenario 4: En este caso podemos ver que cada parte del sistema está en la nube de distintas empresas y nuestro sistema sigue funcionando por su diseño modular o distribuido.</p>
+            <h6>¿Hasta dónde puedo modularizar o distribuir mi sistema?</h6>
+            <p>El cómo distribuir el sistema es algo que se analiza en el diseño de la aplicación o se va cambiando a medida que el sistema va creciendo, normalmente cuando llegamos a un trabajo las aplicaciones ya están funcionando y necesitan de nuestro conocimiento para mantenerlas y agregarles mejoras.</p>
+            <p>Cuando una aplicación se hace más grande, compleja y con más usuarios necesitamos seguir modularizando el sistema, dado que no nos alcanza con separar en Front End, Back End y base de datos. En esta situación ya debemos pensar en modularizar o separar algunas funcionalidades del sistema, algunos motivos pueden ser:</p>
+            <ul>
+                <li><b>Por alta demanda</b>: Cuando el sistema tiene una funcionalidad que es compleja, consume muchos recursos del servidor o es muy demandada por distintos partes del sistema.</li>
+                <li><b>Por interconexión</b>: Cuando un sistema tiene funcionalidades que necesitan dar acceso a otros sistemas para consumir este proceso, función o datos.</li>
+                <li><b>Por segregación de roles</b>: Cuando es necesarios separar roles o funciones por motivos de seguridad o aspectos técnicos, también puede ser por que el negocio lo requiere, por ejemplo si se decide por seguridad separar el proceso de autenticación del sistema para reforzar la seguridad.</li>
+                <li><b>Por escalamiento:</b> Cuando las proyecciones indican que en un periodo de tiempo la demanda aumentará considerablemente, será necesario agregar mas servidores en la red con la misma funcionalidad para que satisfaga la demanda.</li>
+            </ul>
+            <p>Existen varias formas de separar estas funcionalidades que llamaremos API REST o Microservicios, si bien a medida que avancemos iremos aprendiendo más sobre las API REST, ahora veremos como la arquitectura distribuida puede aplicarse para pasar de un gran sistema que tiene todo en un solo lugar a separarlo en pequeñas y que todo siga funcionando.</p>
+            <p>Para ejemplificar tomaremos un sistema que tiene lo siguiente:</p>
+            <ul>
+                <li><b>Front End</b>: Todo fue diseñado pensando en una arquitectura distribuida, las funcionalidades son las siguientes.</li>
+                <ul>
+                    <li><i><u>Login</u></i>: Se conecta con el Back End para validar el usuario y clave.</li>
+                    <li><i><u>CLiente</u></i>: Se conecta con el Back End para consultar, editar, crear y eliminar clientes.</li>
+                    <li><i><u>Producto</u></i>: Se conecta con el Back End para consultar, editar, crear y eliminar productos.</li>
+                    <li><i><u>Proveedor</u></i>: Se conecta con el Back End para consultar, editar, crear y eliminar proveedores.</li>
+                </ul>
+            </ul>
+            <ul>
+                <li><b>Back End</b>: Todo fue diseñado pensando en una arquitectura distribuida, las funcionalidades son las siguientes.</li>
+                <ul>
+                    <li><i><u>Login</u></i>: Recibe la repetición, consulta la base de datos y valida si el usuario existe.</li>
+                    <li><i><u>CLiente</u></i>: Recibe la petición, consulta la base de datos y devuelve los datos del cliente.</li>
+                    <li><i><u>Producto</u></i>: Recibe la petición, consulta la base de datos y devuelve los datos del producto.</li>
+                    <li><i><u>Proveedor</u></i>: Recibe la petición, consulta la base de datos y devuelve los datos del proveedor.</li>
+                </ul>
+            </ul>
+            <p>Ahora veamos en un diagrama o esquema como estas funcionalidades se pueden ir distribuyendo en distintos servidores:</p>
+            <h5>Arquitectura micro servicio api rest</h5>
+            <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/1/core_h5p/content/734/images/file-612d44da3d6e7.png" alt="">
+            <p>Analicemos juntos los escenarios de la imagen anterior:</p>
+            <ul>
+                <li>Escenario 1: En este caso tenemos el sistema que está en 3 servidores para cada separación.</li>
+                <ol>
+                    <li>Front End: Todas las funcionalidades están juntas y en el mismo servidor.</li>
+                    <li>Back End: Todas las funcionalidades están juntas y en el mismo servidor.</li>
+                    <li>Base de datos: Todas las funcionalidades están juntas y en el mismo servidor.</li>
+                </ol>
+            </ul>
+            <ul>
+                <li>Escenario 2: En este caso podemos ver que cada parte del sistema está distribuido en 5 servidores y el sistema sigue funcionando porque el desarrollador Back End escribió el código pensando en una arquitectura distribuida.</li>
+                <ol>
+                    <li>Front End: Todas las funcionalidades están juntas y en el mismo servidor.</li>
+                    <li>Back End: La funcionalidad de login está en un servidor exclusivo.</li>
+                    <li>Back End: Las funcionalides de cliente y proveedor están en un servidor.</li>
+                    <li>Back End: La funcionalidad producto está en un servidor exclusivo.</li>
+                    <li>Base de datos: Todos los datos en una base de datos y en el mismo servidor.</li>
+                </ol>
+            </ul>
+            <ul>
+                <li>Escenario 3: En este caso podemos ver que cada parte del sistema está distribuido en 5 servidores en nubes diferentes y el sistema sigue funcionando porque el desarrollador Back End escribió el código pensando en una arquitectura distribuida.</li>
+                <ol>
+                    <li>Front End: Todas las funcionalidades estan juntas y en el mismo servidor de la nube de Argentina.</li>
+                    <li>Back End: La funcionalidad de login está en un servidor de la nube de España.</li>
+                    <li>Back End: La funcionalidades de cliente y proveedor están en un servidor de la nube de Canadá.</li>
+                    <li>Back End: La funcionalidad producto está en un servidor en la nube de Nueva Zelanda.</li>
+                    <li>Base de datos: TOdos los datos en una base de datos y en un servidor propio.</li>
+                </ol>
+            </ul>
+            <ul>
+                <li>Escenario 4: En este caso podemos ver que el sistema está en la misma nube, a pesar que las funcionalidades están todas juntas, como en el escenario 1, y nuestro sistema sigue funcionando.</li>
+                <ol>
+                    <li>Front End: Todas las funcionalidades están juntas y en el mismo servidor de la nube de Argentina.</li>
+                    <li>Back End: Todas las funcionalidades están juntas y en el mismo servidor de la nube de Argentina.</li>
+                    <li>Base de datos: Todas las funcionalidades están juntas y en el mismo servidor de la nube de Argentina.</li>
+                </ol>
+            </ul>
+            <p>Como hemos visto hay varios niveles de como modularizar, distribuir o separar en capas una aplicación con sus funcionalidades, en algunos casos la separación solo puede ser Front End, Back End. Pero existen otras formas de separar en partes más pequeñas la aplicación y eso lo hacemos con la ayuda de las APIs REST.</p>
+            <h3>Elementos de la arquitectura web</h3>
+            <ol>
+                <li><h5>La infraestructura de red</h5></li>
+                <p>Si bien es cierto que, en fase de desarrollo, para probar nuestra aplicación web, no necesitaríamos de esta infraestructura, una vez nuestra aplicación se instale en el hosting definitivo, será necesario una red ethernet y todos los componentes que hacen posible la conectividad de los equipos informáticos</p>
+                <li><h5>ISP</h5></li>
+                <p>Siglas en inglés para el proveedor de servicio de Internet.</p>
+                <li><h5>Cliente Web</h5></li>
+                <p>Es el navegador web. Ejemplos: Chrome, Firefox, Safari, etc. Pero ya no se restringe solo a estos dispositivos sino que podría ser, por ejemplo, un sistema embebido ejecutándose en una SBC (small board computer). Incluso podría no estar ejecutando un navegador convencional, como por ejemplo un reloj inteligente, o un dispositivo vinculado a una máquina de producción seriada como los resurgidos de la mano del concepto de Industria 4.0.</p>
+                <li><h5>Nombre de dominio</h5></li>
+                <p>Dicho de forma sencilla, el nombre de dominio (o simplemente "dominio") es el nombre de un sitio web. Es decir, lo que aparece después de "@" en una dirección de correo electrónico o despues de "www." en una direccion web. Si alguien te pregunta cómo te puede encontrar en internet, tendrás que decirle tu nombre de dominio. Las computadores para comunicarse utilizan direcciones IP (números únicos en la red). Un ejemplo de una dirección IP de un servidor es 173.194.121.32. Para nosotros es imposible recordar tantos números y saber qué servicio o qué aplicación se encuentra en esa dirección IP o servidor. Para resolver estos problemas se usan palabras que las personas pueden leer, que son intuitivas, fáciles de reocrdar y dicen mucho sobre el servicio web que ofrecen, se denominan nombres de dominio. ¿Puedo comprar un nombre de dominio? No, los nombres no se pueden comprar, solo se puede pagar por el derecho a usarlo por cierto periodo de tiempo. Para registrar un dominio a tu nombre debes hacerlo por medio de una empresa que se encarga de administrar las registraciones de nombres de dominio. En el caso de argentina es <a href="http://nic.ar">NIC Argentina</a>.</p>
+                <li><h5>URL</h5></li>
+                <p>Una URL (o localizador uniforme de recursos) es una dirección web completa que se utiliza para encontrar una página web especifica. Mientras que el dominio es el nombre del sitio web, la URL es una dirección que remite a los usuarios a una de las páginas de ese sitio web. Cada URL contiene un nombre de dominio y otros componentes necesarios para localizar una página o un contenido concreto.</p>
+                <li><h5>Sitio web</h5></li>
+                <p>Aunque una cosa lleve a la otra, comprar un nombre de dominio no implica tener un sitio web. El dominio es el nombre del sitio web, la URL es la forma de encontrarlo y el sitio web es lo que los usuarios ven en sus pantallas y con lo que interactúan. Es decir, cuando compres un dominio, habrás adquirido el nombre de tu sitio web, pero faltará crear el sitio web en cuestión.</p>
+                <li><h5>Servidor DNS</h5></li>
+                <p>(Sistema de Nombre de Dominio) Se ocupa de la administración del espacio de nombres de dominio. Este servidor se encarga de hacer las conversiones de nombres de dominio a direcciones IP. Cuando el cliente realiza una peticion web, por ejemplo google.com, una de las primera acciones del sistema es invocar a un servidor DNS para que le devuelva la direccion IP del/o de alguno de los servidores de Google. Por ejemplo devolverá la IP 172.217.162.14.</p>
+                <li><h5>Hosting</h5></li>
+                <p>Es el nombre que se le da al servicio de alojamiento en la web a nuestras paginas, aplicaciones, bases de datos (los hosting son servidores que están siempre encendidos y conectados a internet). Los programadores una vez terminado el trabajo suben su aplicación web al hosting para que todo el mundo pueda acceder.</p>
+                <li><h5>Servidor Web</h5></li>
+                <p>También llamado servidor HTTP, es un programa informático que procesa una aplicación del lado del servidor, realizando conexiones bidireccionales o unidireccionales y sincronas o asincronas con el cliente y generando o cediendo una respuesta en cualquier lenguaje o aplicación del lado del cliente.</p>
+                <li><h5>Contenedor de aplicaciones web (o servidor de aplicaciones web)</h5></li>
+                <p>En el módulo que permite la ejecución de aplicaciones web. Por ejemplo el módulo PHP o Python del Servidor Web. Componente ASP o ASPX de IIS. Servidor o Contenedor de Aplicaciones Web Java: Tomcat, Weblogic, Websphere, JBoss, Geronimo, etc.</p>
+                <li><h5>Servidor de base de datos</h5></li>
+                <p>Estos son contenedores de bases de datos que permiten organizar y administrar los datos que deben permanecer en un medio de almacenamiento permanente. Resuelven problemas de: seguridad, mecanismos de comunicación, concurrencia, incosistencias de los datos, respaldo, entre otros. Hay varios tipos de bases de datos, por ejemplo, las relaciones que organizan los datos en forma de tablas, en filas y columnas. Otro tipo son los orientados a objetos u orientados a documentados donde el concepto de tablas se cambia por la colección con formatos similares a JSON. El JavaScript Object Notation es un formato basado en texto estándar para representar datos estructurados en la sintaxis de objetos de JavaScript. Es utilizado para transmitir datos en aplicaciones web (por ejemplo: enviar algunos datos desde el servicio al cliente, así estos datos pueden ser mostrados en la página web, o viceversa).</p>
+            </ol>
+        </section>
+        <section>
+            <h2>Desarrollo Web Full Stack</h2>
+            <p>El desarrollador web full stack puede crear aplicaciones web dinámicas. Esto se logra en base a los <a href="https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/The_web_and_web_standards">estandares web</a> y utilizando tecnologias web que pueden variar según la pila de desarrollo. Tiene por objetivo la creación de aplicaciones web dinámicas. Como vimos anteriormente, <b>las aplicaciones web dinámicas modifican su contenido en función del usuario que acceden permitiendo mostrar uno u otro contenido dependiendo del usuario y de su interacción para con la aplicación web (ej. Facebook, Instagram, etc.) mientras que las aplicaciones web estáticas muestran siempre el mismo contenido independientemente del usuario visitante (ej. un blog).</b></p>
+            <p>Pero, ¿qué son los estándares web y qué buscadores existen? Los estándares web son tecnologías que se utilizan para crear aplicaciones web. Los mismos son creados por organismos de estándares - instituciones que invitan a grupos de personas de diferentes compañias de tecnología a unirse y acordar cómo deben funcionar las tecnologías de la mejor manera posible para cumplir con todo sus casos de uso. El W3C es el organismo de estándares web más conocido, pero hay otros como WHATWG (responsables de la modernización del lenguaje HTML), ECMA (publica el estándar para ECMAScript, en el que se basa JavaScript), Khronos (publica tecnologías para gráficos 3D, como WebGL) y otras MDN Web Docs.</p>
+            <h5>¿Pero qué son los stacks?</h5>
+            <p>Lo que denominamos stack tecnológico, o también denominado stack de soluciones o ecosistema de datos, es un conjunto de todas las herramientas tecnológicas utilizadas para construir y ejecutar una sola aplicación.</p>
+            <p>Recordemos lo que ya hemos visto en la arquitectura cliente / servidor a su vez al código que navega el cliente por el navegador le llamamos Front End y la parte de código que accede a los datos se le llama Back End.</p>
+            <p>Cada una de estas partes de la arquitectura puede crearse con distintos lenguajes de programación.</p>
+            <p><b>Front End:</b> Para el desarrollo se necesita:</p>
+            <ul>
+                <li>Estructura y estilos: HTML, CSS o frameworks como Bootstrap.</li>
+                <li>Lenguaje de programación: JavaScript, Java, PHP, o frameworks como Angular (JavaScript).</li>
+            </ul>
+            <p><b>Back End:</b> Para el desarrollo se necesita un web server, una base de datos y un lenguaje de programación.</p>
+            <ul>
+                <li>Base de datos: pueden ser MySQL, PostgreSQL, etc.</li>
+                <li>Lenguaje: Java, PHP, etc.</li>
+                <li>Apache, NGINX, etc.</li>
+            </ul>
+            <p>Como son muchas las opciones de lenguaje de programación, bases de datos y frameworks. Se ha creado <b>el concepto de Stacks o pila que agrupa las tecnologias (que funcionan bien en conjunto o mas utilizadas)</b> para crear una aplicación desde el Front End y Back End usando ese Stack y ahorrarnos tener que investigar al detalle que tecnologia podemos utilizar, es como un combo de tecnologías. Esto también ayuda a las empresas a identificar el conocimiento que tiene un programador al nombrar el Stack tecnológico que utiliza.</p>
+            <p>Sitios como la red social Facebook, han sido desarrollados por una combinación de frameworks de codificación y lenguajes, entre los que se incluyen JavaScript, HTML, CSS, HPP y ReactJS. Así podemos decir que este es el "stack tecnológico de Facebook.</p>
+            <p>Podríamos preguntarnos cuáles son los stacks que usan Netflix, WhatsApp, Instagram...</p>
+            <p>Uno de los stacks o pila de tecnologías más utilizado por los desarrolladores es el que se conoce por <b>LAMP</b>: <b>L</b>inux, <b>A</b>pache, <b>M</b>ySQL y <b>P</b>HP. Cualquier web hecha con Wordpress, Drupal o Prestashop, por ejemplo, están hechas sobre estos cuatro pilares. Pero se pueden hacer las variaciones que se crean convenientes, puesto que muchas de estas tecnologías son intercambiables por otras similares. Por ejemplo, NginX en lugar de Apache, PostgreSQL en lugar de MySQL o Ruby on Rails en lugar de PHP.</p>
+            <p>Otro stack muy utilizado es el llamado <b>MEAN</b>, que se compone de <b>M</b>ongoDB, <b>E</b>xpress, <b>A</b>ngular y <b>N</b>odeJS.</p>
+            <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232197/mod_page/content/34/image%20%281%29.png" alt="">
+            <p><b>Algunos ejemplo de Stacks</b>:</p>
+            <ul>
+                <li>LAMP: Linux - Apache - MySQL - PHP. Es la más antigua y el formato de las aplicaciones predominantes se denomina "Multi Page Application" o "MPA" o aplicación de múltiples páginas.</li>
+                <li>MEAN: MongoDB - Express - AngularJS - Node.js. Es la más moderna y el formato de aplicaciones predominante se denomina "Aplicación de una sola página" o "SPA" o aplicación de una sola página.</li>
+                <li>.NET: .NET + WebApi + IIS - SQL Server. Utilizan Microsoft. .NET Core como plataforma de desarrollo.</li>
+                <li>Patrón BFF: Se puede usar una arquitectura Backend for Frontend (BFF) para crear backends para aplicaciones web o móviles orientados al cliente. Los BFF pueden ayudar a respaldar una aplicación con múltiples clientes al mismo tiempo que mueven el sistema a un estado menos acoplado que un sistema monolítico. El acoplamiento es "el grado en que los módulos de un programa depende unos de otros". Una aplicación monolítica es una unidad cohesiva de código. Este patrón de código ayuda a los equipos de desarrollo a iterar las funciones más rápido y tener control sobre los backends para aplicaciones móviles sin afectar la experiencia de la aplicación móvil o web correspondiente.</li>
+                <li>Django: Python - Django - MySQL</li>
+                <li>Ruby on Rails: Ruby - SQLite - Rails</li>
+                <li>LEMP: Linux - Nginx - MySQL - PHP</li>
+                <li>MERN: MongoDB - Express - React - Node.js</li>
+                <li>Otros stacks: Existen otros stacks y probablemente surjan nuevos en el futuro cercano. Una solución completa involucra no solo el stack, que en ocasiones conlleva la inversión en las correspondientes licencias, sino también las consideraciones referidas al costo de hardware, entre ellos el servidor fisico. Así por ejemplo, en torno al lenguaje de programación Java y de la mano del servidor web JBoss, se pueden implementar en servidores con sistemas operativos RedHat. El hardware puede ser por ejemplo de Dell, HP, entre otros. Otra posible configuración es el frontend desarrollado en torno a React, el backend en Python y Django y usando como base de datos SQLite.</li>
+            </ul>
+            <h5>¿Todas las empresas usan si o si estos Stacks?</h5>
+            <p>No siempre, tengamos en cuenta que los stacks son un grupo de herramientas tecnológicas sugeridas para crear una aplicación web, por ende, las empresas pueden elegir las herramientas que necesiten sin tener en cuenta los Stack antes nombrados, pero recuerda cuando una empresa solicita un programador LAMP y te presentas, ellos asumiran que sabrás manejar ese grupo de tecnologías. Existen otras empresas que buscan perfiles con conocimiento solo en Front End o Back End, estas empresan foalizan al programador en un solo área independientemente del stack.</p>
+            <p></p>
+            <h5>¿Con qué tecnologías trabajaremos en el curso?</h5>
+            <p>Luego de investigar y consultar la demanda requerida de las empresas vs las tecnologías mas utilizadas en Argentina, utilizaremos las siguientes tecnologías:</p>
+            <p><b>Para Front End:</b></p>
+            <ul>
+                <li><u>Estructura y estilos:</u> HTML, CSS y framework como Bootstrap.</li>
+                <li><u>Lenguaje de programación:</u> TypeScript y el framework como Angular, ambos basados en JavaScript.</li>
+            </ul>
+            <p><b>Para Back End:</b></p>
+            <ul>
+                <li><u>Base de datos:</u> Usaremos MySQL.</li>
+                <li><u>Lenguaje de programación:</u> Java con Framework Spring Boot.</li>
+                <li><u>Web server:</u> Apache Tomcat</li>
+            </ul>
+            <h5>¿Qué significa ser un desarrollador full stack?</h5>
+            <p>El desarrollador Full Stack es un perfil que tiene conocimiento de lenguajes de programación de Front End, Back End, APIs y Base de datos. Esta amplitud de conocimiento es muy buscada hoy en día por las empresas, esto significa que al momento de trabajar en un proyecto podrías estar asignado a cualquiera de esas áreas.</p>
+            <p>Recuerda que tener el conocimiento de un programador full stack te amplia las posibilidades de trabajo, por ello, vale la pena el esfuerzo de aprender y practicar. En el proceso podrías descuibrir que tienes facilidad o te gusta más alguna parte del Full Stack ( Front End,</p>
+            <h3>Proceso de una petición web y modelo OSI</h3>
+            <p>El modelo OSI o Modelo Interconexión de Sistemas Abiertos (Open Systems Interconection). Es un modelo de comunicación de 7 capas, y es la base por el cual viaja toda la información por las redes (internet global, internet local, internet celular, etc.)</p>
+            <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232199/mod_page/content/19/ModeloOsiFinal3.gif" alt="">
+            <h5>Como viaja la información por Internet</h5>
+            <p>El protocolo HTTP es el que utilizan los servidores para enviar y recibir documentos a través de Internet.</p>
+            <p>El router enviará la solicitud al proveedor de acceso de internet.</p>
+            <p>La solicitud se conecta con el servidor de nombres de dominio. Esta máquina traduce el nombre del dominio (www.facebook.com) a su dirección IP (157.240.20.35).</p>
+            <p>Gracias al protocolo TCP, que divide el mensaje en paquetes, la información que enviamos y recibimos recorre su camino sin problemas.</p>
+            <p>El servidor host (Facebook) ejecuta la solicitud, y devuelve código HTML en el ordenador del usuario.</p>
+            <p>Entonces el navegador web del usuario recibe la información y procesa el HTML para que se muestre como una página web visual.</p>
+            <h5>Proceso de una petición web</h5>
+            <ol>
+                <li><b>Cliente web</b>: Solicita la resolución de nombres al servidor DNS. Por ejemplo: google.com</li>
+                <li><b>Servidor DNS</b>: Recibe y trata la solicitud. Una vez recibida la petición realiza las consultas necesarias para resolver y obtener la dirección IP.</li>
+                <li>Servidor DNS: Devuelve al navegador web la dirección IP que corresponde al servidor web.</li>
+                <li><b>Cliente web</b>: Conecta con el servidor web mediante la dirección IP y el puerto. Realiza la petición mediante una URL (método GET) o un formulario (método POST). Dicha solicitud incluye: la dirección IP del servidor web, el puerto del servidor web, URL y parámetros.</li>
+                <li><b>Servidor web</b>: Control de acceso, Análisis de la petición y localización del recurso. Como detecta que es el acceso a un fichero o ruta de aplicación tiene que traspasar el control al contenedor de aplicaciones web.</li>
+                <li>Paso a la petición del servidor web al contenedor de aplicaciones web.</li>
+                <li>El contenedor analiza la petición y en base a la ruta traspasa el control a la aplicación web.</li>
+                <li>Paso del control de la petición desde el CAW a la aplicación.</li>
+                <li>La aplicación recibe la petición y decide qué hacer en base a ella, es decir, elegir la función que se encargará de gestionar esa petición, normalmente en base a la ruta, el método HTTP y los parámetros de entrada por URL. Una vez elegida ejecutará esa función.</li>
+                <li>La aplicación realiza una petición SQL a la base de datos.</li>
+                <li>La base de datos recibe la petición SQL y la procesa realizando los cambios que tenga que hacer, si corresponde.</li>
+                <li>Una vez procesada la petición devuelve los datos a la aplicación web, normalmente un conjunto de datos. Ej. los 10 últimos clientes.</li>
+                <li>La aplicación web recibe estos datos y tiene que generar una salida, normalmente en HTML, donde estructura el contenido de los datos devueltos por la base de datos en etiquetas HTML.</li>
+                <li>La aplicación web devuelve una respuesta al contenedor de aplicaciones web.</li>
+                <li>El contenedor procesa la respuesta, para controlar la ejecucción de la aplicación por si esta falla.</li>
+                <li>El contenedor de aplicaciones web devuelve el fichero al servidor web.</li>
+                <li>El servidor web devuelve los datos dentro de la respuesta HTTP al navegador web.</li>
+                <li><b>Cliente web</b>: Presenta (renderiza) el contenido HTML resultante.</li>
+            </ol>
+            <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232199/mod_page/content/19/Recurso%2020.jpg" alt="">
+            <p>En resumen, si hay algo que nos queda claro entonces, es el potencial que ha tenido y que tiene la web, su capacidad de escalabilidad por lo que todos los mercados, incluso la cultura y el arte, se manifiestan con gran libertad.</p>
+            <p>Pero a medida que ampliamos los horizontes aparecen nuevos problemas y estos generan nuevas soluciones. Es que ya no son simples páginas web coloridas y dinamizadas, sino sistemas completos, distribuidos, multiplataformas, para usos generales y específicos, como por ejemplo una plataforma de e-commerce.</p>
+            <p>Arquitectura web de 3 niveles:</p>
+            <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232199/mod_page/content/19/Recurso%2021.jpg" alt="">
+            <p>En cuanto a los desarrolladores, es importante agregar que si bien, lo más habitual es que se especialicen en Front End o Back End, hoy existe un tercer perfil: el desarrollador <b>Full-Stack</b> (muy solicitado por las empresas de desarrollo de software). Este perfil se caracteriza por tener una visión integral de toda la aplicación web (Front End + Back End).</p>
+        </section>
+        <section>
+            <h2>Transferencia de datos</h2>
+            <h3>Conceptualización de las estructuras involucradas en la transferencia de datos entre computadoras</h3>
+            <p>Para entender la programación web es necesario además conocer o tener alguna noción sobre las estructuras involucradas en la transferencia de datos entre computadoras. Esta transferencia de datos, es decir, la comunicación entre dos o más computadoras se lleva a cabo a través de lo que se llama comúnmente red de computadoras. La red más conocida es Internet o, como también se la denomina, la red de redes.</p>
+            <p>Vamos a ver conceptos de red de computadoras, de Internet y de cómo funcionan los elementos que las constituyen, a modo introductorio para entender cómo funcionan los sistemas para la Web.</p>
+            <p>"<i>(...) una red de computadoras, también llamada red de ordenadores, red de comunicación de datos o red informática, es un conjunto de equipos nodos y software conectados entre sí por medio de dispositivos físicos o inalámbricos que envían y reciben impulsos eléctricos, ondas electromagnéticas o cualquier otro medio para el transporte de datos con la finalidad de compartir información, recursos y ofrecer servicios (...)</i>" (Tanenbaum, 2003).</p>
+            <p>A continuación un esquema de cómo se conectan distintas redes, como la red de un hogar con la red de una empresa y quien nos provee internet para transmitir o recibir datos.</p>
+            <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232201/mod_page/content/12/esquema%20de%20red.png" alt="">
+            <p>En la imagen podemos observar los distintos escenarios:</p>
+            <ul>
+                <li><b>Red del hogar</b>: En la red del hogar podemos observar como entra el cable al modem wifi permitiendo que los equipos o nodos se conecten por la red inalámbrica, los dispositivos que se conectan son notebook, cámaras, celulares, impresoras. También podemos ver que desde el modem sale un cable hacia una computadora de escritorio. Todo está conectado por la misma red.</li>
+                <li><b>Red empresarial</b>: En la red empresarial entra un cable al modem principal que llega al primer y segundo edificio permitiendo conectar en red a los equipos o nodos (notebooks, pcs de escritorio, impresoras, servidores). También observamos que desde el modem principal sale un cable de red que conecta con un modem wifi el cual permite conectar los equipos o nodos que tenga conexión a la red por medio de wifi.</li>
+                <li><b>Red proveedor de Internet</b>: Podemos observar que distintas empresas se conectan entre sí formando una red en la que transmiten y reciben datos.</li>
+            </ul>
+            <h5>¿Cuál es el objetivo de una red?</h5>
+            <p>El objetivo de las redes en general, consisten en "compartir recursos" entre computadoras de modo tal que los programas, datos y equipo estén disponibles para cualquier solicitud que los equipos de la red quieran, sin importar la ubicación o distancia física del recurso (equipo) y del usuario. Es decir si tenemos una aplicación que necesita datos de otro equipo, sin importar que se encuentren a 1000 km de distancia de los datos, la aplicación podrá solicitar los datos, mostrarlos o utilizarlos como localmente.</p>
+            <p>La finalidad principal para la creación de una red de ordenadores es:</p>
+            <ul>
+                <li>Compartir recursos e información a grandes distancias (computadoras, impresoras, servidores, cámaras, etc.).</li>
+                <li>Asegurar la confiabilidad y la disponibilidad de la información (características propias que lo definen lo que es información).</li>
+                <li>Aumentar la velocidad de transmisión de los datos y obtenerlos en milisegundos para su uso.</li>
+                <li>Reducir los tiempos y costos en actividades como procesamiento de información.</li>
+            </ul>
+            <h5>¿Cómo podemos entender una red?</h5>
+            <p>La comunicación por medio de una red se lleva a cabo en dos categorías diferentes: una capa denominada física y otra lógica.</p>
+            <p>La <b>capa física</b> incluye todos los elementos de los que hace uso un equipo para comunicarse con otro equipo dentro de la red, como por ejemplo, tarjetas de red, los cables, antenas, etc.</p>
+            <p>Con respecto a la <b>capa lógica</b> la comunicación se rige por normas muy rudimentarias que por sí mismas resultan de escasa utilidad. Sin embargo, haciendo uso de dichas normas es posible construir los protocolos denominados, que son normas de comunicación más complejas (de alto nivel) capaces de proporcionar servicios útiles.</p>
+            <p>Los protocolos son un concepto muy similar al de los idiomas de las personas. Es decir, si dos personas hablan el mismo idioma, y respetan ciertas reglas (tales como hablar y escucharse por turnos), es posible comunicarse y transmitir ideas e información. Ese es el modelo de un protocolo.</p>
+            <p><b>Para formar una red se requieren elementos de hardware, software y protocolos.</b> Los elementos físicos se clasifican en dos grupos: los dispositivos de usuario final (llamados también Hosts) y los dispositivos de red. Entre los dispositivos usuario final podemos enumerar, computadoras, impresoras, escáneres, y demas elementos que brindan servicios directamente al usuario. Los segundos (dispositivos de red) son todos aquellos que conectan entre sí a los dispositivos de usuario finales posibilitando su intercomunicación. (Farias, 2013).</p>
+            <p>Internet es un conjunto descentralizado de redes de comunicación interconectadas que utilizan la familia de protoclos TCP / IP, locual garantiza que las redes físicas heterogéneas que la componen, constituyan una red lógica única de alcance mundial. (Guillamón, 2019)</p>
+            <p>Uno de los servicios que más éxito ha tenido en Internet ha sido world wide web, WWW o la web. La WWW es un conjunto de protocolos que permite de forma sencilla la consulta remota de archivos de hipertexto y utiliza Internet como medio de transmisión. ("Internet, n.". Oxford English Dictionary (edición Draft). Marzo de 2009).</p>
+            <p>Para hacer más notable esta distinción vamos a nombrar algunos otros servicios y protocolos en Internet aparte de la web por ejemplo para el envio de correo electrónico usamos el protocolo SMTP, para la transmisión de archivos usamos el protocolo FTP, por nombrar algunos.</p>
+            <p>Esta familia de protocolos es un conjunto de protocolos de red en los que se basa Internet y permite la transmisión de datos entre computadoras como hemos dicho.</p>
+            <p>Entre los principales podemos nombrar el conjunto de protocolos TCP/IP que hace referencia a los dos protocolos más importantes que componen la Internet, que fueron los primeros en definirse y que son los más utilizados.</p>
+            <p><b>TCP (protocolo de control de transmisión)</b> se usa para crear conexiones entre computadoras a través de las cuales pueden enviarse un flujo de datos. Por la forma en la que está implementando este protocolo los datos serán entregados en su destino sin errores y en el mismo orden en el que se transmitieron. ¿Esto qué quiere decir? Que es un protocolo orientado a conexión, ya que el cliente y el servidor deben anunciarse y aceptar la conexión antes de comenzar a transmitir los datos entre ellos. Es decir que hay un intercambio de mensajes entre ellos para abrir una línea de conexión que permanece abierta durante toda la comunicación. (dsi.uclm.es 2007)</p>
+            <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232201/mod_page/content/12/esquema%20de%20red-Page-9.drawio.png" alt="">
+            <p>Por otro lado, el protocolo IP es un protocolo cuya función principal es el uso direccional en origen o destino de comunicación para transmitir datos mediante un protocolo no orientado a conexión que transfiere paquetes conmutados a través de distintas redes previamente enlazadas según la normal OSI.</p>
+            <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232201/mod_page/content/12/esquema%20de%20red-segmento%20de%20red.png" alt="">
+            <p>Algo importante del diseño del protocolo IP es que se realizó suponiendo que la entrega de los paquetes de datos sería no confiable por eso se tratará de realizar del mejor modo posible mediante técnicas de enrutamiento sín garantias de alcanzar el destino final, pero tratando de buscar la mejor ruta entre las conocidas por la máquina que está usando IP.</p>
+            <p>Para entender mejor esta distinción entre dos protocolos uno TCP y otro IP habría que analizar el modelo de capas OSI, hay una jerarquía entre capas y el protocolo IP pertenece a una capa denominada de red que está por encima de una capa denominada de transporte en dónde se encuentra TCP.</p>
+            <p>Entonces, en conclusión, se utiliza la combinación de estos dos protocolos para la comunicación en Internet, en donde TCP aporta la fiabilidad entre la comunicación e IP la comunicación entre distintas computadoras ya que las cabeceras de IP (cabecera por ser una parte el protocolo) contienen las direcciones de destino de las máquinas de origen y llamadas direcciones de destino de las máquinas de origen y llamadas direcciones IP. Estas direcciones serán usadas por los routers para decidir el tramo de red por el que se enviarán los paquetes.</p>
+            <p>Para entender mejor el funcionamiento de la Internet vamos a decir que <b>dentro de la red de redes que es Internet debe existir un mecanismo para conectar dos computadoras. Este mecanismo lo proporciona el protocolo de Internet, el cual hace que un paquete de una computadora, llegue a la otra de manera segura a través del protocolo TCP y que llegue a destino a través de las direcciones IP.</b></p>
+            <p>Para terminar, una dirección IP es un número que identifica de manera lógica y jerárquica una interfaz de un dispositivo dentro de una red que utiliza el protocolo de Internet. Todas las computadoras en Internet tienen una dirección IP, en la imágen siguiente vemos un esquema de 2 computadoras con sus direcciones IP.</p>
+            <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232201/mod_page/content/12/conexi%C3%B3n%20entre%202%20PC.png" alt="">
+            <p>A modo informativo vamos a decir que existe otro sistema que se denomina sistema de nombres de dominio o DNS que asocian nombres comunes a direcciones IP, por ejemplo la dirección www.cba.gov.ar tiene asociado un número de IP correspondiente, pero este mecanismo existe para que sea más fácil llegar a esa página web sin tener que recordar el número de IP.</p>
+            <p>Con esto concluimos una introducción de lo que es la comunicación entre computadoras en Internet. Si bien parece algo complejo es de mucha importancia conocer estos mecanismos con los que trabajamos.</p>
+            <p>Por ejemplo, si queremos comunicarnos con una base de datos en Internet y nos pide un número de IP ya sabemos de qué se trata. También sabemos que podemos comunicarnos a cualquier computadora conectada en red a través de mecanismos y que nos abstraemos de cómo se hace esto. Es decir, no nos tenemos que preocupar de manejar errores o interferencias en la comunicación.</p>
+            <p>Ya vimos que la estructura de red se maneja en capas. También mencionaremos que hay una capa de red en dónde está el protocolo IP, una capa superior de transporte en dónde esta el protocolo TCP y ahora vemos una nueva capa que es la de la aplicación en dónde se usa el protocolo HTTP.</p>
+            <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232201/mod_page/content/12/Caps%20y%20datos.png" alt="">
+            <p>Por otro lado, antes de continuar con el desarrollo web tradicional tenemos que aprender un nuevo protocolo que es imprescindible para la comunicación en la web.</p>
+            <h3>HyperText Transfer Protocol (HTTP)</h3>
+            <p><b>Hypertext Transfer Protocol (HTTP) (Protocolo de Transferencia de Hipertexto</b>, en español) es un protocolo de la capa de aplicación para la transmisión de documentos hipermedia, como HTML. Fue diseñado para la comunicación entre los navegadores y servidores web, aunque puede ser utilizado para otros propósitos también.</p>
+            <p>HTTP define un conjunto de métodos de petición para indicar la acción que desa realizar para un recurso determinado. Aunque estos también pueden ser sustantivos, estos métodos de solicitud a veces son llamados <i>verbos HTTP</i>.</p>
+            <p>Es muy importante saber que HTTP es un protocolo sin estado, es decir, no guarda ninguna información sobre conexiones anteriores. Luego veremos las implicancias de esto.</p>
+            <p>Una descripción importante del protocolo es que <b>está orientado a transacciones y sigue el esquema de petición/respuesta entre un cliente y un servidor</b>. El cliente realiza una petición enviando un mensaje con cierto formato al servidor. El servidor le envia un mensaje de respuesta. <b>hacerlo más concreto, un cliente podría ser un navegador web y un servidor podría ser una aplicación en un servidor web corriento en internet.</b></p>
+            <p>Para que entendamos la forma de cómo se programa una aplicación web, necesitamos en alguna medida entender los mensajes HTTP. Los mensajes HTTP son en texto plano lo que hace más legible y fácil de depurar. Estos tienen la siguiente estructura:</p>
+            <p>Primero, hay una línea inicial en donde se diferencian dependiendo si son peticiones y respuesta. Para las solicitudes la línea comienza con una acción requerida por el servidor, a esto se le denomina método de petición  seguido de la URL del recurso y la versión HTTP que soporte al cliente. Lo importante es el método de petición y la URL (Uniform Resource Locator o localizador de recursos uniforme).</p>
+            <p>Para las respuestas, la línea comienza con la versión de HTTP seguido por un código de respuesta y con una frase asociada a dicho retorno.</p>
+            <p>También los mensajes tienen una cabecera que son metadatos con información diversa y el cuerpo de mensaje que es opcional. Tipicamente este cuerpo tiene los datos que se intercambian entre el cliente y el servidor.</p>
+            <p>Los métodos de petición (o también llamado verbos) son varios. Cada método indica la acción que desea que se efectúe sobre el recurso identificado lo que este recurso representa dependiente de la aplicación del servidor.</p>
+            <p>Los métodos que vamos a usar son los de GET y POST. Cabe destacar que hay convenciones en donde se utilizan otros métodos. En este punto entran en juego el estándar REST y las APIs.</p>
+            <p>El método GET solicita una representación del recurso especificado. Las solicitudes que usan sólo deben recuperar datos y no deben tener ningún otro efecto.</p>
+            <p>El método POST envía los datos para que sean procesados por el recurso identificado. Los datos enviados se incluirán en el de la petición. Esto puede resultar en la creación de un nuevo recurso o de las actualizaciones de los recursos existentes.</p>
+            <p>Para finalizar con la explicación de HTTP vamos a nombrar códigos de respuesta:</p>
+            <ol>
+                <li>El 200 representa una respuesta correcta, es decir que indica que la petición ha sido procesada correctamente.</li>
+                <li>La respuesta 404, significa errores causados por el cliente, por ejemplo que el recurso no se encuentra.</li>
+                <li>Finalmente, las respuestas que comienzan con 5 por ejemplo el 500, son errores causados por el servidor. Esto indica que ha habido un error en el proceso de la petición a causa de un fallo en el servidor.</li>
+            </ol>
+            <p>Todo lo que hablamos de HTTP lo vamos a usar al momento de programar una aplicación web. Vamos a ver que al presionar por ejemplo un enlace se hace una petición GET al servidor para buscar otra página lo que resultará en una respuesta 200 si se encuentra la página o en un 404, si no se encuentra. También veremos que al llenar un formulario y enviarlo al servidor lo haremos a través de una petición POST.</p>
+            <p>Los otros protocolos de TCP / IP son necesarios para configuraciones de conexiones, pero a nivel de aplicación no los utilizaremos. Eso no significa que no haya que entenderlos pues nos facilitarán la solución de problemas, por ejemplo, al conectarnos a una base de datos desde la aplicación web del servidor.</p>
+            <h6>Ejemplo</h6>
+            <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232202/mod_page/content/11/Recurso%2045.png" alt="">
+            <h6>Métodos</h6>
+            <table>
+                <tr>
+                    <th>Método</th>
+                    <th>Descripción</th>
+                </tr>
+                <tr>
+                    <th>GET</th>
+                    <td>Solicita una representación de un recurso específico. Las peticiones que usan el método GET sólo deben recuperar datos</td>
+                </tr>
+                <tr>
+                    <th>HEAD</th>
+                    <td>Pide una respuesta idéntica a la de una petición GET, pero sin el cuerpo de la respuesta</td>
+                </tr>
+                <tr>
+                    <th>POST</th>
+                    <td>Se utiliza para enviar una entidad a un recurso en específico, causando a menudo un cambio en el estado o efectos secundarios en el servidor</td>
+                </tr>
+                <tr>
+                    <th>PUT</th>
+                    <td>Reemplaza todas las representaciones actuales del recurso de destino con la carga útil de la petición</td>
+                </tr>
+                <tr>
+                    <th>DELETE</th>
+                    <td>Borra un recurso en específico</td>
+                </tr>
+                <tr>
+                    <th>CONNECT</th>
+                    <td>Borra un recurso en específico</td>
+                </tr>
+                <tr>
+                    <th>OPTIONS</th>
+                    <td>Es utilizado para describir las opciones de comunicación para el recurso de destino</td>
+                </tr>
+                <tr>
+                    <th>TRACE</th>
+                    <td>Realiza una prueba de bucle de retorno de mensaje a lo largo de la ruta al recurso de destino</td>
+                </tr>
+                <tr>
+                    <th>PATH</th>
+                    <td>Es utilizado para aplicar modificaciones parciales a un recurso</td>
+                </tr>
+            </table>
+            <h6>Código de estados</h6>
+            <ol>
+                <li>Mensaje informativo</li>
+                <li>Éxito</li>
+                <ul>
+                    <li>200 - Ok</li>
+                    <li>201 - Created</li>
+                    <li>202 - Accepted</li>
+                    <li>204 - No content</li>
+                </ul>
+                <li>Redirección</li>
+                <ul>
+                    <li>300 - Multiple chooice</li>
+                    <li>301 - Moved permanently</li>
+                    <li>302 - Found</li>
+                    <li>304 - Not modified</li>
+                </ul>
+                <li>Error del cliente</li>
+                <ul>
+                    <li>400 - Bad request</li>
+                    <li>401 - Unauthorized</li>
+                    <li>403 - Forbidden</li>
+                    <li>404 - Not found</li>
+                </ul>
+                <li>Error del servidor</li>
+                <ul>
+                    <li>500 - Internat server error</li>
+                    <li>501 - Not implemented</li>
+                    <li>502 - Bad gateway</li>
+                    <li>503 - Service unavailable</li>
+                </ul>
+            </ol>
+            <h6>Composición de la URL</h6>
+            <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232202/mod_page/content/11/Imagen923fsd.png" alt="">
+        </section>
+        <section>
+            <h2>Glosario</h2>
+            <p><b>Bases de datos</b>: Una base de datos es una colección organizada de información estructura, o datos, típicamente almacenados electrónicamente en un sistema de computadora.</p>
+            <p><b>DOM</b>: El <i>DOM</i> (<b>Modelo de Objetos del Documento)</b> es una API definida para representar e interactuar con cualquier documento HTML o XML. El DOM es un modelo de documento que se carga en el navegador web y que representa el documento como un árbol de nodos, en donde cada nodo representa una parte del documento (puede tratarse de un elemento, una cadena de texto o un comentario).</p>
+            <p><b>Frameworks</b>: La traducción literal de <i>framework</i> es 'marco de referencia', y explica muy bien lo que significa. Un <i>framework</i> es un patrón o esquema que ayuda a la programación a estructurar el código y a ahorar tiempo y esfuerzos a los programadores.</p>
+            <p><b>LAN</b>: <i>LAN</i> (red de área local) describe una red cuya área geografica no se extienda más de una milla.</p>
+            <p><b>Python</b>: Python es un lenguaje de scripting independiente de plataforma y orientado a objetos, preparado para realizar cualquier tipo de programa, desde aplicaciones Windows a servidores de red o incluso, páginas web. Es un lenguaje interpretado, lo que significa que no se necesita complilar el código fuente para poder ejecutarlo, lo que ofrece ventajas como la rapidez de desarrollo e inconvenientes con una menor velocidad.</p>
+            <p><b>Rails</b>: Ruby on Rails (o simplemente Rails) es un framework Open Source, multiplataforma y basado en el lenguaje de scripting Ruby que facilita sobremanera el diseño y desarrollo de aplicaciones web que acceden a bases de datos. Rails separa automáticamente en tres capas todos los componentes de una aplicación web (Model, View y Controller: MVC), lo que hace más sencillo y rápido el mantenimiento de aplicaciones que en otros entornos.</p>
+            <p><b>Swift</b>: Swift es un lenguaje intuitivo de programación de código abierto creado por Apple que permite diseñar aplicaciones para iOS, Mac, Apple TV y Apple Watch.</p>
+            <p><b>WAN</b>: (Wide Area Network) describe una red cuya área geográfica excede a la de una ciudad. A menuda, varias LAN o varias MAN (Metropolitan Area Network) son enlazadas para crear una WAN.</p>
+        </section>
+        <section>
+            <h2>Metodología de organización del tiempo</h2>
+            <p>¿Qué opciones tenemos para organizarnos? ¿Existen metodlogías? Las metodologías pueden ser varias, pero siempre debes investigar para ver cuál se adapta mejor a tus hábitos y actividades. Por el momento presentamos 2 metodologías (GTD y Time Boxing) y algunas formas de cómo podemos aplicarlo al calendario.</p>
+            <h3>GTD</h3>
+            <p><b>¿Qué es GTD? Getting Things Done</b> es un método de gestión de las actividades y el título de un libro de David Allen que en español se ha titulado "Organízate con Eficacia". GTD se basa en el principio de que una persona necesita liberar su mente de las tareas pendiente guardándolas en un lugar específico. De este modo, no es necesario recordar lo que hay que hacer y se puede concentrar en realizar las tareas.</p>
+            <img src="https://sebastianpendino.com/wp-content/uploads/2016/12/que-es-GTD-proceso-pasos.png" alt="">
+            <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232211/mod_page/content/13/Recurso%2010.png?time=1631205030463" alt="">
+            <h3>Time Boxing</h3>
+            <p>¿Qué es el Timeboxing? Timeboxing es una estrategia de gestión del tiempo orientada a los objetivos que puede ayudarte a aumentar la productividad y evitar la procrastinación. Cuando fijas un "bloque de tiempo", estableces una meta para finalizar una tarea específica dentro de un periodo determinado.</p>
+            <p>Planificar con anticipación cuánto tiempo te llevará finalizar una tarea te permitirá organizar de manera consciente cómo usarás tu tiempo y en qué trabajaras. Esto puede ayudar a reducir los pormenores del trabajo, que actualmente ocupan el 60% de nuestro tiempo. En lugar de perseguir aprobaciones o buscar documentos, puedes asegurarte de tener al alcance todo lo que necesitas al momento de empezar a trabajar en tu bloque de tiempo.</p>
+            <p>Si quieres implementar la técnica de timeboxing para mejorar tu concentración o combatir la procrastinación (postergar los hechos), prueba estos siete consejos para gestionar el tiempo de manera eficaz:</p>
+            <ol>
+                <li><h6>Prioriza los bloques de tiempo establecidos</h6></li>
+                <p>Cuando tienes un día muy ocupado, puede resultar tentador reorganizar, reprogramar o cancelar los bloques de tiempo reservados para ese día. Trata de hacer todo lo posible para evitar eso. Una vez que hayas creado bloques de tiempo, considéralos como reuniones programados contigo mismo. No se trata de una planificación vaga. Por el contrario, se trata de un compromiso que genera contigo mismo para trabajar en esta tarea durante el tiempo que has reservado. Del mismo modo que no cancelarías una reunión con un miembro del equipo a último momento a menos que sea absolutamente necesario, tampoco debes cancelar un bloque de tiempo.</p>
+                <li><h6>Visualiza tu tiempo para comprenderlo mejor</h6></li>
+                <p>El timeboxing es más efectivo cuando lo puedes visualizar. Programar el tiempo para la concentración en tu calendario te ayuda a visualizar qué limite de tiempo tienes para cada tarea en particular. También te ayuda a cumplir con tus horarios y les permite a los miembros del equipo saber cuándo no estarás disponible. Si no marcas estos tiempos para la concentración en tu calentario, tus compañeros de equipo pueden interpretarlo como tiempo libre y programar una reunión o enviarte consultas.</p>
+                <li><h6>Configura un temporizador</h6></li>
+                <p>Independientemente de si estableces un bloque de tiempo rígido o flexible, usa un temporizador para programar una alarma que te notifique cuándo se acaba el tiempo. Recuerda: cuando creas un bloque de tiempo, lo que haces es establecer un objetivo para finalizar una tarea en particular en un período determinado. El temporizador puede ayudarte a cumplir con esa expectativa y notificarte cuando se acaba ese tiempo.</p>
+                <p>El temporizador también te permite trabajar sin tener que pensar en la hora. En lugar de consultar el reloj constantemente o tener que preocuparte por no llegar tarde a tu próxima reunión, puedes usar ese tiempo para sumergirte de lleno y cenrtarte en tu trabajo.</p>
+                <p>En el caso de los bloques de tiempo rígidos, prográmate pasar a la siguiente tarea una vez que se acabe el tiempo. Si aún no has finalizado essa tarea, puedes retomarla en bloque de tiempo posterior. En los bloques de tiempo flexibles, usa el temporizador como un recordatorio de que debes concluir lo que estás haciendo en los próximos cinco o diez minutos y pasar a la siguiente tarea.</p>
+                <li><h6>Desactiva las notificaciones o programa el modo "No molestar"</h6></li>
+                <p>Los bloques de tiempo son efectivos ya que te ayudan a concentrarte en la tarea en cuestión y sumergirte de lleno en el trabajo. A menudo desvíamos nuestra atención o la misma se ve interrumpida por cuestiones externas, lo que además de provocar que nuestra productividad disminuya, también impide que la realicemos de un modo eficaz y de alto impacto. Del mismo modo, tampoco queras distraerte innecesariamente una vez iniciado tu bloque de tiempo.</p>
+                <p>Si desactivas las notificaciones o activas el modo "No molestar", puedes asegurarte de que no te interrumpirán y, al mismo tiempo, informa a los demás miembros del equipo que te comunicarás con ellos lo antes posible. La mayoria de las herramientas permiten que los miembros del equipo "ignoren" estas configuraciones en caso de que sea necesario ponerse en contacto contigo, por lo que no estarás completamente aislado, simplemente estarás protegido de notificaciones innecesarias mientras trabajas en tu bloque de tiempo.</p>
+                <li><h6>Tómate descansos entre bloques de tiempo</h6></li>
+                <p>Cuando hablamos de productividad, no nos referimos a "hacer todo lo que puedas". Y ese tampoco es el objetivo del timeboxing. Por el contrario, creemos que las estrategias de gestión del tiempo son una forma de maximizar tu eficiencia y lograr el mayor impacto posible en tu trabajo.</p>
+                <p>De un modo similar, use el método timeboxing para organizar tu trabajo no es una forma de lograr mayor productividad posible, sino una forma de ayudarte a tu tiempo de forma más consciente y eficaz. Como todo trabajo que requiere mucha concentracion, asegúrate de tomar descansos breves entre bloques de tiempo, aunque solo sea para ponerte de pie y estirarte o beber un poco de agua.</p>
+                <li><h6>Captura todo tu trabajo en una herramienta de gestión del trabajo</h6></li>
+                <p>Para crear un bloque de tiempo, primero necesitas saber en qué tienes que trabajar. Si aún no lo haces hecho, crea una <a href="https://asana.com/es/resources/make-better-to-do-lists">lista de tareas pendientes</a> en un proyecto o en una <a href="https://asana.com/es/uses/work-management">herramienta de gestión del trabajo</a> como Google, Trello o Asana. Estas herramientas te ayudan a identificar que tareas importantes tienes por delante y qué tareas debes realizar durante cada dia de trabajo.</p>
+                <li><h6>Agrupa las tareas similares</h6></li>
+                <p>Para implementar el timeboxing de manera eficaz, debes crear bloques de tiempo individuales para la mayoría de las tareas o iniciativas. Sin embargo, aun con todos los beneficios del timeboxing, cambiar entre tareas requiere tiempo y energía mental. Para evitar esto, recomendamos agrupar tareas similares en bloques de tiempo consecutivos. Esto permite que tu cerebro se mantenga en la misma "sintonía", incluso cuando estés trabajando en iniciativas individuales. Agrupar tareas similares puede ayudar a mantener la concentración y el flujo, incluso al pasar de un bloque a otro.</p>
+                <p>Por ejemplo, si formas parte del equipo de ventas, seguramente necesites preparar presentaciones y redactar correos electrónicos para diversas oportunidades de ventas. Lo ideal es definir bloques de tiempo para cada tarea. Pero en este caso, intenta agrupar las tareas relacionadas con el mismo cliente en bloques de tiempo consecutivos. <b>Por ejemplo</b>, si necesitas preparar una presentación y redactar un email para le empresa A, y preparar una presentación para la empresa B, fija las tareas para la empresa A en bloques de tiempo consecutivos antes de ponerte a trabajar en la presentación para la empresa B.</p>
+                <p>Hagamos un ejemplo:</p>
+                <p>Imagina que necesitas estudiar y n osabes por dónde arrancar, si es así, responde estas preguntas:</p>
+                <ol>
+                    <li>Pensemos qué tenes que hacer:</li>
+                    <ul>
+                        <li>Definir cual es el objetivo y cuál sería la consecuencia.</li>
+                    </ul>
+                    <li>¿Qué tiempo disponible tienes en el dia?:</li>
+                    <ul>
+                        <li>Fijate en la semana qué días y qué horas tenes libre para eso que necesitas hacer.</li>
+                    </ul>
+                    <li>¿Cuántas cosas debes hacer en ese tiempo?:</li>
+                    <ul>
+                        <li>Arma una lista de tareas a realizar y mételas dentro de ese espacio de tiempo que tienes disponible.</li>
+                    </ul>
+                    <li>¿Cuándo debes hacer cada cosa?:</li>
+                    <ul>
+                        <li>Es momento de abrir la agenda y crear el TimeBoxing de 2 horas, asignar las tareas que crees que puedes hacer en ese tiempo.</li>
+                    </ul>
+                    <li>¿Te alcanzará el tiempo asignaod?:</li>
+                    <ul>
+                        <li>Es común que calculemos mal el tiempo al principio, así que, si no te alcanzo <i>no pasa nada</i>, tenes que asignar las tareas que te faltaron de la lista de tareas para el próximo Time Boing.</li>
+                    </ul>
+                </ol>
+                <p>Si respondes esas preguntas <i>seguramente</i> vas a saber por dónde empezar, ahora respondámosla:</p>
+                <ol>
+                    <li>Pensemos qué tenes que hacer:</li>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <li>¿Qué tiempo disponible tienes en el dia?:</li>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <li>¿Cuántas cosas debes hacer en ese tiempo?:</li>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <li>¿Cuándo debes hacer cada cosa?:</li>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <li>¿Te alcanzará el tiempo asignado?:</li>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </ol>
+            </ol>
+            <h3>Eficiencia vs eficacia</h3>
+            <h5>¿Cómo nos damos cuenta de que tenemos una mala organización del propio trabajo y un mal uso del tiempo?</h5>
+            <p>Una buena forma de saber si tienes una mala organización del trabajo y mal uso del tiempo es a través de los siguientes sintomas:</p>
+            <ol>
+                <li>Jornadas cada vez más largas</li>
+                <li>Cuando te piden algo, no saber o no querer decir "no"</li>
+                <li>Buscas el perfeccionismo y se te va el tiempo en eso</li>
+                <li>No negocias plazos de respuesta</li>
+                <li>Empleas mal el tiempo de entrevistas (escuchar, preguntar, argumentar)</li>
+                <li>Tienes objetivos personales confusos o cambiantes</li>
+                <li>Falta de un plan de trabajo diario</li>
+                <li>No te dejas un tiempo para imprevistos</li>
+                <li>Utilizas mal las comunicaciones (Internet, chats, series, películas, consolas de juego, etc.)</li>
+                <li>Escapar a hacer el compromiso de la tarea</li>
+                <li>No quieres tener ningún objetivo</li>
+                <li>Desconocimiento de las personas que influyen en una decisión</li>
+                <li>Abordar las tareas en tiempo real, hacerlo deprisa, uno mismo</li>
+                <li>Estrés o cansancio permanente</li>
+            </ol>
+            <p>Cuando revisamos juntos cómo utilizas tu tiempo, te vas a sorprender al descubrir que <b>son tus propios hábitos</b> los que te permiten o no un aprovechamiento adecuado de este recurso finito.</p>
+            <p>¿Cómo usas tu tiempo en el estudio o trabajo?</p>
+            <p>Para hacer una buena gestión del tiempo <b>es necesario tener presente, y saber la diferencia del significado de eficiencia, eficacia y el tiempo requerido para la realización de cada una de las tareas laborales, de estudios o lo que tengas que hacer.</b></p>
+            <p><b>La eficiencia</b> consiste en hacer las cosas bien, pero no garantiza resultados. La eficiencia se centra en el método, en el cómo. Es decir, se limita a hacer bien lo que se hace.</p>
+            <p><b>La eficacia</b> consiste en hacer lo que realmente hay que hacer. La perosna eficaz sabe, ante todo, qué es lo que debe hacer. Tiene en mente los resultados que desea alcanzar y hace lo que le acerca a ellos. La persona que hace un buen empleo del tiempo es capaz de equilibrar eficiencia y eficacia.</p>
+            <h3>Ley de Parkinson</h3>
+            <h5>¿En qué consiste la Ley de Parkinson?</h5>
+            <p>Un británico llamado Cyril Parkinson expuso en 1957 esta teoría tras observar su propia experiencai en una oficina pública británica. Su reflexión ayuda a entender por qué se posponen tareas y se pierde tanto el tiempo:</p>
+            <p><i>"El trabajo se expande hasta llenar el tiempo disponible para que se termine"</i>, lo que viene a decir es que, <b>cuanto menos tiempo se tiene para realizar una tarea, mayor es el esfuerzo para concluirla</b>. Mientras que cuando se tiene más tiempo, menos esfuerzo se realiza para llevarla a cabo. A esto hay que sumarle que existe una tendencia a procastinar las tareas y a ocupar el tiempo en otras tareas que distraen del objetivo principal.</p>
+            <p>Las ideas claves que sostienen la Ley de Parkinson pueden resumirse en tres:</p>
+            <ol>
+                <li><b>Trabajo</b>: lo que comentábamos anteriormente, que el trabajo se expande hasta ocupar el tiempo disponible para realizar la tarea.</li>
+                <li><b>Tiempo</b>: el tiempo que se dedica a las diferentes tareas que se realizan a lo largo del día no es proporcional a su importancia.</li>
+                <li><b>Gasto</b>: el gasto aumentará hasta cubrir la totalidad de los ingresos. Esta premisa es fundamental para entender por qué muchas personas no logran llegar a fin de mes o por qué una empresa gasta todos sus recursos disponibles. Se suele decir que las necesidades de una persona se invierten en base a sus ingresos.</li>
+            </ol>
+            <h6>¿Cómo aplicar la Ley de Parkinson en el trabajo?</h6>
+            <p>Para aplicar la Ley de Parkinson lo primero que hay que hacer es <b>marcarse un objetivo</b>. De no ser así, la tarea se dilatará en el tiempo. Además, existe una norma básica que sostiene que si una tarea requiere poco tiempo para realizarla hay que hacerla de inmediato sin planificación. De esta manera, se ahorra tiempo y se reduce el número de tareas pendientes. Además, también ayudará a crear una rutina y adquirir hábitos de trabajo.</p>
+            <p><b>Técnica pomodoro:</b> basada en la filosofía del boxeo temporal, su objetivo es fijar un tiempo máximo para realizar tareas, tomar decisiones y lograr objetivos. Consiste en dividir el tiempo de trabajo en bloques de 25 minutos a los que se denominan "pomodoros". Cuando se concluye un bloque, hay 5 minutos de descanso y tras 3 bloques de 25 se puede descansar entre 15 y 20 minutos. Durante el pomodoro no se permite ninguna distracción y en los minutos de descanso, no se permite ninguna tarea que requiera un esfuerzo mental.</p>
+            <p>A través de este método se pretende evitar el cansancio y la fatiga mental y fomentar la concentración y la agilidad mental.</p>
+            <p><b>Ley de Pareto o Regla 80/20</b>: A esta recla se la conoce como Ley de Pareto, Vilfredo Pareto fue un economista y filósofo que expuso que el 80% de los resultados de una tarea proceden de hacer un esfuerzo correspondiente al 20% del tiempo dedicado. La clave de esta teoría está en concentrarse y prestar la máxima atención durante el 20% y en menor medida el 80% restante. De esta manera, se concentra un mayor esfuerzo en un periodo corto de tiempo y se logra diferenciar lo importante de lo que no lo es.</p>
+            <p><b>Evitar alargar el tiempo de trabajo</b>: es importante ser estricto con el tiempo útil de trabajo para aprovecharlo al máximo y evitar postergar tareas. De este modo, se logra finalizar las tareas en menos tiempo y dedicándoles menos tiempo. Así se logra ser más eficiente y alcanzar las metas marcadas.</p>
+            <p><b>Aprovechar las horas de mayor productividad</b>: cada persona rinde de una manera distinta y no tienen por qué coincidir en las mismas franjas horarias. Por ese motivo, es importante aprovechar las horas de mayor productividad para realizar las tareas y así lograr mejores resultados.</p>
+            <p>Evitar lo que te perjudica y anticiparse a aquellas cocnductas que conducen a la procrastinación, son las claves para hacer frente a la Ley de Parkinson en el trabajo o en cualquier otro ámbito. Para cumplir con los objetivos marcados se debe marcar prioridades y optimizar al máximo los espacios de tiempo que se dedican a realizar esas tareas evitando las distracciones. De esta manera, se reducirá el tiempo en llevarla a término.</p>
+            <h5>¿Cuáles son algunos principios de la eficacia?</h5>
+            <ol>
+                <li><b>Principio 1</b>: Se alargan las tareas al interrumpirlas. Las tareas se estiran y el tiempo no. Teóricamente, toda tarea requiere un tiempo determinado para obtener unos resultados -o calidad- deseados. Esta es, al menos, la impresión subjetiva que tenemos. Pero la realidad es muy distinta. Porque no nos es posible prácticamente nunca realizar de un tirón tareas medianamente complejas.</li>
+                <li><b>Principio 2</b>: <b>Principio de la planificación</b>. Cada minuto que inviertes en planificar tus actividades, te ahorra diez minutos de ejecución. El propósito de la planificación es llevarte a obtener el máximo "retorno en la inversión" que realizas en energia para tu vida personal y laboral.</li>
+                <li><b>Principio 3</b>: <b>Principio de las prioridades</b>. Tu capacidad de fijar prioridades claras en el tiempo determina el avance hacia tus metas u objetivos.</li>
+                <li><b>Principio 4</b>: <b>Principio de las recompensas.</b> Tus recompensas van a estar determinadas por tus resultados. La manera más efectiva de avanzar es lograr resultados de calidad en un mejor tiempo.</li>
+                <li><b>Principio 5</b>: <b>Principio de las secuencias</b>. La administración eficaz del tiempo te permite manejar la secuencia de eventos.</li>
+            </ol>
+            <h3>Modelo estímulo - respuesta</h3>
+            <h5>¿Vos de qué lado estas?</h5>
+            <p>Según se responde ante los estímulos que nse nos plantean en la vida, se actúa de manera reactiva o proactiva:</p>
+            <p><b>Reactivo</b>: Las personas reactivas esperan a que las cosas se arreglen solas y no son capaces de tomar decisiones: responden ante estimulos siempre de la misma manera, impulsadas o por emociones, sentimientos, circunstancias, condiciones o por el mismo ambiente.</p>
+            <p><b>Proactivo</b>: Los proactivos son capaces de romper ese modelo porque tienen libertad interior, es decir, tienen la capacidad de elegir reaccionar ante ciertas situaciones, pudiendo así, tomar decisiones más prudentes. Afrontar la vida personal y profesional tomando la iniciativa.</p>
+            <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232218/mod_page/content/18/Recurso%2044.png" alt="">
+            <p><b>En el lenguaje</b>:</p>
+            <p>El hombre es el único ser sobre la Tierra que tiene conciencia de sí mismo, lo que le dota de libertad. Y el uso de esta libertad es lo que le ha hecho progresar a lo largo de su historia. Tiene incluso libertad para elegir el contenido de su conciencia aún en medio de las circunstancias exteriores. Viktor Frankl (neurólogo y psiquiatra austríaco) pudo constatar como prisionero en un campo de concentración nazi, que quienes tenían más entrenada esta clase de libertad, fueron los que tuvieron más posibilidades de sobrevivir.</p>
+            <table>
+                <tr>
+                    <th>REACTIVO</th>
+                    <th>PROACTIVO</th>
+                </tr>
+                <tr>
+                    <td>Culpan a los demás por sus actos</td>
+                    <td>Se hacen responsables de sus actos</td>
+                </tr>
+                <tr>
+                    <td>Les suceden las cosas</td>
+                    <td>Hacen que las cosas sucedan</td>
+                </tr>
+                <tr>
+                    <td>Esperan a que las cosas se arreglen solas</td>
+                    <td>Tienen iniciativa</td>
+                </tr>
+                <tr>
+                    <td>Se ofenden fácilmente</td>
+                    <td>No se ofenden fácilmente</td>
+                </tr>
+                <tr>
+                    <td>Se vuelven víctimas</td>
+                    <td>Ejercen el control</td>
+                </tr>
+                <tr>
+                    <td>Se enfadan, pierden la cabeza, y dicen cosas que después lamentan</td>
+                    <td>Piensan antes de actuar, son prudentes</td>
+                </tr>
+                <tr>
+                    <td>Se quejan y lloran</td>
+                    <td>Vuelven a hacer el intento cuando algo sale mal</td>
+                </tr>
+                <tr>
+                    <td>Se paralizan ante el fracaso y tienen miedo de volver a caer</td>
+                    <td>Reconocen su error, aprenden de él y lo corrigen instantáneamente</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>Lenguaje REACTIVO</th>
+                    <th>Lenguaje PROACTIVO</th>
+                </tr>
+                <tr>
+                    <td>Yo soy así, no tengo remedio</td>
+                    <td>Puedo mejorar</td>
+                </tr>
+                <tr>
+                    <td>Intentare</td>
+                    <td>Lo hare</td>
+                </tr>
+                <tr>
+                    <td>No puedo, no tengo tiempo</td>
+                    <td>Si, mañana a las 8:00 am</td>
+                </tr>
+                <tr>
+                    <td>No puedo hacer nada</td>
+                    <td>Examinaremos nuestras opciones, debe haber una solución</td>
+                </tr>
+                <tr>
+                    <td>Me vuelvo loco</td>
+                    <td>Controlo mis sentimientos y emociones</td>
+                </tr>
+                <tr>
+                    <td>Tengo que hacerlo</td>
+                    <td>Elegi hacerlo</td>
+                </tr>
+                <tr>
+                    <td>Debo</td>
+                    <td>Prefiero</td>
+                </tr>
+                <tr>
+                    <td>Me arruinaste el día</td>
+                    <td>No permitiré que tu mal estado de ánimo se me contagie</td>
+                </tr>
+            </table>
+            <h5>Matriz de administración de tiempo. Priorización</h5>
+            <p>La utilización eficiente del tiempo se basa en la orientación de las tareas a la consecución de los objetivos. Por lo tanto, el establecimiento de prioridades es primordial a la hora de gestionar el tiempo. Priorizando, es decir, estableciendo un orden en las tareas diarias, se puede evitar la tiranía de lo urgente y ayuda a centrarse en lo importante. Para poder establecer una clara prioridad de las actividades planificadas, se deben clasificar estas como:</p>
+            <ul>
+                <li>Tareas urgentes e importantes: se trata de tareas prioritarias en cuanto a que están contempladas dentro de los objetivos, pero que por falta de planificación o imprevistos de última hora, son urgentes y no se pueden demorar más.</li>
+                <li>Tareas urgentes y no importantes: son tareas que han sido realizadas ya, pero que no son importantes puesto que su realización no aporta valor en el cumplimiento de los objetivos.</li>
+                <li>Tareas no urgentes e importantes: son tareas contempladas como parte de los objetivos, las cuales se han sabido o pudieron planificar correctamente, con lo cual se pueden realizar con perspectiva.</li>
+                <li>Tareas no urgentes y no importantes: son tareas que ni son importantes para el cumplimiento de los objetivos, ni son apremiantes.</li>
+            </ul>
+            <p>En la siguiente Matriz de administración del tiempo, se muestran ejemplo de tareas/actividades tipo de cada uno de los cuadrantes mencionados.</p>
+            <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232218/mod_page/content/18/activo3.png" alt="">
+        </section>
+        <section>
+            <h2>SCRUM</h2>
+            <h3>Desarrollo de software</h3>
+            <p>Segun la IEEE, el software es el "<i>conjunto de programas de cómputo, procedimientos, reglas, documentación y datos asociados, que forman parte de las operaciones de un sistema de computación</i>". Es la parte de un sistema que se puede codificar para ejecutarse en una computadora como un conjunto de instrucciones, e incluye la documentación asociada necearia para comprender, transformar y usar esa solución. Estos documentos describen la organización del sistema, explican al usuario cómo utilizarlo y obtener eventuales actualizaciones del producto.</p>
+            <p>El software es un producto intangible, de alto contenido intelectual, que no sufre desgaste alguno y que puede ser potencialmente modificado de forma permanente. No se manufactura sino que se desarrolla a través de proyectos que son realizados por equipos de personas altamente formadas. A pesar de la tendencia a desarrollar componentes que puedan ser reutilizados y adaptados a diferentes necesidades, la gran mayoría del software se construye a medida.</p>
+            <p>El proceso de desarrollo de software es un conjunto de actividades que da como resultado un producto que responde a las necesidades de un usuario. Este proceso define todas aquellas actividades necesarias para transformar los requisitos de un usuario en un producto. Estas actividades se las puede organizar con diferentes criterios y, como es un proceso intelectual-creativo, depende de las personas que formen parte del equipo y de sus decisiones y juicios. Existen varios procesos o modelos de desarrollo y podríamos catalogarlos en secuenciales o definidos, y en empíricos. Los primeros responden siempre de la misma forma ante una determinada entrada, mientras que los segundos dependen de la evolución y adaptación de etapas anteriores.</p>
+            <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232221/mod_page/content/15/proceso1.png" alt="">
+            <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232221/mod_page/content/15/proceso2.png" alt="">
+            <p>El conjunto de fases (o procesos) por las que pasa el software desde que se concibe y se desarrolla hasta que finaliza su uso (retiro de servicio) se conoce como ciclo de vida del software. Estas fases están estandarizadas, existiendo un marco de referencia que contiene los procesos, las actividades y las tareas involucradas en el desarrollo, explotación y mantenimiento de un producto software, abarcando la vida del sistema, desde la definición de sus requirimientos hasta la finalización de su uso.</p>
+            <h5>Metodología en cascada</h5>
+            <p>El modelo de desarrollo en cascada fue presentado por primera vez en 1970 por Royce. Se lo conoce también como modelo lineal secuencial. Su principal característica es que cada fase del desarrollo está bien definida y separada, siguiendo un orden secuencial en el que cada etapa dependiente de la finalización de la anterior y que esta última haya pasado un proceso de validación que apruebe el paso a la siguiente.</p>
+            <p>Comúnmente las etapas del modelo son:</p>
+            <ol>
+                <li>Análisis y definición de los requerimientos</li>
+                <li>Diseño del sistema y del software</li>
+                <li>Implementación y pruebas unitarias</li>
+                <li>Integración y pruebas de sistema</li>
+                <li>Funcionamiento y mantenimiento</li>
+            </ol>
+            <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232221/mod_page/content/15/cascada.jpg" alt="">
+            <p>Imaginemos que somos un equipo de desarrollo de software y recibimos un pedido de la empresa "ArgProg". Se trata de una PyME nacional del rubro farmacéutico que, en los últimos años, experimentó un importante crecimiento gracias a su capacidad de idear soluciones innovadoras a problemas de la industria. Como resultado,la empresa incrementó tanto su plantilla de empleados como su cartera de proyectos. En este nuevo contexto, "ArgProg" nos demanda el desarrollo de un software que mantiene conectadas a las personas y a los proyectos, ya que esa interacción es la base de la innovación permanente.</p>
+            <p>Si bien es un gran, conocemos el recorrido tradicional para responder a esta demanda:</p>
+            <ol>
+                <li>Nos reunimos internamente para decidir si tomamos el proyecto.</li>
+                <li>Invertimos tiempo y recursos en diseñar hasta el último detalle de la solución que veamos a ofrecer a la empresa (alcance del proyecto).</li>
+                <li>Listamos y ordenamos todas las tareas que serán necesarias para construir esa solución (descomposición de la estructura de trabajo).</li>
+                <li>Estimamos cuánto tiempo y recursos implicará la realización de esas tareas (cronograma y presupuesto del proyecto). Tomamos como base para esta estimación los proyectos similares que hicimos en el pasado.</li>
+                <p>Una vez plasmamos toda esta información en documentos (planificación), se lo presentamos a la empresa y, si logramos un acuerdo, entonces si:</p>
+                <li>Ejecutamos las tareas planificadas (ejecución)</li>
+                <li>Monitoreamos el progreso para evitar desvíos respecto de lo que habíamos planificado en los documentos (monitoreo y evaluación).</li>
+                <li>Completamos el desarrollo del software, se lo entregamos a nuestro cliente y finalizamos el proyecto (cierre).</li>
+            </ol>
+            <p>Esta metodología para gestionar proyectos, denominada "metodologia tradicional", parece clara y relativamente sencilla de implementar ¿no?</p>
+            <p>Sin embargo, según datos del Sandish Group, más del 70% de los proyectos de desarrollo de software gestionados bajo esta metodología no tienen éxito.</p>
+            <p>Las principales razonas:</p>
+            <ul>
+                <li>Suponen que los usuarios del software tienen completamente clara su necesidad o deseo y esto muchas veces no ocurre en la realidad. En el ejemplo, "ArgProg" busca "mantener conectados a las personas y a los proyectos", sin embargo ¿qué implica estar "conectados"? Es algo difuso... ¿Alcanza con que sepan qué están desarrollando los otros equipos? ¿Lo relevante es que estén al tanto de los desafíos que enfrentan sus compañeros? ¿Aportar sus experiencia o saberes para ayudarlos a resolverlos? A esta falta de claridad sobre la necesidad hay que sumarle otro factor: la multiplicidad de actores involucrados. La empresa está conformada por un directorio, gerentes, mandos medios, trajadores de línea, cada uno de ellos con sus propios intereses.</li>
+                <li>Suponen que el equipo de desarrollo puede crear la solución ideal y describirla de forma precisa y detallada antes de empezar a construirla. En el caso de "ArgProg" implicaría tener absoluta certeza sobre la arquitectura que tendrá el software, cada aspecto de su funcionamiento, cada una de las funcionalidades que incluirá, cada detalle del "look and feel", etc. antes de escribir el primer código. Idear una solución y plasmarla en documentos con este nivel de detalle es, en la mayoría de los casos, inviable y lleva a que se desarrollen más funcionalidades de las deseadas o muchas menos de las necesarias, a que se sobreestimen aspectos que no agregan valor al cliente y se descarten aquellos que fueron realmente valiosos.</li>
+                <li>Dada la claridad de las necesidades y la capacidad de idear una solución que las satisfaga, las metodologías tradicionales suponen que es posible planificar todos los aspectos del proyecto (actividades, cronogramas y presupuestos) y ajustarse a ese plan. El problema es que esto sólo es viable cuando contamos con experiencias anteriores en desarrollos similares, las cuales podemos usar como referencia para estimar el esfuerzo que demandará el proyecto actual. Esto no es viable cuando apuntamos a generar soluciones innovadoras para las cuales no contamos con antecedentes para planificar con certeza.</li>
+            </ul>
+            <h3>Metodología iterativa e incremental</h3>
+            <p>La metodología iterativa e incremental deriva del proceso de desarrollo en cascada pero, con la diferencia de que aquí se admite que las etapas se solapan en tiempo con la finalidad de flexibilizar el tiempo de desarrollo total y asi poder alcanzar resultados funcionales de manera temprana.</p>
+            <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232222/mod_page/content/14/Recurso%209.png" alt="">
+            <p>Esta metología involucra dos procesos fundamentales:</p>
+            <ul>
+                <li>El proceso <b>incremental</b>: con esto se busca desarrollar una parte del producto que se pueda integrar al conjunto a medida que se alcanza un grado de completitud.</li>
+                <li>El proceso <b>iterativo</b>: se realiza en ciclos donde se revisa y mejora el producto. De manera que la calidad del producto aumente, y no siempre implica la integración de nuevas funcionalidades.</li>
+            </ul>
+            <h5>Procesos ágiles</h5>
+            <p>A fin de superar las dificultades o límites de las metodologías tradicionales, surgieron las metodologoías ágiles para la gestión de proyectos. Los métodos o procesos ágiles consideran un efoque iterativo para las etapas de especificación, desarrollo y entrega del software. Estos métodos fueron pensados para el desarrollo de aplicaciones donde los requerimientos del sistema cambian rapidamente y también están enfocados en poder entregar software funcional de forma rápida a los usuarios, quienes pueden evaluar y proponer nuevos requerimientos o cambios para iteraciones próximas.</p>
+            <p>Estos procesos se basan en los valores y los principios definidos en el manifiesto ágil elaborado en 2001 por un grupo de profesionales críticos de los modelos de desarrollo de software propuestos hasta el momento a los que consideraban excesivamente pesados y rigidos por su carácter normativo y fuerte dependencia de planificaciones detalladas previas al desarrollo.</p>
+            <p>Los valores que propone este manifiesto son:</p>
+            <ul>
+                <li>Valorar más a los individuos y sus interacciones que a los procesos y las herramientas</li>
+                <li>Valorar más el software funcionando que la documentación exhaustiva</li>
+                <li>Valorar más la colaboración con el cliente que la negociación contractual</li>
+                <li>Valorar más la respuesta ante el cambio que seguir un plan</li>
+            </ul>
+            <p>También se ven los siguientes 12 principios:</p>
+            <ol>
+                <li>Nuestra principal prioridad es satisfacer al cliente a través de la entrega temprana y continua de software de valor</li>
+                <li>Son bienvenidos los requisitos cambiantes, incluso si llegan tarde al desarrollo. Los procesos ágiles se doblegan al cambio como ventaja competitiva para el cliente</li>
+                <li>Entregar con frecuencia software que funcione, en periodos de un par de semanas hasta un par de meses, con preferencia en los periodos breves</li>
+                <li>Las personas del negocio y los desarrolladores deben trabajar juntos de forma cotidiana a través del proyecto</li>
+                <li>Construcción de proyectos en torno a individuos motivados, dándoles la oportunidad y el respaldo que necesitan y procurándoles confianza para que realicen la tarea</li>
+                <li>La forma más eficiente y efectiva de comunicar información de ida y vuelta dentro de un equipo de desarrollo es mediante la conversación cara a cara</li>
+                <li>El software que funciona es la principal medida del progreso</li>
+                <li>Los procesos ágiles promueven el desarrollo sostenido. Los patrocinadores, desarrolladores y usuarios deben mantener un ritmo constante de forma indefinida</li>
+                <li>La atención continua a la excelencia tecnica enaltece la agilidad</li>
+                <li>La simplicidad como arte de maximizar la cantidad de trabajo que se hace, es esencial</li>
+                <li>Las mejores arquitecturas, requisitos y diseños emergen de equipos que se autoorganizan</li>
+                <li>En intervalos regulares, el equipo reflexiona sobre la forma de ser mas efectivo y ajusta su conducta en consecuencia</li>
+            </ol>
+            <p>Si bien hay diferentes métodos ágiles, todos comparten algunos <b>principios elementales</b>:</p>
+            <ul>
+                <li><b>Participación del cliente</b>: Los clientes deben estar implicados en todo el proceso de desarrollo, su rol está enfocado en proporcionar y dar prioridad a nuevos requerimientos del sistema, como así también participar en la evaluación de los entregables de cada iteración</li>
+                <li><b>Entrega incremental</b>: El software se desarrolla en incrementos y el cliente es quien determina qué necesita incluir en cada incremento</li>
+                <li><b>Enfocado en personas, no en procesos</b>: Hay que identificar y explotar las habilidades de cada una de las personas del equipo. Cada equipo debe desarrollar sus propias formas de trabajar, es decir, sin imponer procesos normales</li>
+                <li><b>Aceptar el cambio</b>: Siempre se debe tener en cuenta que los requerimientos del sistema pueden cambiar, y por lo tanto el diseño debe contemplar esto</li>
+                <li><b>Mantener la simplicidad</b>: Se debe enfocar la simplicidad tanto en el software que se desarrolla como en el proceso de desarrollo</li>
+            </ul>
+            <p>Existen diferentes metodlogías ágiles que si bien comparten los mismos principios, cada una posee sus propias caracteristicas que las diferencian entre si. Algunas de ellas son las programación extrema (XP, Extreme Programming), el Desarrollo Rápido de Aplicaciones, el Desarrollo de prototipo, y Scrum.</p>
+            <h3>¿Qué es Scrum?</h3>
+            <p>SCRUM fue creado por Ken Schwaber y Jeff Sutherland a partir de la reflexión sobre su propia práctica y la de sus colegas, y actualmente es el enfoque más utilizado a nivel mundial para el desarrollo de software. Es especialmente útil para trabajar en entornos complejos en los cuales tanto la necesidad a cubrir como la solución que la satisfaga no son claras de antemano y solo pueden conocerse a medida que se construye y se pone a prueba el software.</p>
+            <p>Scrum es un marco de trabajo a través del cual las personas pueden abordar problemas complejos adaptativos, a la vez que se entregan productos de forma eficiente y creativa con el máximo valor. En scrum se aplica un conjunto de buenas prácticas para trabajar de manera colaborativa y obtener así el mejor resultado posible en proyectos complejos que demandan constantes cambios y adaptaciones.</p>
+            <p>La palabra scrum tiene su origen en un ámbito alejado al de la gestión de proyectos: el deporte. En rugby, Scrum es el término que define a la formación en la que ambos equipos empujan de forma coordinada para obtener la pelota. Esta formación requiere a cada equipo de empujar no sólo en la misma dirección sino al mismo tiempo para lograr la suma de las fuerzas individuales. Representa un claro ejemplo de trabajo en equipo y coordinación entre todos los miembros de un mismo equipo.</p>
+            <p>Uno de los pilares de Scrum es la <b>transparencia</b>. Los aspectos significativos del proceso deben ser visibles para aquellos que son responsables del resultado. Esto requiere que dichos aspectos sean definidos en base a un estándar común, de tal modo que los observadores compartan un entendimiento común de lo que están viendo. Por ejemplo:</p>
+            <ul>
+                <li>Deben compartir un lenguaje común todos los participantes para referirse al proceso.</li>
+                <li>Aquellos que desempeñan el trabajo y quierenes inspeccionan el incremento deben compartir una definición común de "terminado".</li>
+            </ul>
+            <p>Otros de los pilares es la <b>inspección</b>. Los usuarios de Scrum deben inspeccionar frecuentemente los artefactos de Scrum y el progreso hacia un objetivo para detectar variaciones indeseadas. Su inspección no debe ser tan frecuente como para que pueda interferir en el trabajo. Las inspecciones son más beneficiosas cuando se realizan de forma diligente por inspectores expertos en el mismo lugar de trabajo.</p>
+            <p>Finalmente, otro pilar de la metodología es su adaptación. Si un inspector determina que uno o más aspectos de un proceso se desvían de los límites aceptables y que el producto resulta inaceptable, el proceso o el material que está siendo procesado deben ajustarse. Dicho ajuste deberá realizarse cuanto antes para minimizar desviaciones mayores.</p>
+            <p>Desde la perspectiva de SCRUM, un proyecto se considera exitoso si entrega el mayor valor posible para el usuario en un tiempo dado. ¿Cómo sabemos qué aporta valor al o los usuarios? A medida que se va construyendo y testeando el software se va comprendiendo más profundamente la problemática y la necesidad de los usuarios y las posibles formas de satisfacerlo (incluso los mismos usuarios al interactuar con el producto van terminando de comprender su propia necesidad).</p>
+            <p>Los proyectos se llevan a cabo en equipos que trabajan en ciclos temporales cortos y duración fija. Cada ciclo se conoce como Sprint y tiene que proporcionar un resultado completo, un incremento del producto final que sea susceptible de ser entregado con el mínimo esfuerzo al cliente cuando este lo solicite. Los componentes del ciclo son:</p>
+            <ul>
+                <li><b>Eventos</b>: Planificación del sprint, Scrum diario, Revisión del sprint, y Retrospectiva del sprint.</li>
+                <li><b>Roles</b>: Desarrollador, Propietario del producto y Scrum master.</li>
+                <li><b>Artefactos</b>: Pila del producto, Pila de sprint, e incremento</li>
+            </ul>
+            <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232223/mod_page/content/14/Recurso%2046.png" alt="">
+            <h3>Eventos - Planificación en Scrum</h3>
+            <h4>Eventos</h4>
+            <p>El núcleo de esta metodología son los Eventos. Cada uno de estos, se enmarca en el ciclo iterativo denominado Sprint y hace que sea posible llegar a un entregable útil al final de cada iteración. <b>Los Sprints</b> son el corazón de la metodología, <b>son períodos de tiempo fijos</b>, generalmente de un mes o menos, y comienzan inmediatamente después de finalizado el <i>Sprint</i> anterior. <b>Durante un <i>Sprint</i> no se pueden hacer cambios que perjudiquen los objetivos del mismo</b>, se refina la pila de producto y eventualmente se podría clarificar o renegociar el alcance con el propietario del producto a medida que se aprende sobre el avance. <b>Solo si el objetivo se vuelve obsoleto, el propietario del producto tiene la autoridad para cancelar el <i>Sprint</i></b>.</p>
+            <h6>Planificación de Sprint</h6>
+            <p>La planificación es el evento que da inicio al <i>Sprint</i> y es donde se lleva a cabo la organización del trabajo a realizar. Este evento no es necesariamente exclusivo del equipo de <i>Scrum</i>, sino que se puede invitar a otras personas para que aconsejen en los temas pendientes.</p>
+            <p>Durante la planificación se tratan los siguientes temas:</p>
+            <ul>
+                <li>¿Por qué es valioso este <i>Sprint</i>?</li>
+                <p>El propietario del producto propone cómo él va a aumentar su valor y utilidad con el <i>Sprint</i>. Todo el equipo colabora para definir el objetivo del <i>Sprint</i> que transmite el por qué es valioso para los interesados en el producto. Al final de este evento el objetivo debe estar bien definido.</p>
+                <li>¿Qué se puede hacer en este <i>Sprint</i>?</li>
+                <p>A lo largo de la discusión, los desarrolladores eligen items de la pila de producto, para incluirlos en el <i>Sprint</i> en curso. Durante este proceso, el equipo puede refinar estos items mejorando el entendimiento sobre cada uno. Este tema, de conocer cuánto se puede hacer, los desarrolladores lo entrenan teniendo en cuenta su rendimiento pasado, la capacidad y su definición de terminado.</p>
+                <li>¿Cómo se llevará a cabo el trabajo seleccionado?</li>
+                <p>Para cada uno de los elementos seleccionados, los desarrolladores planean el trabajo necesario para crear un incremento que cumpla con la definición de terminado. La manera en que estos lo ejecutan queda a su discreción y suelen descomponer los items de la pila de producto en tareas más pequeñas, de un dia o menos.</p>
+            </ul>
+            <h6>Scrum Diaria</h6>
+            <p>Las <i>Scrum</i> diarias (Daily Scrum) son reuniones de no más de 15 minutos, en las cuales se sincroniza el trabajo desarrollado y se establece el plan para el día en curso. Generalmente se recomienda hacerlas viendo el tablero con la pila de sprint. Se comparten los avances, los problemas y las ideas, también si es necesario se actualiza la pila de <i>Sprint</i>. Es importante tener en cuenta que no es una reunión de inspección o control, sino que de comunicación entre el equipo.</p>
+            <h6>Revisión de Sprint</h6>
+            <p>Sobre el final del <i>Sprint</i> se hacen las reuniones de revisión de <i>Sprint</i> para comprobar el incremento. Estas suelen durar entre una y dos horas, en caso de que el incremento tenga una complejidad muy alta, podrían extenderse aún más. Estas pueden permitir al equipo y al propietario del producto tomar sensibilidad del ritmo de construcción y la trayectoria que cobra la visión del producto. Son instancias en las que se reajusta la pila de producto para incluir nuevas oportunidades.</p>
+            <h6>Retrospectiva de Sprint</h6>
+            <p>El propósito de las reuniones de Retrospectiva de <i>Sprint</i> es planear nuevas formas de mejorar la calidad y efectividad. Se analiza lo que sucedió en la última Sprint con respecto a los individuos, sus interacciones, los procesos, lo que fue bien y los problemas que se encontraron, los que se resolvieron y los que quedaron pendientes.</p>
+            <h3>Roles - equipo SCRUM</h3>
+            <h4>Roles - Equipo</h4>
+            <p>La unidad fundamental de Scrum es un equipo de personas (Scrum Team). Cada equipo consiste en un <i>Scrum Master</i>, un propietario del producto (<i>Producto Owener</i>) y desarrolladores (<i>Developers</i>).</p>
+            <p>El equipo debe ser suficientemente pequeño como para ser ágil y grande como para completar una cantidad considerable de trabajo dentro de un <i>Sprint</i>. Normalmente los equipos están conformados por 10 personas o menos, ya que en general, los equipos pequeños se comunican mejor y son más productivos.</p>
+            <p>El equipo es responsable de todas las actividades relacionadas al producto desde la colaboración con las partes interesadas, verificación, mantenimiento, experimentación, desarrollo y cualquier otra cosa que pueda ser requerida.</p>
+            <h5>Desarrolladores</h5>
+            <p>Los desarrolladores son aquellos que producen cada uno de los incrementos de cada <i>sprint</i> y siempre son responsables de:</p>
+            <ul>
+                <li>Crear un plan para el <i>Sprint</i>, la pila de <i>Sprint</i> (<i>Sprint Backlog</i>).</li>
+                <li>Asegurar la calidad mediante la adopción de una definición de terminado.</li>
+                <li>Adaptar el plan de cada día para conseguir el objetivo del <i>Sprint</i> (<i>Sprint Meta</i>).</li>
+            </ul>
+            <h5>Propietario del Producto</h5>
+            <p>El Propietario del Producto es el responsable de gestionar efectivamente la pila del producto (<i>Product Backlog</i>), lo que incluye:</p>
+            <ul>
+                <li>Desarrollar y comunicar el objetivo del producto (meta del producto).</li>
+                <li>Crear y comunicar cada uno de los artículos de la pila de producto.</li>
+                <li>Ordenar los artículos de la pila de producto, siguiendo alguna prioridad.</li>
+                <li>Asegurar que la pila de producto sea transparente, visible y comprensible.</li>
+            </ul>
+            <p>Es importante resaltar que el propietario del producto es una única persona, y por tanto, se deben respetar sus decisiones. Estas, deben ser reflejadas en el contenido y orden en la pila de producto, como así también en el incremento y la revisión del <i>Sprint</i>.</p>
+            <h6>Scrum Master</h6>
+            <p>El <i>Scrum Master</i> es el encargado de asegurar que la metodología se lleve a cabo tal y como está definida. Esto se logra haciendo que cada persona del equipo entienda la teoría y práctica de la metodología.</p>
+            <p>La persona con el rol de <i>Scrum Master</i> sirve al equipo de Scrum de varias formas:</p>
+            <ul>
+                <li>Orienta a los miembros del equipo en la autogestión y la multifuncionalidad.</li>
+                <li>Ayuda a los equipos a enfocarse en crear incrementos de alto valor que cumplan con la definición de terminado.</li>
+                <li>Remueve los impedimentos de progreso que pudiera tener el equipo.</li>
+                <li>Asegura que todos los eventos de <i>Scrum</i> se lleven a cabo y que sean positivos, productivos y dentro de los tiempos establecidos.</li>
+            </ul>
+            <p>El <i>Scrum Master</i> también colabora con el <i>Product Owner</i> de las siguientes maneras:</p>
+            <ul>
+                <li>Ayuda a encontrar técnicas para definir efectivamente el objetivo del producto y la gestión de la pila de producto.</li>
+                <li>Ayuda a que los miembros del equipo entiendan los artículos de la pila de producto.</li>
+                <li>Ayuda a establecer un planeamiento del producto de manera empírica para entornos que sean complejos.</li>
+            </ul>
+            <p>Finalmente también colabora con el resto de la organización con actividades como:</p>
+            <ul>
+                <li>Liderar, planear y entrenar a los miembros de la organización en lo que respecta a la adopción de <i>Scrum</i>.</li>
+                <li>Planear y aconsejar cómo implementar <i>Scrum</i> dentro de la organización.</li>
+                <li>Ayudar a los empleados a comprender y llevar a cabo la práctica de la metodología, mediante un enfoque empírico para trabajos complejos.</li>
+            </ul>
+            <p>Durante la reunión de planificación de <i>Sprint</i>, el <i>Scrum Master</i> deberá desempeñar las siguientes funciones:</p>
+            <ul>
+                <li>Realizar esta reunión antes de cada <i>Sprint</i>.</li>
+                <li>Asegurar que se cuenta con una pila de producto preparada por el propietario del producto.</li>
+                <li>Ayudar a mantener el diálogo entre el propietario del producto y los desarrolladores.</li>
+                <li>Asegurar que se llegue a un acuerdo entre el propietario del producto y los desarrolladores con respecto a lo que incluirá el incremento.</li>
+                <li>Ayudar a comprender la visión y las necesidades de negocio del cliente.</li>
+                <li>Asegurar que se ha realizado una decomposición y estimación del trabajo realistas.</li>
+                <li>Asegurar que al final de la reunión estén determinados los siguientes puntos:</li>
+                <ol>
+                    <li>Los items de la pila de producto que se van a ejecutar.</li>
+                    <li>El objetivo del <i>Sprint</i>.</li>
+                    <li>La pila del <i>Sprint</i> con todas las tareas estimadas.</li>
+                    <li>La duración del <i>Sprint</i> y la fecha de reunión de revisión.</li>
+                    <li>La definición de terminado que determinará que el incremento está listo.</li>
+                </ol>
+            </ul>
+            <h3>Artefactos SCRUM</h3>
+            <h4>Artefactos</h4>
+            <h5>Pila de producto</h5>
+            <p>La pila de producto (<i>Product Backlog</i>) es una lista ordenada. Cada una de las entreadas de esta lista son posibles trabajos a seleccionarse para su realización durante una reunión de planificación de <i>Sprint</i>. El refinamiento de los ítems de la pila de producto es el acto de convertir esos ítems en elementos más detallados y precisos, en este proceso también se les asigna una prioridad y un "tamaño".</p>
+            <p>La pila de producto puede incluir items para explorar las necesidades del cliente, analizar opciones técnicas, y otros ítems de trabajo tales como la corrección de errores (bugs) o la configuración del entorno. Todo lo que esté en la pila de producto representa o aporta a conseguir el objetivo del producto (<i>Product Goal</i>) y este último es el objetivo que el equipo tiene que conseguir cumplir a largo plazo.</p>
+            <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232226/mod_page/content/14/Recurso%2047.png" alt="">
+            <h5>Pila de Sprint</h5>
+            <p>Este artefacto demilita el trabajo necesario para alcanzar determinado incremento, y sirve para marcar el avance. También sirve como herramienta de comunicación del equipo. Esto es visible para todos y representa una imagen en tiempo real del trabajo que llevan los desarrolladores para alcanzar el objetivo del sprint (<i>Sprint Meta</i>). Este último se crea durante la reunión de planificación de <i>Sprint</i> y a lo largo de todo el ciclo, los desarrolladores lo tienen presente.</p>
+            <h5>Incremento</h5>
+            <p>Un incremento de producto es un paso concreto que acerca el desarrollo al objetivo del producto. Cada incremento agrega valor al incremento anterior y bajo un proceso de verificación, asegura que todos los incrementos trabajen bien juntos.</p>
+            <p>Existe un compromiso entre el incremento y la definición de terminado. Esta definición es una descripción formal del estado que debe alcanzar el incremento para cumplir con el nivel de calidad requerido para el producto. Si por alguna razón algún ítem de la pila de producto no cumple con la definición de terminado, no debe formar parte del entregable y nisiquiera ser presentado en la reunión de revisión de Sprint. En lugar de esto, debe volver a la pila de producto para ser considerado en un futuro.</p>
+            <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232226/mod_page/content/14/info%20marco%20de%20trabajo.png" alt="">
+            <h3>Especificaciones y requerimientos</h3>
+            <p>Es importante realizar una especificación de los requisitos, es decir documental de forma completa, precisa y verificable los requisitos, el diseño y el comportamiento u otras características de un sistema o componentes del mismo.</p>
+            <h5>Requerimientos funcionales</h5>
+            <p>Los requisitos funcionales son declaraciones de los servicios que deben proporcionar el sistema. Describen cómo debe reaccionar el sistema a entradas particulares o cómo debe comportarse bajo determinadas condiciones.</p>
+            <p>Por tanto, la especificación de requerimientos debería cumplir las características de ser completa y consistente. Para que sea completa, todos los servicios descritos por el usuario deben estar definidos. Por otra parte, para que sea consistente los requerimientos no deben ser contradictorios.</p>
+            <h6>Requerimientos no funcionales</h6>
+            <p>Los requisitos no funcionales son aquellas propiedades que deben tener, como fiabilidad, capacidad de almacenamiento, tiempo de respuesta, etc.</p>
+            <p>Generalmente surgen de necesidades del usuario que políticas tienen que ver con restricciones de presupuesto, la interoperabilidad con otros sistemas, factores externos, regulaciones, privacidad, seguridad, etc.</p>
+            <h6>Requerimientos en Scrum y estimulación de tiempos</h6>
+            <p>Dentro de las metodologoías ágiles se suelen utilizar las historias de usuario (<i>User Stories</i>) como herramienta para definir los requerimientos del sistema. Estas son descripciones o especificaciones de una función, validadas por un usuario o cliente del sistema.</p>
+            <p>Generalmente las historias se escriben en un lenguaje que el usuario pueda entender y que refleje una descripción sintetizada  de lo que este desea. En lo posible se debe tratar de eliminar ambigüedades y malas interpretaciones.</p>
+            <p>Para redactar una historia de usuario se tiene que seguir una estructura como la siguiente:</p>
+            <h6>Como <b>&lt;usuario&gt;</b> quiero/puedo <b>&lt;algún objetivo&gt;</b> para que/de forma que <b>&lt;motivo&gt;</b>.</h6>
+            <p>Escribir las historias de usuario con este formato tiene ciertas ventajas:</p>
+            <ul>
+                <li>Primera persona: Invita a quien la lee a ponerse en el lugar del usuario.</li>
+                <li>Priorización: Ayuda al propietario del producto a priorizar y visualizar mejor cuál es la función, quién se beneficia y cuál es el valor.</li>
+                <li>Propósito: la presencia del propósito de una función brinda equipo la posibilidad de plantear alternativas que cumplan con el mismo objetivo en caso de que el costo de la función sea demasiado alto o su construcción no sea viable.</li>
+            </ul>
+            <p>Podemos redactar la historia de usuario del siguiente ejemplo: "Daniel llegó hoy a Nueuquén pero está perdido en su automóvil y dio vueltas por horas. Quiere llegar al Museo Provincial de Bellas Artes. En su celular deberá buscar cómo llegar si la calle es Mitre y Santa Cruz." Utilizando la estructura propuesta de la siguiente forma: Como <i>conductor</i> quiero <i>buscar un destino a partir de una calle y altura</i> para poder <i>llegar al lugar deseado</i>.</p>
+            <h5>Temas, épicas e historias</h5>
+            <p>Durante el proceso de análisis de historias de requerimientos se suele agrupar a las últimas de usuario en épicas y a su vez, estas últimas estan relacionadas con un tema en particular.</p>
+            <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232228/mod_page/content/19/Recurso%2049.png" alt="">
+            <p>Usualmente las historias de usuario se ubican en la pila del producto, son derivadas de los temas y agrupadas en épicas, luego se traducen en tareas en la pila de Sprint.</p>
+            <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232228/mod_page/content/19/Recurso%2050.png" alt="">
+            <h5>Método INVEST</h5>
+            <p>Este método, desarrollado por Bill Wake en 2003, permite asegurar la calidad de la escritura de las historias de usuario. Para esto debe cumplir con las siguientes características:</p>
+            <ul>
+                <li>Independiente: Cada historia de usuario puede ser planificada e implementada en cualquier orden. No depende unas de otras, si esto ocurre se deben dividir o combinar.</li>
+                <li>Negociable: Las historias deben ser negociables y sus detalles serán acordados por el cliente/usuario y el equipo durante la fase de converasción.</li>
+                <li>Valiosa: Una historia de usuario tiene que ser valiosa para el cliente o el usuario.</li>
+                <li>Estimable: Una buena historia de usuario debe ser estimada con la precisión suficiente para ayudar al cliente o usuario a priorizar y planificar su implementación. Si no podemos estimarla debemos incidir en la fase de conversación o dividrla.</li>
+                <li>Pequeña (<i>Small</i>): Solemos hacerlas de tal modo que ocupen máximo un sprint.</li>
+                <li>Comprobable (<i>Testable</i>): La historia de usuario debe poderse probar Hemos trabajado con anterioridad en la fase "confirmación" de la historia de usuario. Tanto el usuario como el equipo de desarrollo tienen que poder probarla para saber cuándo esta finalizada.</li>
+            </ul>
+            <h5>Método SMART</h5>
+            <p>Cuando se descomponen las historias de usuarios en tareas, se pude utilizar el método SMART, un método que sirve para evaluar si las tareas están correctamente definidas. SMART es un acrónimo (en inglés) de las siguientes características:</p>
+            <ul>
+                <li>Específico (<i>Specific</i>): Una tarea debe ser lo suficientemente específica para que todos puedan entenderla.</li>
+                <li>Medible: ¿Hace lo que se pretende? Es el equipo quien debe ponerse de acuerdo sobre lo que esto significa.</li>
+                <li>Alcanzable: ¿Es razonable la meta? Consejo: Es bueno establecer metas que representan un desafio, pero pueden ser contraproducentes no alcanzarlas.</li>
+                <li>Relevante: Cada tarea debe ser relevante, contribuyendo a la historia en cuestión.</li>
+                <li>A tiempo (<i>Time-Boxed</i>): Una tarea debe estar limitada a una duración especifica. No necesariamente debe ser una estimación formal en horas o días, pero deben hacer una expectativa para que la gente sepa cuándo debe ayudar.</li>
+                <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232228/mod_page/content/19/Recurso%2051.png" alt="">
+                <p>Existe una guía de patrones para subdividir historias de usuarios grandes o complejas en otras más pequeñas y alcanzables. Esta técnica de subdivisión de historias de usuario se puede llevar a cabo mediante juegos de cartas.</p>
+                <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232228/mod_page/content/19/historia%20de%20usuario.png" alt="">
+                <h6>Las 3 C de las historias de usuario</h6>
+                <p>Una historia de usuario está compuesta de tres elementos que son fundamentales. La trivial es la primera y la tarjeta (<i>card</i>), es donde se escribe la historia de manera clara y con la ambigüedad minima. El segundo componente es la <b>conversación</b>, es importante debatir y validar con el cliente y el equipo de desarrollo, por lo general esto se realiza en la reunión de planificación. Y finalmente la confirmación, es importante confirmar que todos los involucrados han comprendido los requisitos.</p>
+                <h6>Puntos de historia</h6>
+                <i><p>"El trabajo necesario para realizar un requisito o una historia de usuario no se puede prever de forma absoluta porque rara vez son realidades de una solución única. En el caso de que se pudiera, por otra parte, la complejidad de la medición haría una métrica demasiado pesada para la gestión ágil.</p>
+                <p>No resulta posible estimar con precisión la cantidad de trabajo que hay en un requisito. En consecuencia, tampoco se puede saber con antelación cuánto tiempo exigirá, porque a la incertidumbre del trabajo se suman las inherentes al tiempo: no se puede estimar la cantidad o la calidad del trabajo que realiza una 'persona media' por unidad de tiempo, porque son muy grandes las diferencias de unas personas a otras. Es más: la misma tarea realizada por la misma persona requerirá diferentes tiempos según las diferentes circunstancias.</p>
+                <p>Por todas estas razones, al estimar de forma ágil, se prefiere emplear unidades relativas. En gestión ágil se suelen emplear 'puntos' como unidad de trabajo, utilizando las denominaciones como 'puntos de historia'. Cada organización, según sus circunstancias y su criterio, institucionaliza su métrica de trabajo, su 'punto'. Es el tamaño relativo de tareas que se suele emplear. Es importante que el significado y la forma de aplicar la métrica sea siempre la misma en las mediciones de la organización, y que sea conocida por todos. El tipo de 'punto' depende de la organización. En un equipo de programación el punto puede ser equivalente a preparar una pantalla de inicio de sesión; para un equipo de diseño gráfico, la maquetación de un tríptico.</p>
+                <p>El 'púnto' ayuda, por un lado, a dimensionar la estimación de una tarea comparándola con una ya conocida, y por otro lado, a contrastar la dificultad que la tarea presenta para cada miembro del equipo según sus especialidades. Un ejemplo para ilustrar esto último podría ser el esfuerzo que cuesta frír un huevo. Si se estima cuántos 'huevos fritos' costaría planchar una camisa, la respuesta dependiente de la persona. Alguien puede ser muy habilidoso friendo huevos, pero muy torpe para planchar camisas y estimará que eso le costaria '8 huevos fritos'; es decir, '8 puntos', alguien muy acostumbrado a las tareas domésticas, en cambio, podría estimar la tarea en 'un punto' o 'un huevo frito'.</p>
+                <p>Ambos tienen razón: la cuestión es que la persona que estime sea la que va a realizar la tarea. Los 'puntos de historia' suelen ser una unidad relativa o abstracta basada en algo con lo que el equipo esté muy familiarizado.</p>
+                <p>Por último, con esto se puede estimar la velocidad: en scrum, está es igual a la cantidad de trabajo realizado por el equipo en un sprint. Así, por ejemplo, una velocidad de 150 puntos indica que el equipo realiza 150 puntos de trabajo en cada sprint.</p>
+                <p>No obstante, al salir del marco estándar de scrum podemos encontrar sprints de diferentes duraciones. Cuando esto sucede se puede expresar la velocidad en unidades de tiempo en lugar de por sprint. Es decir: 'la velocidad media del equipo es de x puntos por semana'."</p></i>
+                <p>Los puntos de historia representan un valor que sólo será relevante para el equipo de scrum, y que se usará para estimar el tamaño de una tarea (también llamada ítem, en inglés) en el backlog. Permite al equipo determinar qué tareas pueden realizar en un sprint. El product owner (propietario del producto) podrá ver, por los puntos de la historia, qué tareas fueron relativamente complicadas de hacer por el equipo. Los puntos dan una idea del tamaño y el esfuerzo que se necesita para las tareas realizadas.</p>
+                <p>Para empezar con los puntos de la historia, el equipo debe primero definir una <b>historia de referencia (o pivote)</b> con la que después podrá comparar todas las historias. Se recomienda elegir una historia de usuario más o menos compleja, que incluya tantas disciplinas del equipo como sea posible. A esta historia le daremos un puntaje, posiblemente 5 u 8. Luego, se utiliza el pivote durante los perfeccionamientos del sprint backlog para determinar si otra historia de usuario es más pequeña o más grande, y qué valor puede darle.</p>
+            </ul>
+            <h3>Planificación SCRUM</h3>
+            <h4>Planificación</h4>
+            <p><i>"La planificación de Sprint es una reunión critica, probablemente la más importante de Scrum. Una planificación de Sprint mal ejecutada puede arruinar por completo todo el Sprint.</i></p>
+            <p><i>El propósito de la planificación de Sprint es proporcionar al equipo suficiente información como para que puedan trabajar en paz y sin interrupciones durante unas pocas semanas, y para ofrecer al dueño de producto suficiente confianza como para permitirselo.</i></p>
+            <p><i>Una planificación de Sprint produce, concretamente:</i></p>
+            <ul>
+                <li><i>Una meta de Sprint.</i></li>
+                <li><i>Una  lista de miembros (y su nivel de dedicación, si no es del 100%)</i></li>
+                <li><i>Una pila de Sprint (lista de historias incluidas en el Sprint)</i></li>
+                <li><i>Una fecha concreta para la demo del Sprint</i></li>
+                <li><i>Un lugar y momento definido para el scrum diario.</i></li>
+            </ul>
+            <p><i>Es importante que tanto el equipo como el propietario del producto asistan a la planificación de Sprint ya que cada historia contiene tres variables que son muy dependientes unas de otras.</i></p>
+            <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232229/mod_page/content/15/Recurso%2052.png" alt="">
+            <p><i>El alcance y la importancia los fija el propietario del producto. La estimación la proporciona el equipo. Durante una planificación de Sprint, estas variables tienen un ajuste fino y continuo a través del diálogo cara a cara entre el equipo y el propietario del producto.</i></p>
+            <p><i>La reunión que se realiza al comienzo de cada Sprint donde participa el equipo completo sirve para inspeccionar el Product Backlog y que el equipo de desarrollo selecciona el Product Backlog Items en los que va a trabajar durante el siguiente Sprint. Durante esta reunión, el propietario del producto presenta el Backlog del producto actualizado que el equipo de desarrollo se encarga de estimar, además de intentar clarificar aquellos items que crean necesarios.</i></p>
+            <p><i>Durante esta etapa se inspeccionan el Product Backlog, los acuerdos de la retrospectiva, la capacidad y la definición de terminado y se adaptan el sprint backlog, sprint goal y el plan para poder alcanzar ese sprint goal."</i></p>
+            <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232229/mod_page/content/15/Imagen14.png" alt="">
+            <h5>Planificación de póquer</h5>
+            <p>A la hora de estimar tiempos se trata de alcanzar los siguientes objetivos:</p>
+            <ul>
+                <li>Tener diferentes puntos de vista. En la estimación ágil se busca que todo el mundo participe y diga la suya. Si hay una discusión mejor, ya que de lo que se trata es de avanzar todo lo posible en los problemas y tenerlos en cuenta desde el inicio. No debería haber personas con una voz y voto más fuertes que los demás.</li>
+                <li>Detectar posibles tareas ocultas y posibles obstáculos. La sesión de estimación es una de las primeras oportunidades de detectar riesgos que pueden comenzar a tratarse para que no se conviertan en impedimentos.</li>
+                <li>Tener una visión compartida del trabajo que se va a realizar. Es muy útil haber participado en las estimaciones para después hacer las planificaciones. Conocer el tamaño de las historias y tareas permite que sea más facil comprometerse con un plan de trabajo.</li>
+                <li>Tener estimaciones más realistas (no más precisas). Para ello necesitas eliminar la presión contractual, esto es, dejar margen para equivocarse y evitar así introducir buffers "inconscientes" por si acaso. Lo que buscamos es realismo, no precisión, es decir, quiero saber si una historia serán 3 o 5 días, si me dices que tardara 26.5 horas dudaré que hayas hecho un buen ejercicio de estimación.</li>
+            </ul>
+            <p><i>Planning Poker</i> es una técnica efectiva para la estimación ágil. Se reúne al equipo y se utiliza una baraja de poker modificada con la que se hacen rondas de estimación con ayuda de estas cartas.</p>
+            <p>La baraja de cartas tiene una pseudo secuencia de Fibonacci modificada, cada participante recibe cartas con valores 0, 1/2, 1, 2, 3, 5, 10, ? e infinito, donde el 0 significa que la historia ya está hecha o no requiere esfuerzo, el interrogante significa que falta información para estimar la tarea o historia, finalmente el infinito significa que el trabajo es demasiado grande y habría que subdividirla.</p>
+            <p>Para comenzar la sesión de estimación se suele realizar una ronda de preguntas para estimar y para despejar cualquier tipo de dudas sobre las historias que se van a estimar. Luego se leen y discuten una por una las historias y cada uno de los integrantes elige una carta en función del esfuerzo que debe requerir esa historia, es importante aclarar que solo se pueden elegir valores incluidos en la baraja. Finalmente, si no hay consenso, se abre una discusión donde cada uno explica su elección, luego se repite la estimación en busca de un consenso y, si al final no hay consenso, se elige la media o el valor más alto.</p>
+            <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232229/mod_page/content/15/Recurso%2053.png" alt="">
+            <p>Esta técnica tiene varias ventajas:</p>
+            <ul>
+                <li>Todos los miembros del equipo expresan su opinión sin sentirse condicionados por el resto.</li>
+                <li>Al ser consciente del esfuerzo que supone, aumenta el grado de implicación de los componentes del equipo.</li>
+                <li>Al sentirse participe, el grado de compromiso con el proyecto también aumenta.</li>
+                <li>Hay más efectividad a la hora de estimar las fechas de entrega del proyecto.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Git y Github</h2>
+            <h3>Git introducción</h3>
+            <p>En el proceso de desarrollo de software es un requisito casi indispensable mantener un registro de los cambios que se realizan sobre el código fuente a lo largo del tiempo. Es debido a esto que cobran importancia los sistemas de control de versiones. <b>Estos sistemas son herramientas que permiten realizar un seguimiento de los cambios y también permitir proteger el código de errores humanos accidentales</b>. Además, un sistema de control facilita el trabajo en equipo a la hora de desarrollar software, ya que mientras un integrante trabaja en alguna función específica, otro podría estar trabajando en alguna corrección de errores o bien en otra función, para luego integrar las soluciones y realizar una sincronización del trabajo de cada uno.</p>
+            <p>El uso de un sistema de control de versiones tiene tres ventajas principales:</p>
+            <ol>
+                <li>Gracias al historial de cambios, se puede saber el autor, la fecha y notas escritas sobre los cambios realizados. También permite volver a versiones anteriores para ayudar a analizar causas raíces de errores y es crucial cuando hay que solucionar problemas de versiones anteriores.</li>
+                <li>Creación y fusión de ramas. Al tener varios integrantes del equipo trabajando al mismo tiempo, cada uno en una tarea diferente, pueden beneficiarse de tener flujos de trabajo independientes. Posteriormente se pueden fusionar estos flujos de trabajos o ramas a una principal. Los sistemas de control de versiones tienen mecanismos para identificar que los cambios entre ramas no entren en conflicto para asegurar la funcionalidad y la integración.</li>
+                <li>Trazabilidad de los cambios que se hacen en el software. Poder conectar el sistema de control con un software de gestión de proyectos y seguimiento de errores, ayuda con el análisis de la causa raíz de los problemas y con la recopilación de información.</li>
+            </ol>
+            <p>El concepto de versión (también llamado revisión o edición) de un proyecto (código fuente) hace referencia al estado en el que se encuentra el mismo en un momento dado de su desarrollo o modificación. Los sistemas de control de versiones utilizan repositorios para almacenar el proyecto actualizado junto a sus cambios históricos. Los sistemas de control de versiones centralizados almaccenan todo el código en un único repositorio, es decir que un único servidor contiene todos los archivos versionados. Esto representa un único punto de falla dado que si el servidor no está disponible por un tiempo nadie podrá colaborar o guardar cambios en archivos en los que hayan estado trabajando.</p>
+            <p>Los sistemas de control de versiones distribuidos permiten en cambio continuar el trabajo aún cuando el repositorio de referencia no está disponible. En estos sistemas los clientes no solo descargan la última copia del código, sino que se replica completamente el repositorio con los cambios históricos (versiones). De esta manera, si un servidor deja de funcionar y estos sistemas estaban colaborando a través de el, cualquiera de los repositorios estarán disponibles para los clientes y puede ser copiado al servidor con el fin de restaurarlo.</p>
+            <h4>Git</h4>
+            <p>Git es un proyecto de código abierto maduro y con un activo mantenimiento desarrollado originalmente por Linus Torvalds. Este sistema de control de versiones distribuido funciona bajo cualquier plataforma (Windows, MacOS, Linux, etc.) y está integrado en una amplia variedad de entornos de desarrollo (IDEs). Este sistema presenta una arquitectura distribuida, es decir que, cada desarrollador posee una copia del trabajo en un repositorio local donde puede albergar el historial completo de todos los cambios y, mediante comandos determinados, realiza sincronizaciones al repositorio remoto.</p>
+            <p>Git fue diseñado teniendo en cuenta las siguientes características:</p>
+            <ul>
+                <li><b>Rendimiento</b>: Los algoritmos implementados en Git aprovechen el profundo conocimiento sobre los atributos comunes de los auténticos árboles de archivos de código fuente. El formato de objeto de los archivos del repositorio de Git emplea una combinación de codificación delta (que almacena las diferencias de contenido) y comprensión, guardando explícitamente el contenido de los directorios y los objetos de metadatos de las versiones.</li>
+                <li><b>Seguridad</b>: La principal prioridad es conservar la integridad del código fuente gestionado. El contenido de los archivos y las verdaderas relaciones entre estos y los directorios, las versiones, las etiquetas y las confirmaciones, están protegidos con un algoritmo de hash criptográficamente seguro llamado "SHA1". De este modo, se salvaguarda el código y el historial de cambios frente a las modificaciones accidentales y maliciosas, garantizando que el historial sea totalmente trazable.</li>
+                <li><b>Flexibilidad</b>: es flexible en varios aspectos, en la capacidad para varios tipos de flujos de trabajo de desarrollo no lineal, en su eficiencia en proyectos tanto grandes como pequeños y en su compatibilidad con numerosos sistemas y protocolos. Se ha ideado para posibilitar la ramificación y el etiquetado como procesos de primera importancia y las operaciones que se refieren a las ramas y las etiquetas (como la fusión o la reversión) también se almacenan en el historial de cambios.</li>
+            </ul>
+            <h3>Áreas y estados</h3>
+            <p>Para trabajar con git es fundamental entender los estados por los que pueden pasar los archivos durante todo el flujo de desarrollo.</p>
+            <p>En un proyecto de Git hay 4 secciones fundamentales:</p>
+            <ul>
+                <li><b>Directorio de trabajo</b> (<i>Working Area</i>): Es una copia de una versión del proyecto, archivos sacados de la base de datos comprimida y se colocan en el disco para ser usados o modificados.</li>
+                <li><b>Área de preparación</b> (<i>Staging Area</i>): Es un archivo que se encuentra dentro del directorio de Git y que contiene información acerca de lo que va a ir en la próxima confirmación.</li>
+                <li><b>Directorio de Git</b> (<i>Local Repository</i>): Es el lugar en donde se almacenan los metadatos y la base de datos de objetos del proyecto. Es lo que se copia cuando se clona un repositorio desde otra fuente.</li>
+                <li><b>Repositorio Remoto</b> (<i>Remote Repository</i>): Es el repositorio que se encuentra en un servidor remoto y con el que eventualmente se sincroniza los trabajos entre los diferentes integrantes del equipo.</li>
+            </ul>
+            <p>Es importante tener presente siempre en qué áreas internas de Git están nuestros archivos, porque el no saber exactamente residen los archivos puede ocurrir que perdamos cambios por confusión. El objetivo es que los archivos que ya sabemos que están funcionando corectamente queden en el repositorio local y en caso que se quiera compartir el código debemos enviarlo al repositorio remoto.</p>
+            <p>Para mover los archivos a las distintas áreas dentro de Git debemos utilizar los comandos desde la consola.</p>
+            <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232234/mod_page/content/18/git.png" alt="">
+            <h5>Comandos básicos</h5>
+            <p>Git se puede ver como un set de herramientas muy completo, pero para un manejo básico de repositorio en GIt es necesario conocer por lo menos, los siguientes comandos:</p>
+            <ul>
+                <li><b>git init</b> es el comando para inicializar un directorio como repositorio Git, se ejecuta dentro del directorio del proyecto, y como resultado crea un subdirectorio .git que contiene todos los archivos para poder realizar el seguimiento de los cambios, etiquetas, etc.</li>
+                <li><b>git add &lt;archivo&gt;</b> luego de la creación, modificación o eliminación de un archivo, los cambios quedan únicamente en el área de trabajo, por lo tanto es necesario pasarlos al área de preparación mediante el uso del comando <b>git add</b>, para que sea incluido dentro de la siguiente confirmación (cometer).</li>
+                <li><b>git status</b> es un comando que permite conocer en qué estado se encuentran los archivos.</li>
+                <li><b>git commit</b>, con este comando se confirman todos los cambios registrados en el área de preparación, o lo que es lo mismo, se pasan los cambios al repositorio local.</li>
+                <li><b>git push</b> es el comando que se utiliza para enviar todas las confirmaciones registradas en el repositorio local a un repositorio remoto.</li>
+                <li><b>git pull</b> funciona al inverso de <b>git push</b>, trayendo todos los cambios al repositorio local, pero también dejándolos disponibles directamente para su modificación o revisión en el área de trabajo. Es importante mencionar que se utiliza cuando ya se tiene un repositorio local vinculado a uno remoto, al igual que con el comando <b>git push</b>.</li>
+                <li><b>git clone</b>, en el caso de necesitar "bajar" un repoisotio remoto de algún proyecto ya existente se puede ejecutar este comando. Genera un directorio (con el nombre del repositorio o uno especificado explícitamente) que contiene todo lo propio al proyecto, además del subdirectorio <b>.git</b> necesario para poder gestionar los cambgios y todo lo pertinente al repositorio Git.</li>
+            </ul>
+            <h3>Github</h3>
+            <p>Github es una plataforma de colaboración formal e informal de desarrollo de software  (conocida también como plataforma de social coding), en esta se pueden publicar repositorios remotos que funcionan bajo el sistema de control de versiones Git. La plataforma configura los proyectos nuevos como de código abierto, por lo que cualquier persona puede verlos, pero esto es configurable.</p>
+        </section>
+    </body>
+</html>

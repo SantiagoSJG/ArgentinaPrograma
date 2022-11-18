@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100vw;
+    max-width: 100vw;
+    background: #009DE0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    top: 20;
+}
+
+header {
+    background: #21212c;
+    width: 100%;
+}
+
+h1 {
+    color: #009DE0;
+    font-size: 6rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+}
+
+section {
+    background: #21212c;
+    margin: 20px 60px;
+    border-radius: 50px 50px 10px 10px;
+    padding: 15px 50px;
+}
+
+h2 {
+    /* background: #21212c; */
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 15px 0;
+    text-transform: uppercase;
+    /* text-decoration: underline; */
+    border-bottom: 2px solid #009DE0;
+}
+
+table th, table td {
+    border-bottom: 2px solid #21212c;
+}
+
+table {
+    font-size: 1.3rem;
+}
+
+table th {
+    background: #009DE0;
+    color: #21212c;
+    padding: 15px 10px;
+}
+
+table tr {
+    text-align: center;
+    background: #009DE0cc;
+    border-radius: 20px;
+}
+
+table tr td {
+    padding: 15px;
+}
+
+lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+lista div {
+    margin: 20px;
+    max-width: 50%;
+}
+
+lista div h5 {
+    text-align: center;
+    color: #009DE0;
+}
+
+lista div p {
+    text-align: center;
+    padding: 2px;
+}
+
+h3 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 20px 0;
+}
+
+ul, ol {
+    padding-left: 35px;
+}
+
+h4 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 10px 0;
+}
+
+h5 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 10px 0;
+}
+
+h6 {
+    font-size: 1.4rem;
+    margin: 10px 0;
+    color: #009DE0;
+}
+
+li, p {
+    font-size: 1.4rem;
+    padding: 5px;
+}
+
+li {
+    overflow-x: visible;
+}
+
+li::marker, b {
+    color: #009DE0;
+}
+
+ul {
+    list-style-type: square;
+}
+
+img {
+    max-width: 100%;
+}
+
+u {
+    text-decoration: none;
+    border-bottom: #009DE0 1px solid;
+}
+
+/* section > p {
+    text-indent: 20px;
+} */
