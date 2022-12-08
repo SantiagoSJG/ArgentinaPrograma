@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <h2>HTML</h2>
+        <h6>¿Qué es HTML?</h6>
+        <p><b>HTML</b> significa <b>Hyper Text Markup Language</b>, es el lenguaje más utilizado en la web para desarrollar páginas web. HTML fue creado por Berners-Lee a finales de 1991, pero "HTML 2.0" fue la primera especificación HTML estándar que se publicó en 1995.</p>
+        <p>HTML 4.01 era una versión principal de HTML y se publicó a finales de 1999. Aunque la versión HTML 4.01 se usa ampliamente, actualmente tenemos la versión <b>HTML -5</b>, que es una extensión de HTML 4.01 y esta versión se publicó en 2012.</p>
+        <h6>¿Por qué aprender HTML?</h6>
+        <p>Originalmente, HTML se desarrolló con la intención de definir la estructura de documentos como encabezados, párrafos, listas, etc., para facilitar el intercambio de información científica entre investigadores. Ahora, HTML se está utilizando ampliamente para formatear páginas web con la ayuda de diferentes etiquetas disponibles en lenguajes HTML.</p>
+        <p>HTML es una <b>OBLIGACIÓN</b> para que los estudiantes y los profesionales se conviertan en grandes ingenieros de software, especialmente cuando están trabajando en el dominio de desarrollo web.</p>
+        <p>Enumeramos algunas de las ventajas claves de aprender HTML</p>
+        <ol>
+            <li><b>Crear un sitio web:</b> podemos crear un sitio web o personalizar una plantilla web existente si conocemos bien HTML.</li>
+            <li><b>Convertirnos en diseñadores web:</b> si deseamos comenzar una carrera como diseñador web profesional, el diseño de HTML y CSS es una habilidad imprescindible.</li>
+            <li><b>Comprender la web:</b> si deseamos optimizar nuestro sitio web para aumentar su velocidad y rendimiento, es bueno conocer HTML para obtener los mejores resultados.</li>
+            <li><b>Aprender otros lenguajes:</b> una vez que comprendamos los conceptos básicos de HTML, otras tecnologías relacionadas como JavaScript, PHP o Angular se volverán más fáciles de entender.</li>
+        </ol>
+        <h6>Aplicaciones de HTML</h6>
+        <p>Como se mencionó anteriormente, HTML es uno de los lenguajes más utilizados en la web:</p>
+        <ul>
+            <li><b>Desarrollo de páginas web:</b> HTML se utiliza para crear páginas que se representan en la web. Casi todas las páginas de la web tienen etiqeutas HTML para mostrar detalles en el navegador.</li>
+            <li><b>Navegación por Internet:</b>HTML proporciona etiquetas que se utilizan para navegar de una página a otra y se utiliza mucho en la navegación por internet.</li>
+            <li><b>Interfaz de usuario responsiva:</b> las páginas HTML hoy en día funcionan bien en todas las plataformas, dispositivos móviles, pestañas, computadoras de escritorio o portátiles debido a la estrategia de diseño responsivo.</li>
+            <li><b>Las páginas HTML de soporte sin conexión</b>, una vez cargadas, pueden estar disponibles sin conexión en la máquina sin necesidad de Internet.</li>
+            <li><b>Desarrollo de videojuegos:</b> HTML5 tiene soporte nativo para una experiencia rica y ahora también es útil en el campo del desarrollo de videojuegos.</li>
+        </ul>
+        <h3>Introducción a HTML</h3>
+        <p>El HTML describe la ESTRUCTURA y el CONTENIDO de una página web y es un lenguaje que consiste en etiquetas agrupadas o estructuradas de una manera lógica en función de lo que necesitamos como vista. Estas etiquetas le dicen al "navegador web" cómo debe mostrar el contenido.</p>
+        <p>HTML es un lenguaje y como tal tiene su propio vocabulario (palabras) y su propia gramática (reglas).</p>
+        <p>En la actualidad y desde hace varios años, el HTML está definido por el W3C. "El Consorcio World Wide Web es una comunidad internacional que desarrolla estándares abiertos para asegurar el crecimiento a largo plazo de la Web".</p>
+        <h6>¿Qué NO es HTML?</h6>
+        <p>HTML se diferencia de un lenguaje de programación, porque no define el COMPORTAMIENTO (lógica) de las páginas web.</p>
+        <p>HTML utiliza "marcas" para etiquetar texto, imágenes y otro contenido para mostrarlo en un navegador Web.</p>
+        <p>Es decir, con el lenguaje HTML en sí mismo, sólo podremos presentar texto e imágenes básicas en el navegador web. Para la lógica y la presentación estética de una página web, utilizaremos otros lenguajes complementarios al HTML, tales como JavaScript y CSS.</p>
+        <p>Un elemento HTML se distingue de otro texto en un documento mediante "etiquetas", que consiste en el nombre del elemento rodeado por "&lt;" y "&gt;". El nombre de un elemento dentro de una etiqueta no distingue entre mayúsculas y minúsculas. Es decir, se puede escribir en mayúsculas, minúsculas, o una mezcla. Por ejemplo, la etiqueta &lt;title&gt; se puede escribir como &lt;Title&gt;, &lt;TITLE&gt;, o de cualquier otra forma.</p>
+        <p>Las etiquetas vienen de a pares, la primera etiqeuta del par se llama etiqueta o tag de apertura y se ve como esta: &lt;p&gt;. El tag o etiqueta de cierre se escribe igual que el de apertura pero con una barra y se ve como esto: &lt;/p&gt;.</p>
+        <p>Si quieres especificar que  se trata de un párrafo, podrías encerrar el texto con la etiqueta de párrafo (&lt;p&gt;).</p>
+        <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232259/mod_page/content/14/html.png" alt="">
+        <p>Las partes principales del emento son:</p>
+        <ol>
+            <li><b>La etiqueta de apertura</b>: consiste en el nombre del elemento (en este caso p), encerrado por paréntesis angulares (&lt;&gt;) de apertura y cierre. Establece dónde comienza o comienza dónde a tener efecto el elemento -en este caso, dónde es el comienzo del párrafo.-</li>
+            <li><b>La etiqeuta de cierre</b>: es igual que la etiqueta de apertura, excepto que incluye una barra de cierre (/) antes del nombre de la etiqueta. Establece dónde termina el elemento -en este caso dónde termina el párrafo-.</li>
+            <li><b>El contenido:</b> este es el contenido del elemento, que en este caso es sólo texto.</li>
+            <li><b>El elemento:</b> la etiqueta de apertura, mas el contenido, más la etiqueta de cierre equivalen al elemento.</li>
+        </ol>
+        <p>Los elementos y las etiquetas no son las mismas cosas. Las etiquetas comienzan o terminan un elemento en el código fuente, mientras que los elementos son parte del DOM (Document Object Model) tema que abordaremos más adelante en detalle.</p>
+        <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232259/mod_page/content/14/html2.jpg" alt="">
+        <p>Las <b>etiquetas de apertura</b> contienen información adicional acerca del elemento, el cual no desea que aparezca en el contenido real del elemento. Aquí <b>clase</b> es el nombre del <i>atributo</i> e <b>"importante"</b> es el <i>valor</i> del atributo. En este caso, el atributo class permite darle al elemento un nombre identificativo, que se puede utilizar luego para encontrarlo dentro de toda la página y poder aplicarle estilos entre otras cosas.</p>
+        <p>Un atributo debe tener siempre:</p>
+        <ol>
+            <li>Un espacio entre este y el nombre del elemento (o del atributo previo, si el elemento ya posee uno o más atributos).</li>
+            <li>El nombre del atributo, seguido por un signo de igual (=).</li>
+            <li>Comillas de apertura y cierre, encerrando el valor del atributo.</li>
+        </ol>
+        <p>Los atributos siempre se incluyen en la etiqueta de apertura de un elemento, nunca en la de cierre.</p>
+        <h6>Elementos anidar</h6>
+        <p>Puedes también colocar elementos dentro de otros elementos -esto se llama anidamiento-. Si, por ejemplo, quieres resaltar una palabra del texto (en el ejemplo la palabra "muy"), podemos encerrarla en un elemento &lt;strong&gt;, que significa que dicha palabra se debe enfatizar.</p>
+        <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232259/mod_page/content/14/m2_5.png" alt="">
+        <p>Los elementos deben abrirse y cerrarse ordenadamente, de forma tal que se encuentren claramente.</p>
+        <h6>Comentarios HTML</h6>
+        <p>Las etiquetas de comentario son usadas para insertar comentarios en el código HTML.</p>
+        <p>Ejemplo:</p>
+        <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232259/mod_page/content/14/m2_7.png?time=1630656638374" alt="">
+        <p>Observamos que el signo de exclamación de la etiqueta de apertura no está presente en el de cierre. Los comentarios no son mostrados en el navegador web, sirven de ayuda para documentar el código fuente dentro del mismo documento HTML.</p>
+        <h6>Atributos</h6>
+        <p>Hemos visto algunas etiquetas HTML y su uso, como por ejemplo las etiquetas de encabezado &lt;h1&gt; y &lt;h2&gt;, etiqueta de párrafo &lt;p&gt; y otras etiqeutas. Las etiquetas HTML también pueden tener atributos, que son bits adicionales de información.</p>
+        <p>Un atributo se utiliza para definir las características de un elemento HTML y se coloca dentro de la etiqueta de apertura del elemento. Todos los atributos se componen de dos partes: un nombre y un valor.</p>
+        <ul>
+            <li>El <b>nombre</b> es la propiedad que desea establecer. Por ejemplo, el elemento de párrafo &lt;p&gt; en el ejemplo lleva un atributo cuyo nombre es align, que puede usar para indicar la alineación del párrafo en la página.</li>
+            <li>El <b>valor</b> es lo que desea que se establezca como valor de la propiedad y siempre entre comillas. El siguiente ejemplo muestra tres valores posibles del atributo de alineación: <b>left</b>, <b>center</b> y <b>right</b>.</li>
+        </ul>
+        <p>Los nombres y valores de los atributos no se distinguen entre mayúsculas y minúsculas. Sin embargo el W3C recomienda atributos y valores en minúsculas en su recomendación HTML 4.</p>
+        <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232259/mod_page/content/14/Captura%20de%20pantalla%202021-09-03%20a%20las%2010.26.31.png" alt="">
+        <h3>Estructura documento HTML</h3>
+        <h6>Estructura básica de una página HTML</h6>
+        <p>La siguiente figura es una visualización abstracta de la estructura de una página HTML. En ella podemos observar lo que representa cada etiqueta y el contenido de texto que mostraría cada elemento. También podemos visualizar mejor la analogía con la estructura de cajas de cartón. Podríamos decir con exactitud que la caja &lt;html&gt; contiene en su totalidad al resto de las cajas.</p>
+        <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232261/mod_page/content/5/m2_8EstructuraHTML.png" alt="">
+        <p>Ahora veamos una estructura escrita en el código:</p>
+        <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232261/mod_page/content/5/m2_9EstructuraHTML.png?time=1630659097957" alt="">
+        <p>Observamos:</p>
+        <ul>
+            <li><b>&lt;! DOCTYPE html&gt;</b> - el tipo de documento. Es un preámbulo requerido. Anteriormente, cuando HTML era joven (cerca de 1991/2), los tipos de documentos actuaban como vínculos a un conjunto de reglas que el código HTML de la página debía seguir para ser considerado bueno, lo que podía significar la verificación automática de errores y algunas otras cosas de utilidad. Sin embargo, hoy día es simplemente un artefacto antiguo que a nadie le importa, pero que debe ser incluido para que todo funcione correctamente.</li>
+            <li>&lt;html&gt; &lt;/html&gt; - este elemento encierra todo el contenido de la página entera y, a veces, se lo conoce como el elemento raíz.</li>
+            <li>&lt;head&gt; &lt;/head&gt; - este elemento actúa como un contenedor de todo aquello que desea incluir en la página HTML que no es contenido visible por los visitantes de la página. Incluye cosas como palabras claves (keywords), una descripción de la página que quieres que aparezca en resultados de búsquedas, códigos CSS para dar estilo al contenido, declaraciones del juego de caracteres, etc.</li>
+            <li>&lt;meta charset="UTF-8"&gt; - este elemento establece el juego de caracteres que tu documento usará. Incluye casi todos los caracteres de todos los idiomas humanos. Básicamente, puede manejar cualquier contenido de texto que pueda incluir. No hay razón para no establecerlo, y puede evitar problemas en el futuro.</li>
+            <li>&lt;title&gt; &lt;/title&gt; - el elemento establece el título de tu página, que es el título que aparece en la pestaña o en la barra de título del navegador cuando la página es cargada, y se usa para escribir la página cuando es añadida a los marcadores o como favorita.</li>
+            <li>&lt;body&gt; &lt;/body&gt; - encierra todo el contenido que deseas mostrar a los usuarios web que visitan tu página, ya sea texto, imágenes, videos, juegos, pistas de audio reproducibles, y demás.</li>
+            <li>&lt;h1&gt; &lt;/h1&gt; ,..., &lt;h6&gt; &lt;/h6&gt; - los elementos de encabezado implementan seis niveles de encabezado del documento, h1 es el más importante, y h6 el menos importante. Un elemento de encabezado describe brevemente el tema de la sección que presenta. La información de encabezado puede ser usada por los agentes usuarios, por ejemplo para construir una tabla de contenidos para un documento automáticamente.</li>
+            <li>&lt;br&gt; - produce un salto de línea en el texto. Es útil para escribir un poema o una dirección, donde la división de las líneas es significante. No lo utilices para incrementar el espacio entre líneas de texto.</li>
+            <li>&lt;div&gt; &lt;/div&gt; - es exclusivamente usado como contenedor para otros elementos HTML. En conjunto con CSS, el elemento &lt;div&gt; puede ser usado para agregar formato a un bloque de contenido.</li>
+            <li>&lt;img&gt; - este elemento posee los atributos src y alt pero no tiene etiqueta de cierre. Se puede representar &lt;img src="imagen.png" alt="Descripción de la imagen"&gt;, ya que este elemento no encierra contenido. También a este tipo de elemento se lo conoce como elemento vació. El proposito del elemento es desplegar una imagen en la página web, en el lugar que corresponde según la estructura del documento. El nombre de archivo de la imagen de origen está especificado por el atributo src. Los navegadores web no siempre muestran la imagen a la que el elemento hace referencia. En el caso de los navegadores no gráficos (incluidos aquellos usados por personas con problemas de visión), si el usuario elige no mostrar la imagen, o si el navegador es incapaz de mostrarla porque no es válida o soportada. En ese caso, el navegador la reemplazará con el texto definido en el atributo alt.</li>
+            <li><b>&lt;a&gt;</b> - el elemento HTML Anchor, crea un enlace a otras páginas de Internet, archivos o ubicaciones dentro de la misma página, direcciones de correo, o cualquier otra URL que especifiquemos en sus atributos. Se puede representar así &lt;a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/a"&gt; &lt;/a&gt; donde la dirección del enlace está especificada por el atributo href. Dentro del atributo href la URL puede escribirse de forma absoluta (incluyendo el dominio) o relativa (sin incluir el dominio) solo para enlaces dentro del mismo dominio. Tanto de una forma u otra, la ruta de carpetas debe especificarse.</li>
+        </ul>
+        <p>Siguiente con la descripción del atributo href del elemento &lt;a&gt;, podemos dividir los enlaces en 3 tipos:</p>
+        <ol>
+            <li>Enlaces internos: son los que se dan entre páginas web del mismo dominio.</li>
+            <li>Enlaces externos: son lso que se dan entre páginas web de distinto dominio.</li>
+            <li>Enlaces de posición (o marcadores):</li>
+            <ol>
+                <li>De un lugar a otro dentro de la misma página.</li>
+                <li>De un lugar a otro concreto de otra página del mismo dominio.</li>
+                <li>De un lugar a otro lugar concreto de una página de otro dominio.</li>
+            </ol>
+        </ol>
+        <h5>Etiquetas de encabezado</h5>
+        <p>Cualquier documenta comienza con un encabezado. Puede utilizar diferentes tamaños para sus títulos. HTML también tiene seis niveles de encabezados, que utilizan los elementos &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, &lt;h6&gt;. Mientras muestra cualquier encabezado, el navegador agrega una línea antes y una línea después de ese encabezado.</p>
+        <h5>Formato</h5>
+        <h6><b>Texto en negrita</b></h6>
+        <p>Todo lo que aparece dentro del elemeto &lt;b&gt; ... &lt;/b&gt; se muestra en negrita.</p>
+        <h6><i>Texto en cursiva</i></h6>
+        <p>Todo lo que aparece dentro del elemeto &lt;i&gt; ... &lt;/i&gt; se muestra en cursiva.</p>
+        <h6><u>Texto subrayado</u></h6>
+        <p>Todo lo que aparece dentro del elemeto &lt;u&gt; ... &lt;/u&gt; se muestra subrayado.</p>
+        <h3>Meta Tags</h3>
+        <p>HTML te permite especificar metadatos: información adicional importante sobre un documento de diversas formas. Los elementos Meta se pueden utilizar para incluir pares de nombre - valor que escriben propiedades del documento HTML, como el autor, fecha de vencimiento, una lista de palabras clave, el autor del documento, etc.</p>
+        <p>La etiqueta &lt;meta&gt; se utiliza para proporcionar dicha información adicional. Esta etiqueta es un elemento vació y, por lo tanto, no tiene una etiqueta de cierre, pero lleva información dentro de sus atributos.</p>
+        <p>Pueden incluir una o más meta etiquetas en su documento en función de la información que desee mantener, pero en general, las metas etiquetas no indican la apariencia física del documento, por lo que desde el punto de vista de la apariencia, no importa si se incluye o no.</p>
+        <h6>Agregar meta etiquetas a sus documentos</h6>
+        <p>Puedes agregar metadatos a sus páginas web colocando etiquetas &lt;meta&gt; dentro del encabezado del documento que está representado por las etiquetas &lt;head&gt; y &lt;/head&gt;. Una meta etiqueta puede tener los siguientes atributos además de los atributos principales.</p>
+        <h3>Listas, imágenes y enlaces</h3>
+        <p>La listas en HTML son muy importantes, no solo se utilizan para listar, sino también se utilizan para el menú, cuando ingresas en una web y tiene un menú desplegable, seguramente usaron listas que tienen un estilo y comportamiento específico, pero en el fondo son listas.</p>
+        <p>En HTML tenemos 3 tipos de listas a utilizar para diferentes usos:</p>
+        <ol>
+            <li>Listas ordenadas</li>
+            <li>Listas desordenadas</li>
+            <li>Lista de definición</li>
+        </ol>
+        <h5>Listas ordenadas</h5>
+        <p>Las listas ordenadas son listas en las que el orden de los elementos si importa y se indicen con la etiqueta &lt;ol&gt; &lt;/ol&gt;, dentro se le anida otra etiqueta &lt;li&gt; &lt;/li&gt;.</p>
+        <h5>Listas desordenadas</h5>
+        <p>Las listas desordenadas son listas en las que el orden de los elementos no importa y se le indican con las etiquetas &lt;ul&gt; &lt;/ul&gt;, dentro, se le anida otra etiqueta &lt;li&gt; &lt;/li&gt;.</p>
+        <p>En las listas ordenadas existen varios atributos (por ejemplo: start, type, reverse, etc) que se aplican al elemento &lt;ol&gt;.</p>
+        <h5>Listas de definiciones</h5>
+        <p>Se utiliza &lt;dl&gt; &lt;/dl&gt;, dentro &lt;dt&gt; &lt;/dt&gt; que indican un titulo, y debajo &lt;dd&gt; &lt;/dd&gt;, que indican la descripción o definición.</p>
+        <h3>iFrame</h3>
+        <p>Puedes definir un marco en línea con la etiqueta HTML &lt;iframe&gt;. La etiqueta no está relacionada de alguna manera con la etiqueta &lt;frameset&gt;, si no que puede aparecer en cualquier parte de su documento. La eitqueta define una región rectangular dentro del documento en la que el navegador puede mostrar un documento separado, incluidas las barras de desplazamiento y los bordes. Un marco en línea se utiliza para incrustar otro documento dentro del documento HTML actual.</p>
+        <p>El atributo src se utiliza para especificar la URL del documento que ocupa el marco en línea.</p>
+        <h3>HTML5 lo nuevo</h3>
+        <p>Una de las principales ventajas de HTML5 es la inclusión de elementos semánticos, o marcadores semánticos, que nos ayudan a definir las distintas divisiones de una página web. Es decir, los elementos semánticos de HTML5, nos ayudan a identificar cada sección del documento y organizar el cuerpo de una página web de una manera eficiente y estandarizada.</p>
+        <p>En la figura siguiente, observamos el esquema básico de los elementos semánticos introducidos por la última y por la versión actual de HTML5:</p>
+        <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232268/mod_page/content/6/m2_html5.png" alt="">
+        <h6>¿Por qué utilizar elementos semánticos?</h6>
+        <p>Un elemento semántico describe claramente su significado tanto para  el navegador web como para el desarrollador.</p>
+        <p>Ejemplos de elementos no semánticos: &lt;div&gt; y &lt;span&gt; - no dicen nada sobre su contenido.</p>
+        <p>Ejemplos de elementos semánticos: &lt;form&gt;, &lt;table&gt; y &lt;article&gt; - definen claramente su contenido.</p>
+        <h4>Descripción de elementos semánticos HTML5</h4>
+        <h5>&lt;section&gt;</h5>
+        <p>Define una sección de un documento. Según la documentación del W3C: "<i>Una sección es una agrupación temática de contenido, normalmente con un encabezado</i>".</p>
+        <p>Una página web normalmente se puede dividir en secciones para la introducción, el contenido y la información de contacto.</p>
+        <h5>&lt;article&gt;</h5>
+        <p>Especifica contenido autónomo e independiente. Un artículo debe tener sentido por sí solo y debe ser posible distriubirlo independientemente del resto del sitio web.</p>
+        <p>Ejemplos: publicación en un foro, entrada en un blog, artículo periodistico.</p>
+        <h5>&lt;header&gt;</h5>
+        <p>Sirve para especificar contenido tipo introductorio o un conjunto de enlaces de navegación.</p>
+        <p>Normalmente contiene: Uno o más elementos de encabezado, logo o icono e información de autoría.</p>
+        <p><b>Nota</b>: puede tener varios elementos &lt;header&gt; en un documento. Sin embargo, el elemento no puede ser colocado dentro del elemento &lt;footer&gt;, o dentro de otro elemento &lt;header&gt;.</p>
+        <h5>&lt;footer&gt;</h5>
+        <p>Define un pie de página para un documento o sección. Normalmente contiene:</p>
+        <ol>
+            <li>Información de autoría.</li>
+            <li>Información registrada.</li>
+            <li>Información de contacto.</li>
+            <li>Mapa del sitio.</li>
+            <li>Volver a los enlaces superiores.</li>
+            <li>Documentos relacionados.</li>
+        </ol>
+        <h5>&lt;nav&gt;</h5>
+        <p>Representa una sección de página cuyo propósito es proporcionar enlaces de navegación, ya sea dentro del documento actual o en otros documentos. Ejemplos comunes de secciones de navegación son: menús, tablas de contenidos e índices.</p>
+        <p>El elemento &lt;nav&gt; esta destinado sólo para el bloque principal de enlaces de navegación.</p>
+        <p>Los navegadores, como los lectores de pantalla para usuarios con capacidades diferentes, pueden utilizar este elemento para determinar si se debe omitir la representación inicial de este contenido.</p>
+        <h5>&lt;aside&gt;</h5>
+        <p>Representa una sección que consiste en contenido que está indirectamente relacionado con el contenido principal del documento. Estas secciones son a menudo representadas como barra laterales o como inserciones y contienen una explicación al margen como una definición de glosario, elementos relacionados indirectmaente, como publicidad, la biografía del autor, o en aplicaciones web, la información de perfil o enlaces a blogs relacionados.</p>
+    </section>
+    <section>
+        <h2>CSS</h2>
+        <h3>Introducción</h3>
+        <p>El gran impulso de los lenguajes de hojas de estilo se produjo con el boom de Internet y el crecimiento exponencial del lenguaje HTML. Entre la fuerte competencia de navegadores web y la falta de un estándar para la definición de los estilos, se dificultaba la creación de documentos con la misma apariencia en diferentes navegadores.</p>
+        <p>A mediados de la década de 1990 el W3C, encargado de crear todos los estándares relacionados con la web, propuso la creación de un lenguaje de hojas de estilos específicos para el lenguaje HTML y se presentaron propuestas. Las dos propuestas que se tuvieron en cuenta fueron las CHSS (Cascading HTML Style Sheets) y la SSP (Stream-based Style Sheet Proposal). La propuesta CHSS fue realizada por Hakon Wium Lie y SSP fue propuesto por Bert Bos. Entre finales de 1994 y 1995 Lie y Bos se unieron para definir un nuevo lenguaje que tomaba lo mejor de cada propuesta y lo llamaron CSS, <i>Cascading Style Sheets</i>.</p>
+        <p>En 1995, el W3C decidió gestionar el desarrollo y estandarización de CSS y agregó el proyecto a su grupo de trabajo de HTML. A finales de 1996, el W3C publicó la primera recomendación oficial, conocida como "CSS Nivel 1"</p>
+        <h4>¿Qué es CSS?</h4>
+        <p>CSS es un lenguaje que trabaja junto con HTML para proporcionar estilos visuales a los elementos del documento web.</p>
+        <h5>Características</h5>
+        <p>Ahorra trabajo. Se puede controlar el diseño de varias páginas HTML a la vez.</p>
+        <p>Se pueden almacenar en archivos .css.</p>
+        <p>CSS3 es la última versión estándar</p>
+        <h4>¿Para qué utilizar CSS?</h4>
+        <p>Para definir estilos en los documentos web, incluyendo el diseño, la disposición de los elementos y para responder a las variaciones en la pantalla en cuanto a diferentes dispositivos y tamaños de pantalla.</p>
+        <h5>Ventajas</h5>
+        <ol>
+            <li>Control centralizado de la presentación de un sitio web completo con lo que se agiliza considerablemente la actualización y mantenimiento.</li>
+            <li>Los navegadores permiten a los usuarios especificar su propia hoja de estilo local que será aplicada a un sitio web, con lo que aumenta considerablemente la accesibilidad. Por ejemplo, las personas con deficiencias visuales pueden configurar su propia hoja de estilo para aumentar el tamaño del texto o remarcar más los enlaces.</li>
+            <li>Una página puede disponer de diferentes hojas de estilo según el dispositivo que la muestra o incluso una elección del usuario. Por ejemplo, para ser impresa, mostrada en un dispositivo móvil, o ser "leída" por un sintetizador de voz.</li>
+            <li>El documento HTML en sí mismo es más claro de entender y se consigue reducir considerablemente su tamaño (siempre y cuando no se utilice estilo en línea).</li>
+        </ol>
+        <h3>Reglas CSS</h3>
+        <p>CSS define un conjunto de reglas que permiten describir cada una de las partes que componen los estilos CSS.</p>
+        <img src="https://lh5.googleusercontent.com/ACyXP6czzrh-r1CIsomrWpug4Svd_gPfYwMLPs_huPN1Zq5vDzpLpNZTYPVqFC0rP5n6RK53Bfpq489Jto6KXG_-JzSBcTS68H_a4O7wSrtDw7_CDBLvA0B9g1yo2IZnznh8TV8=s0" alt="">
+        <p><b>Selector</b>: indica el elemento o elementos HTML a los que se aplica la regla CSS.</p>
+        <p><b>Declaración</b>: especifica los estilos que se aplican a los elementos.</p>
+        <p><b>Propiedad</b>: permite modificar el aspecto de una característica del elemento.</p>
+        <p><b>Valor</b>: indica el nuevo valor de la característica modificada en el elemento.</p>
+        <h5>Selectores</h5>
+        <p>Nos indican qué elemento HTML hay que aplicar el estilo. Una misma regla puede aplicar a varios selectores y, a un mismo selector se le pueden aplicar varias reglas.</p>
+        <h5>Selectores básicos</h5>
+        <p><b>Selector universal</b>: se utiliza para seleccionar todos los elementos de la página.</p>
+        <img src="https://lh3.googleusercontent.com/JV8NDGgecEV50w3xFXMEwLGhUbiJXfnxM8bNNjoORCCY6X2iaCVI0ANWkJldX_tqvHdpTpl3h8zInMo_KwD7VAwnrycL_5LEKwphTQ3bHpUQ45e1NtMDG2h9coeOdUYLFBpgmYs=s0" alt="">
+        <p><b>Selectores de tipo o etiqueta</b>: selecciona todos los elementos de la págiona cuya etiqueta HTML coincide con el valor del selector:</p>
+        <img src="https://lh6.googleusercontent.com/KFsGGp3h52_3j685POmIn7AVYq2h9VvmRKR0xpCO0rmV4fO2URFr7O1XOVDqdy3vJ7zS_CqYp2w1uuEVDza94LcxdtyyzVATA72ciX75GMR4aR6RRBa73sh1MokKFb54AStgbcc=s0" alt="">
+        <h5>Selector descendente</h5>
+        <p>Selecciona los elementos que se encuentran dentro de otros elementos. Un elemento es descendente de otro cuando se encuentra entre las etiquetas de apertura y de cierre de otro elemento.</p>
+        <img src="https://lh4.googleusercontent.com/GuvDewJijMRmhzzeHPb-8QWAHk-SQiCkkEkv1g8DgorwvcdJ6qiVZcXxnCujZ1Z9MbAogLoMhXlyeZN-5QFAYGAAqC5UAlCfPnJgGVYHjDH0tdXcSRZ4Lym7hUbRssVDgFUufak=s0" alt="">
+        <p>Si el código HTML de la página es el siguiente:</p>
+        <img src="https://lh3.googleusercontent.com/93goF3UhNyqSpWSJxyL89PxBLkqaoDhFGbPg0oZ98AyQOecXQS__fZIkMud9jjpftGriRyjqjnH8694Fe79D9GbC0Rm87krlFXJe93MLrx7IsQimu4QLRDrLjNUXZX2-8Zzx6gU=s0" alt="">
+        <p>El selector p span selecciona tanto texto1 como texto2. El motivo es que en el selector descendente, un elemento no tiene que ser descendiente directo del otro. La única condición es que un elemento debe estar dentro de otro elemento, sin importar el nivel de profundidad en el que se encuentre.</p>
+        <p>No se les aplica la regla CSS anterior si el resto de los elementos &lt;span&gt; de la página no están dentro de un elemento &lt;p&gt;.</p>
+        <p>Los selectores descendentes nos permiten aumentar la precisión del selector de tipo o etiqueta. Así, utilizando el selector descendente, podemos aplicar diferentes estilos a los elementos del mismo tipo.</p>
+        <h5>Selector Class</h5>
+        <p>Si consideramos el siguiente código HTML de ejemplo:</p>
+        <img src="https://lh3.googleusercontent.com/eeuI6GOaOowlH6B7QVvR2gy3TRam3hBXnb-R5Q87tc1wMAnKAsu3dTjBkkPqTfCWQ8dFuXgx0NBopyt9JzrtoUoDcc4U8fF8GAFON-68tr205sVRkUcKsdf8nIwHP79R3nwku0o=s0" alt="">
+        <p><b>¿Cómo podemos aplicar estilos CSS sólo al primer parrafo?</b></p>
+        <p>Una de las soluciones más sencillas para aplicar estilos a un solo elemento de la página consiste en utilizar el atributo class de HTML sobre ese elemento para indicar directamente la regla CSS que se le debe aplicar.</p>
+        <img src="https://lh5.googleusercontent.com/Bm8bHQJfrTRkFX1ylzS2nBCU5SiApawmuvV4REWYeKZnJe2ikaXneGt7xWu7ISPpjlseAXoN7SDjolUVFvrsI0oCQaktgkZqfYmODNodj4qqvqGHBtkFJ_cjWZ83OYS-TgYDgmA=s0" alt="">
+        <p>A continuación, creamos en el archivo CSS una nueva regla llamada destacado con todos los estilos que vamos a aplicar al elemento. Para que el navegador no confunda este selector con los otros tipos de selector, prefijamos el valor del atributo class con un punto (.).</p>
+        <img src="https://lh3.googleusercontent.com/bgi0EVUhky1R6ifd8PnSfUo6vlTwAKroa-YDEyXFUkI2G-iBzkPlhm0i_MzrKCfs-4eDJHZ9Hs7UGi0PyU7g97MTvdHeKUUgzQskYUQxzb7KU9tyL09Z3JXxM2cawMUDC_Gya5U=s0" alt="">
+        <p>El selector destacado se interpreta como "cualquier elemento de la página cuyo atributo class sea igual a destacado", por lo que solamente el primer párrafo del anterior ejemplo cumple esa condición.</p>
+        <p>Este tipo de selectores de clase son los más utilizados junto con los selectores de ID. La principal característica de este selector es que en una misma página HTML varios elementos diferentes pueden utilizar el mismo valor en el atributo class.</p>
+        <img src="https://lh4.googleusercontent.com/2KV0m1KoWJowAO9H1lqZPnFGQiYYOuszPl_eLrIvR1nOydpWEfbd8TAAvHdTI5c3iCnoYXe5IzerIkidlPt6h9PqbUzXjc12OyV7WYPm3oxH7o5knRzmUAgYX3zzLdlf0zpzyv4=s0" alt="">
+        <p>Los selectores de clases resultan imprescindibles para diseñar páginas web complejas, ya que nos permiten disponer de una precisión total al seleccionar los elementos. Además, estos selectores nos permiten reutilizar los mismos estilos para varios elementos diferentes.</p>
+        <img src="https://lh3.googleusercontent.com/Wd356zbRbw1Z-B3nAOkd1ZOGGuXTLayKqAzpgeEo7XiZ-pOPAUKZ1_Gg4fyuVTezhAosnGz7QUPD8RXS1ob0x3H1ufipjN_zVy5Z5V9KhZHlNQL7hk7gCHs3ET5hpQcOlg47Tb0=s0" alt="">
+        <img src="https://lh5.googleusercontent.com/a1UY8UbCjchFoehAksLxJZWxI8n2yaL5Ws7ZBQUxsRRIGu0l89hE4Ey9r7KnSjnJF1NIfk-glvoLv16lYEzWqaaG8FyxYQl5bDb1KOoucV2C48kjIDgqXT8Q0nT9yg9syYLBI-Y=s0" alt="">
+        <p>El elemento span tiene un atributo class="error", por lo que se le aplica las reglas CSS indicadas por selector .error. Por su parte, el elemento div tiene un atributo class="aviso", por lo que su estilo es el que define las reglas CSS del selector .aviso.</p>
+        <p>En ciertos casos, es necesario restringir el alcance del selector de clase. Si utilizamos el ejemplo anterior:</p>
+        <img src="https://lh4.googleusercontent.com/2KV0m1KoWJowAO9H1lqZPnFGQiYYOuszPl_eLrIvR1nOydpWEfbd8TAAvHdTI5c3iCnoYXe5IzerIkidlPt6h9PqbUzXjc12OyV7WYPm3oxH7o5knRzmUAgYX3zzLdlf0zpzyv4=s0" alt="">
+        <p><b>¿Cómo podemos aplicar estilos solamente al párrafo cuyo atributo de class sea igual a destacado?</b></p>
+        <p>Combinando el selector de tipo y el selector de clase, se obtiene un selector mucho más especifico.</p>
+        <img src="https://lh6.googleusercontent.com/X-RcCyLuN-sE4lzNyTi08XbfgFgAB3LD2r_-UqNY-VeqXywRoTekFyLn6nHfusKQpX17yaQ-CGLySpmNQ58mAc7yC_EUKiP5pzj8YlxJEwYWyJoHdDQ1u9BA3MSgc5O2vtO63Eo=s0" alt="">
+        <p>Interpretamos al selector p.destacado como "aquellos elementos de tipo &lt;p&gt; que dispongan de un atributo calss con el valor destacado". De la misma forma, el selector a.destacado solamente seleccionaría los enlaces cuyo atributo class sea igual a destacado.</p>
+        <p>De lo anterior deducimos que el atributo .destacado es equivalente a *.destacado, por lo que todos los diseñadores obvian el símbolo * al escribir un selector de clase normal.</p>
+        <p>No debemos confundir  el selector de clase con los selectores anteriores:</p>
+        <dl>
+            <dt>Todos los elementos de tipo "p" con atributo class="aviso"</dt>
+            <dd>p.aviso</dd>
+            <dt>Todos los elementos con atributo class="aviso" que estén dentro de cualquier elemento de tipo "p".</dt>
+            <dd>p .aviso /* notar el espacio entre p y la clase. */</dd>
+        </dl>
+        <p>Para completar, es posible aplicar los estilos de varias clases CSS sobre un mismo elemento. La sintaxis es similar, pero los diferentes valores del atributo class se separan con espacios en blancos.</p>
+        <img src="https://lh3.googleusercontent.com/TmFN9pAuG1u9k0gQFca8t97USc42bFLLefZJP-O7_yomr-YaKWdpXh09cZF4hZSdU3oR12x0deXfTeWdP8pTlNcLyM2Y8GozUNE9_oRy99k9u8pbqPiPD-qrNpAC_lXKqlwf72Q=s0" alt="">
+        <p>Al párrafo anterior le aplicamos los estilos definidos en las reglas .especial, .destacado y .error, por lo que en el siguiente ejemplo, el texto del párrafo se vería de color rojo, en negrita y con un tamaño de letra de 15 pixeles:</p>
+        <img src="https://lh3.googleusercontent.com/TmFN9pAuG1u9k0gQFca8t97USc42bFLLefZJP-O7_yomr-YaKWdpXh09cZF4hZSdU3oR12x0deXfTeWdP8pTlNcLyM2Y8GozUNE9_oRy99k9u8pbqPiPD-qrNpAC_lXKqlwf72Q=s0" alt="">
+        <img src="https://lh3.googleusercontent.com/FaM9p4RwLOuUkI1c-djB6nyEA2zcdBScQa4Y2BYGfMrMy3AaQH83J5rN_3p8nUHzhRD_5kGfO2m42dE7TOHrATo44a3MXFoYJvpuyGRalCwWHCHmNp9HDvqdPMasa4s1Q3h567A=s0" alt="">
+        <p>Si un elemento dispone de un atributo class con más de un valor, es posible utilizar un selector más avanzado.</p>
+        <img src="https://lh5.googleusercontent.com/Vh5dEZ7OLGTWIxnyPnOFverlUOlEY2KSTXLahjiEDpaKwWDoDNvxlpFxsfaYdAWWFcQNsB3lfqLaY0ieVFXn3e5GD-Zev5HckUAkUWTZLtY0ym_B53XPoYyrgpmluT71WslNQ-Y=s0" alt="">
+        <img src="https://lh3.googleusercontent.com/FaM9p4RwLOuUkI1c-djB6nyEA2zcdBScQa4Y2BYGfMrMy3AaQH83J5rN_3p8nUHzhRD_5kGfO2m42dE7TOHrATo44a3MXFoYJvpuyGRalCwWHCHmNp9HDvqdPMasa4s1Q3h567A=s0" alt="">
+        <p>En el ejemplo anterior, el color de la letra del texto es azul y no rojo. Esto se debe a que hemos utilizado un selector de clase múltiple, que se interpreta como "aquellos elementos de la página que están disponibles de un atributo class con al menos dos valores error y destacado.</p>
+        <h3>Selectores de ID</h3>
+        <p>En ocasiones, es necesario aplicar estilos CSS a un único elemento de la página. Aunque puede aplicar un selector de clase para un único elemento, existe otro selector más eficiente en este caso.</p>
+        <p>El selector de ID permite seleccionar un elemento de la página a través del valor de su atributo ID. Este tipo de selectores sólo selecciona un elemento de la página porque el valor del atributo id no se puede repetir en dos elementos diferentes de una misma página.</p>
+        <p>La sintaxis de los selectores ID es muy parecida a la de los selectores de clase, salvo que se utiliza el símbolo de la almohadilla (#) en vez del punto (.) como prefijo del nombre en la regla CSS.</p>
+        <img src="https://lh5.googleusercontent.com/16tF7ljYZZKx9_qljieEi90--o0VLYBP_ovKIFuNXDMoYpPLmwIeJ3q832W7ltmoYlBkx69F36VBovtgZ3zxwt9sWAT5vWW-tmEuU0uvFgHdGfSuiljNz2CAJZWAY_8-XeBrEj0=s0" alt="">
+        <img src="https://lh6.googleusercontent.com/r8iilrw4vXYmmz1j5cxjMfrZ6XO7ScDhDJ9jWP-feJrDKXzdHNs-NW9FOiIYGi8zwjGR67u1d3WcAFqdAfBYuYL-ngs-xgiy-hUBESYWfrOn_TB_gh4MAnXa6BogLv_-GU0bMdM=s0" alt="">
+        <p>La principal diferente entre este tipo de selector y el selector de clase tiene que ver con HTML y no con CSS. En una misma página, el valor del atributo ID debe ser úinico, de forma que dos elementos diferentes no pueden tener el mismo valor de ID. Sin embargo, el atributo class no es obligatorio que sea único, de forma que muchos elementos HTML diferentes pueden compartir el mismo valor para su atributo class.</p>
+        <p>De esta forma, la recomendación general es la de utilizar el selector de ID cuando se quiere aplicar un estilo a un solo elemento especifico de la página y utilizar el selector de clase cuando queremos aplicar un estilo determinado a varios elementos diferentes de la página HTML.</p>
+        <p>Al igual que los selectores de clase, en este caso también podemos restringir el alcance del selector mediante la combinación con otros selectores.</p>
+        <img src="https://lh5.googleusercontent.com/lRiul4YqQ04VoPqSgltZEat1gWeo8ZNUgLQnHCJMSi1iHvNDQKpd0QU_Sdi-Ta0T5GpR7EJ5PX7lQvPsTYG0QH6t0wDWuQMnX251MGCGV3G9wVMMNNOcfhQX0Gs2_ng9-NnnNN8=s0" alt="">
+        <p>A primera vista, restringir el alcance de un selector de ID puede parecer absurdo. En realidad, un selector de tipo p # aviso sólo tiene sentido cuando el archivo CSS se aplica sobre muchas páginas HTML diferentes</p>
+        <p>En este caso, algunas páginas pueden disponer de elementos con un atributo ID igual a aviso y que no sean párrafos, por lo que la regla anterior no se aplica sobre esos elementos.</p>
+        <h4>Selectores avanzados</h4>
+        Se trata de un selector similar al selector descendente, pero muy diferente en su funcionamiento. Se utiliza para seleccionar un elemento que es hijo directo de otro elemento y se indica mediante el signo "mayor que" (&gt;).
+        <img src="https://lh3.googleusercontent.com/ttr5VWGGbnC7MnqKihfwLqEbzegzS4NGAqSDCNkOmCnEOob7ZTZ9ynxm7nC0kYnHIUI4fGyOWoW3XoVWzE_XcyVzHzZ3WVO-DqrIxMv5INo5tgPWCwNzHzCVho3-fmIhNSnZVu0=s0" alt="">
+        <img src="https://lh3.googleusercontent.com/EU6K4dHO5NGSeEskB8_9EjqLuin-gXfRcC-1aKW_hMflhXb1_3Jba6lJoqkSVz8Zn-LY6_U5cRps1sxCHsIF6I-rgRSeZ3ccYMF6ZrDsVzD1EPeGkVqIKRNQYq1zcMc25EN-wxE=s0" alt="">
+        <p>En el ejemplo anterior, el selector p &gt; span se interpreta como "cualquier elemento &lt;span&gt; que sea hijo directo de un elemento &lt;p&gt;", por lo que el primer elmeento &lt;span&gt; cumple con la condición del selector. Sin embargo, el segundo elemento &lt;span&gt; no la cumple por que es descendiente, pero no hijo directo de un elemento &lt;p&gt;</p>
+        <p>El siguiente ejemplo muestra las diferencias entre el selector descendente y el selector de hijos:</p>
+        <img src="https://lh5.googleusercontent.com/M3DeY9cibRTaCX6AgTyX_TRgUUzPCxSER7kFyW00-al1mQ257tzG_MTvA3nc3l-apoHO69FmOy1ZRKpCB24wuSwUqO8Ks-pCjdmSO4AvmjGocXssxi4-0i4QY7xgLMTPiyRkHxc=s0" alt="">
+        <img src="https://lh5.googleusercontent.com/Ub4MUJkgVb3w7yRfwPW7Y2l7z3HQ7NOIYIa6oht31xEyKdjdxK-B75XFOsWvlaom1ZyQvJ_VSzaqX3NrhGtIf7Y8oHKkLhEuE4bsV7MA3zZjJGEq4-HqZ2jBt4PkxXImtGESv1s=s0" alt="">
+        <p>El primer selector es de tipo descendente y por tanto se aplica a todos los elementos &lt;a&gt; que se encuentran dentro de los elementos &lt;p&gt;. En este caso, los estilos de selector se aplican a los dos enlaces.</p>
+        <p>Por otra parte, selector de hijos obliga a que el elemento &lt;a&gt; sea hijo directo de un elemento &lt;p&gt;. Por lo tanto, los estilos del selector p &gt; a no se aplican al segundo enlace del ejemplo anterior.</p>
+        <h3>Modelo de cajas</h3>
+        <p>Tal como dijimos en la unidad de HTML, si hacemos una analogia con una estructura de cajas de cartón, podemos decir que hay ciertas cajas que van dentro de otras y ciertas cajas que van al lado de otra.</p>
+        <p>El "modelo de caja" es probablemente la característica más importante del lenguaje de hojas de estilo CSS, ya que no condiciona el diseño de todas las páginas web. El modelo de cajas es el comportamiento de CSS que hace que todos los elementos de las páginas sean representados mediantes cajas rectangulares.</p>
+        <p>Cada vez que se inserta un elemento HTML, se crea un nueva caja rectangular que encierra los contenidos de ese leementos. La siguiente imagen muestra tres cajas rectangulares que crean los tres elementos HTML de una porción de página de ejemplo.</p>
+        <img src="https://lh5.googleusercontent.com/sA7bHbisZjnZo_JSWLjmlgTk1ZYlmRJkGyNuYu31Sszbvx9DGuIbvWrONceUCo4u1bt0GxVnd93vDefFd3Ew5YAM1v9_xZlOQpgGOwY83oX-Bv1cgOUTo85l04hvlH2x-KEMm_g=s0" alt="">
+        <p>Los navegadores web crean y colocan las cajas de forma automática, pero CSS permite modificar todas sus características. Cada una de las cajas está formada por seis partes que se desiscriben a continuación:</p>
+        <ol>
+            <li><b>Content</b>: se trata del contenido HTML del elemento (las palabras del párrafo, una imagen, el texto en una lista de elementos, etc.).</li>
+            <li><b>Padding</b>: espacio libre opcional existente entre el contenido y el borde.</li>
+            <li><b>Border</b>: línea que encierra completamente el contenido y su relleno.</li>
+            <li><b>background-image</b>: imagen que se muestra por detras del contenido y espacio de relleno.</li>
+            <li><b>background-color</b>: color que se muestra por detrás del contenido y el espacio de relleno.</li>
+            <li><b>Margin</b>: separación opcional existente entre la caja y el resto de cajas adyacentes.</li>
+        </ol>
+        <h4>Dimensiones de las cajas</h4>
+        <h5>Anchura</h5>
+        <p>Para los elementos de bloque y las imágenes, la propidedad width (anchura) permite establecer la anchura directamente mediante una medida.</p>
+        <h6>En CSS:</h6>
+        <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232274/mod_page/content/9/a1.jpg" alt="">
+        <h6>En HTML:</h6>
+        <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232274/mod_page/content/9/a2.jpg" alt="">
+        <p>Si se utilizan unidades de medida, los valores indicados no pueden ser negativos. Si en vez de una unidad de medida se indica un porcentaje, la referencia de ese valor es la anchura del elemento que lo contiene. El valor heredado indica que la anchura del elemento se hereda de su elemento padre.</p>
+        <p>Si se establece la anchura de un elemento con la unidad de medida em, el valor indicado toma como referencia el tamaño de letra del propio elemento.</p>
+        <p>El valor auto es el valor por defecto del width de todos los elementos. En este caso, el navegador determina la anchura de cada elemento teniendo en cuenta, entre otros, el tipo de elemento que se trata (de bloque o de línea), el sitio disponible en la pantalla del navegador y los contenidos de los elementos.</p>
+        <h5>Altura</h5>
+        <p>Al igual que sucede con el ancho, la propiedad altura no permite valores negativos. Si se indica un porcentaje, se toma como referencia la altura del elemento padre. Si el elemento padre no tiene una altura definida explícitamente, se asigna el valor auto a la altura.</p>
+        <p>El valor hjeredado indica que la altura del elemento se hereda de su elemento padre. El valor automático, que es el que se utiliza si no se establece altura de forma explícita un valor a esta propiedad, indica que el navegador debe calcular automáticamente el elemento, teniendo en cuenta sus contenidos y el sitio disponible en la página.</p>
+        <h6>En CSS:</h6>
+        <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232274/mod_page/content/9/a3.jpg" alt="">
+        <h6>En HTML:</h6>
+        <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232274/mod_page/content/9/a4.jpg" alt="">
+        <h5>Margen</h5>
+        <p>CSS define cuatro propiedades para controlar cada uno de los márgenes horizontales y verticales de un elemento.</p>
+        <ol>
+            <li>margin-top =&gt; margen superior</li>
+            <li>margin-right =&gt; margen derecho</li>
+            <li>margin-bottom =&gt; margen inferior</li>
+            <li>margin-left =&gt; margen izquierdo</li>
+        </ol>
+        <p>Cada una de las propiedades establece la separación entre el borde lateral de la caja y el resto de cajas adyacentes:</p>
+        <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232274/mod_page/content/9/margin.png" alt="">
+        <p>Los márgenes verticales (margin-top y margin-bottom) sólo se pueden aplicar a los elementos de bloque y las imágenes, mientras que los márgenes laterales(margin-left y margin-right) se puede aplicar a cualquier elemento.</p>
+        <h6>Código CSS:</h6>
+        <img src="https://lh6.googleusercontent.com/X7pPJxAw7o6UNt9DWMgwNKsLQ0vhL_P15DuIgLRKOOlXQrsLuczUJMNYG2daSW7uYnHDFZr-6RtdDuUacKNkouYM75JrjPAb8DnJeiorG_WwMocTJmbUm89_4egT4cHU1Z66MBU=s0" alt="">
+        <h6>Alternativa</h6>
+        <img src="https://lh3.googleusercontent.com/UyKb8YYlg_n5W9MFNU-oeLd-q-lctRC8EjGm-Ljy4jHNDe0bLnfpcYYUOxTTXrFG-nkzqA3SRRa0L4t8BZLkFU0S2wJQ3CIYcqTIGJ77drntOrVK-nG3mhZkdoqH2cJP-VQuc38=s0" alt="">
+        <h5>Padding o relleno</h5>
+        <p>CSS define cuatro propiedades para controlar cada uno de los espacios que relleno horizontales y verticales de un elemento.</p>
+        <ol>
+            <li>padding-top =&gt; padding superior</li>
+            <li>padding-right =&gt; padding derecho</li>
+            <li>padding-bottom =&gt; padding inferior</li>
+            <li>padding-left =&gt; padding izquierdo</li>
+        </ol>
+        <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232274/mod_page/content/9/caja.jpg" alt="">
+        <img src="https://lh3.googleusercontent.com/PiwFnvD5OSDurRgwSgd1nihMTgVub61VGd7I3nU1S821PVo9hcNcMxyGpYDwpwsI2XeocKcGUSNugKtaiMFF1Lv0Jn8tIzGApY0ghWq4NX9LfyIQ-CkTYxWxJ_zVe7gMNVGXih8=s0" alt="">
+        <h3>Unidades de medida</h3>
+        <p>CSS admite una serie de medidas que incluyen unidades absolutas como pulgadas, centimetros, puntos, etc., así como medidas relativas como porcentajes y unidades em. Necesita estos valores al especificar varias medidas en sus reglas de estilo, por ejemplo, <b>border="1px solid red"</b></p>
+        <table>
+            <tr>
+                <th>Unidad</th>
+                <th>Descripción</th>
+                <th>Ejemplo</th>
+            </tr>
+            <tr>
+                <td>%</td>
+                <td>Define una emdida como un porcentaje relativo a otro valor, normalmente un elemento volvente</td>
+                <td>p {font-size: 16pt; line-height: 125%;}</td>
+            </tr>
+            <tr>
+                <td>cm</td>
+                <td>Define una medida en centímetros.</td>
+                <td>div {margin-bottom: 2cm;</td>
+            </tr>
+            <tr>
+                <td>em</td>
+                <td>Una medida relativa para la altura de una fuente en espacios em. Debido a que una unidad em equivalente al tamaño de una fuente determinada, si asigna una fuente a 12 puntos cada unidad "em" sería 12 puntos, por lo tanto  2em serían 24 puntos.</td>
+                <td>p {letter-spacing: 7em;}</td>
+            </tr>
+            <tr>
+                <td>ex</td>
+                <td>Este valor define una medida relativa a la altura x de una fuente. La altura de x está determinada por la altura de la letra minúscula x de la fuente.</td>
+                <td>p {font-size:24pt; line-height: 3x;}</td>
+            </tr>
+            <tr>
+                <td>in</td>
+                <td>Define una medida en pulgadas.</td>
+                <td>p {word-spacing: .15in;}</td>
+            </tr>
+            <tr>
+                <td>mm</td>
+                <td>Define una medida en milimetros.</td>
+                <td>p {word-spacing: 15mm;}</td>
+            </tr>
+            <tr>
+                <td>pc</td>
+                <td>Define una medida en picas. Una pica equivale a 12 puntos, por lo tanto hay 6 picas por pulgada.</td>
+                <td>p {font-size: 20pc;}</td>
+            </tr>
+            <tr>
+                <td>pt</td>
+                <td>Define una medida en puntos. Un punto se define como 1/72 de pulgada.</td>
+                <td>body {font-size: 18pt;}</td>
+            </tr>
+            <tr>
+                <td>px</td>
+                <td>Define una medida en pixeles de la pantalla</td>
+                <td>p {padding: 25px;}</td>
+            </tr>
+        </table>
+        <h4>Colores</h4>
+        <p>CSS usa valores de color para especificar un color. Por lo general, se utilizan para establecer un color para el primer plano de un elmeento (es decir, su texto) o para el fondo del elemento. También se puede usar para afectar el color de los bordes y otros efectos decorativos.</p>
+        <p>Puede especificar sus valores de color en varios formatos.</p>
+        <table>
+            <tr>
+                <th>Formato</th>
+                <th>Sintaxis</th>
+                <th>Ejemplo</th>
+            </tr>
+            <tr>
+                <td>Código hexadecimal</td>
+                <td>#RRGGBB</td>
+                <td>p {color: #FF0000;}</td>
+            </tr>
+            <tr>
+                <td>Código hexadecimal corto</td>
+                <td>#RGB</td>
+                <td>p {color: #6A7;}</td>
+            </tr>
+            <tr>
+                <td>RGB %</td>
+                <td>rgb (rrr%, ggg%, bbb%)</td>
+                <td>p {color: rgb(50%, 50%, 50%);}</td>
+            </tr>
+            <tr>
+                <td>Absoluto RGB</td>
+                <td>rgb (rrr, ggg, bbb)</td>
+                <td>p {color: rgb(0,0,255);}</td>
+            </tr>
+            <tr>
+                <td>Palabra clave</td>
+                <td>acquamarine, black</td>
+                <td>p {color: teal;}</td>
+            </tr>
+        </table>
+        <h4>Fuentes</h4>
+        <p>Veamos cómo configurar las fuentes de un contenido, disponible en un elemento HTML. Puedes establecer las siguientes propiedades de fuente de un elemento:</p>
+        <ul>
+            <li>La propiedad <b>font-family</b> se utiliza para cambiar la cara de una fuente.</li>
+            <li><b>font-style</b> se usa para hacer una fuente en cursiva u oblicua</li>
+            <li><b>font-variant</b> se utiliza para crear un efecto de versalitas.</li>
+            <li><b>font-weight</b> se utiliza para aumentar o disminuir la negrita.</li>
+            <li><b>font-size</b> se utiliza para aumentar o diminuir el tamaño de una fuente.</li>
+            <li><b>font</b> se utiliza de forma abreviada para especificar otras propiedades de fuente.</li>
+        </ul>
+        <h3>Bootstrap</h3>
+        <p>Se trata de un framework de interfaz de usuario o UI según sus siglas en inglés. Bootsrap se ha convertido en unos de los frameworks que utilizan HTML, CSS y JS más popular y a su vez más utilizado por los desarrolladores. Su potente sistema de grilla, su extensa y clara documentación, su gran capacidad de adaptación a los distintos tamaños de dispositivos, su variada colección de componentes y la extensa cantidad de templates desarrollados con bootstrap son algunas de las razones, por lo cual hoy, es tan elegido.</p>
+        <h4>Sistema de grillas</h4>
+        <p>El sistema Grid permite dividir la página web en 12 columnas permitiendo adaptar la disposición de los elementos.</p>
+        <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232282/mod_page/content/2/image.png" alt="">
+        <p>Antes de continuar, es importante mencionar algunas reglas a la hora de trabajar con el sistema de grillas de Bootstrap</p>
+        <ul>
+            <li>Las filas deben estar dentro de un contenedor (.container o .container-fluid).</li>
+            <li>Usar filas para crear grupos de columnas. No a la inversa. Esto es posible agregando la clase .row al contenedor horizontal y la clase .col al contenedor columna.</li>
+            <ul>
+                <li>&lt;div class=”row”&gt;&lt;div class =”col”&gt;Contenido&lt;/div&gt;&lt;/div&gt;</li>
+            </ul>
+            <li>El contenido debe estar dentro de las columnas.</li>
+            <li>Los únicos elementos anidados dentro de una fila (row) deben ser columnas (col).</li>
+            <li>Las columnas se deben crear especificando el número de columnas disponibles (12).</li>
+        </ul>
+        <p>A continuación se muestra la estructura básica del sistema de grillas que propone Bootstrap:</p>
+        <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232282/mod_page/content/2/image%20%281%29.png" alt="">
+        <h5>Columnas de ancho automatico</h5>
+        <p>Para definir columnas de ancho automático simplemente debemos utilizar la clase col.</p>
+        <p>&lt;div class="container"&gt;</p>
+        <p>&lt;div class="row"&gt;</p>
+        <p>&lt;div class="col"&gt; Columna &lt;/div&gt;</p>
+        <p>&lt;div class="col"&gt; Columna &lt;/div&gt;</p>
+        <p>&lt;div class="col"&gt; Columna &lt;/div&gt;</p>
+        <p>&lt;/div&gt;</p>
+        <p>&lt;/div&gt;</p>
+        <h5>Columnas de ancho fijo</h5>
+        <p>Las columnas de ancho automático distribuyen el ancho de la pantalla equitativamente para cada columna pero ¿y si deseamos establecer un ancho fijo? En este caso, simplemente debemos especificar el número de columnas:</p>
+        <p>&lt;div class="container"&gt;</p>
+        <p>&lt;div class="row"&gt;</p>
+        <p>&lt;div class="col-4"&gt; Columna &lt;/div&gt;</p>
+        <p>&lt;div class="col-8"&gt; Columna &lt;/div&gt;</p>
+        <p>&lt;/div&gt;</p>
+        <p>&lt;/div&gt;</p>
+        <p>Las columnas se deben crear especificando de manera explícita teniendo en cuenta el número de columnas disponibles, cuya cantidad total es 12.</p>
+        <p>La combinación del sistema de grillas con los puntos de interrupción, es la unión perfecta para colocar nuestro contenido en la web según cada criterio de diseño y con la posibilidad de adaptarlo y ordenarlo al tamaño de pantalla donde se esté mostrando.</p>
+        <table>
+            <tr>
+                <td></td>
+                <th>xs <br> &lt;576px</th>
+                <th>sm <br> ≥576px</th>
+                <th>md <br> ≥768px</th>
+                <th>lg <br> ≥992px</th>
+                <th>xl <br> ≥1200px</th>
+                <th>xxl <br> ≥1400px</th>
+            </tr>
+            <tr>
+                <th>max-width</th>
+                <td>Ninguno (auto)</td>
+                <td>540px</td>
+                <td>720px</td>
+                <td>960px</td>
+                <td>1140px</td>
+                <td>1320px</td>
+            </tr>
+            <tr>
+                <th>Prefijo de clase</th>
+                <td>.col-</td>
+                <td>.col-sm-</td>
+                <td>.col-md-</td>
+                <td>.col-lg-</td>
+                <td>.col-xl-</td>
+                <td>.col-xxl-</td>
+            </tr>
+            <tr>
+                <th># de columnas</th>
+                <td colspan="6">12</td>
+            </tr>
+        </table>
+        <h4>Diseño</h4>
+        <p>El uso correcto del framework hace que los desarrolladores tengan que obedecer cierto estándar en el cumplimiento de algunas reglas, maquetando las páginas web de una forma muy rápida, permitiendo abstraerse de las configuraciones propias de css.</p>
+        <p>Todos los elementos deben estar contenidos dentro de un contenedor con la clase .container o .container-fluid.</p>
+        <h5>Contenedores</h5>
+        <table>
+            <tr>
+                <td></td>
+                <th>xs <br> &lt;576px</th>
+                <th>sm <br> ≥576px</th>
+                <th>md <br> ≥768px</th>
+                <th>lg <br> ≥992px</th>
+                <th>xl <br> ≥1200px</th>
+                <th>xxl <br> ≥1400px</th>
+            </tr>
+            <tr>
+                <th>.container</th>
+                <td>100%</td>
+                <td>540px</td>
+                <td>720px</td>
+                <td>960px</td>
+                <td>1140px</td>
+                <td>1320px</td>
+            </tr>
+            <tr>
+                <th>.container-sm</th>
+                <td>100%</td>
+                <td>540px</td>
+                <td>720px</td>
+                <td>960px</td>
+                <td>1140px</td>
+                <td>1320px</td>
+            </tr>
+            <tr>
+                <th>.container-md</th>
+                <td>100%</td>
+                <td>100%</td>
+                <td>720px</td>
+                <td>960px</td>
+                <td>1140px</td>
+                <td>1320px</td>
+            </tr>
+            <tr>
+                <th>.container-lg</th>
+                <td>100%</td>
+                <td>100%</td>
+                <td>100%</td>
+                <td>960px</td>
+                <td>1140px</td>
+                <td>1320px</td>
+            </tr>
+            <tr>
+                <th>.container-xl</th>
+                <td>100%</td>
+                <td>100%</td>
+                <td>100%</td>
+                <td>100%</td>
+                <td>1140px</td>
+                <td>1320px</td>
+            </tr>
+            <tr>
+                <th>.container-xxl</th>
+                <td>100%</td>
+                <td>100%</td>
+                <td>100%</td>
+                <td>100%</td>
+                <td>100%</td>
+                <td>1320px</td>
+            </tr>
+            <tr>
+                <th>.container-fluid</th>
+                <td>100%</td>
+                <td>100%</td>
+                <td>100%</td>
+                <td>100%</td>
+                <td>100%</td>
+                <td>100%</td>
+            </tr>
+        </table>
+        <h4>Putnso de interrupción</h4>
+        <p>Para lograr un diseño ajustable o responsive incluye seis puntos de interrupción o de ruptura predeterminados. El uso eficiente de estos puntos, como diseñadores o maquetadores web, nos habilita una herramienta para combinar en conjunto al sistema de grillas que propone bootstrap para generar contenidos que se ajusten correctamente a la pantalla del dispositivo donde se esté mostrando. Por esta razón debemos conocer en detalle cuáles son los infijos de clases y el rango de píxeles de pantallas en los que son identificados.</p>
+        <h5>Columnas responsive</h5>
+        <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232284/mod_page/content/2/image.png" alt="">
+        <p>&lt;div class="container"&gt;</p>
+        <p>&lt;div class="row"&gt;</p>
+        <p>&lt;div class="col"&gt; .col &lt;/div&gt;</p>
+        <p>&lt;div class="col-6"&gt; .gol-6 &lt;/div&gt;</p>
+        <p>&lt;div class="col"&gt; .col &lt;/div&gt;</p>
+        <p>&lt;/div&gt;</p>
+        <p>&lt;/div&gt;</p>
+        <h4>Imagenes</h4>
+        <p>El framework, para el caso de las imágenes, nos propone una serie de clases con el objetivo de hacerlas adaptables y/o que nunca sean más grandes que las columnas que la contienen.</p>
+        <p>Ejemplo: Imagenes en miniatura (200x200) con un borde de 1px.</p>
+        <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232285/mod_page/content/2/image%20%281%29.png" alt="">
+        <p>&lt;img src="..." class= "img-thumbnail" alt="..."&gt;</p>
+        <p>Ejemplo: Alinear imágenes (1 al inicio de la fila y 2 al final de la fila)</p>
+        <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232285/mod_page/content/2/image%20%282%29.png" alt="">
+        <p>&lt;img src="..." class= "rounded-float-start" alt="..."&gt;</p>
+        <p>&lt;img src="..." class= "rounded-float-end" alt="..."&gt;</p>
+        <h4>Tablas</h4>
+        <p>El uso de tablas en bootstrap es opcional, ya que no es un elemento que se herede del framework. Dado a su uso popular por los programadores, se propone un grupo de clases para trabajar con los estilos de una tabla.</p>
+        <p>También se puede hacer uso de las clases contextuales para dar oclor a las tablas, de la misma forma que a cualqueir otro elemento.</p>
+        <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232286/mod_page/content/2/image%20%281%29.png" alt="">
+        <ul>
+            <li>&lt;class="table-primary&gt;</li>
+            <li>&lt;class="table-secondary&gt;</li>
+            <li>&lt;class="table-success&gt;</li>
+            <li>&lt;class="table-danger&gt;</li>
+            <li>&lt;class="table-warning&gt;</li>
+            <li>&lt;class="table-info&gt;</li>
+            <li>&lt;class="table-light&gt;</li>
+            <li>&lt;class="table-dark&gt;</li>
+        </ul>
+        <h4>Controles</h4>
+        <p>Los controles dentro de un formulario pueden ser personalizados e incluso utilizados de forma adaptativa, gracias a las clases provistas de Bootstrap.</p>
+        <p>Dimensionamiento:</p>
+        <ul>
+            <li>.form-control-sm (tamaño pequeño)</li>
+            <li>.form-control (tamaño normal)</li>
+            <li>.form-control-lg (tamaño grande)</li>
+        </ul>
+        <p>Habilitado:</p>
+        <ul>
+            <li>Atributo <b>disabled</b> (control deshabilitado)</li>
+            <li>Atributo <b>readonly</b> (control solo lectura)</li>
+            <li>Atributo <b>disabled readonly</b> (control deshabilitado, solo lectura)</li>
+        </ul>
+        <h5>Layout</h5>
+        <p>Cada grupo de campos de formulario debe residir en un elemento &lt;form&gt;. Bootstrap no proporciona un estilo predeterminado para el elemento &lt;form&gt;, pero hay algunas funciones de navegador poderosas que se proporcionan de forma predeterminada.</p>
+        <ul>
+            <li>&lt;button&gt; dentro de un &lt;form&gt; valor predeterminado de type="submit", así que esfuérzate por ser específico y siempre incluye un archivo type.</li>
+            <li>Puedes deshabilitar todos los elementos del formulario dentro de un formulario con el atributo disabled en &lt;form&gt;.</li>
+        </ul>
+        <p>Ya que bootstrap se emplea display:block y width: 100% para casi todos los controles del formulario, los formularios se mostrarán por defecto de manera vertical. Se pueden usar clases adicionales para variar este diseño en función de cada formulario.</p>
+        <h4>Componentes</h4>
+        <h5>Alertas</h5>
+        <p>Este componente es muy utilizado a la hora de mostrar mensajes al usuario de forma flexible y de una manera más amigable. Las alertas son consecuentes con los estilos de colores que propone el framework.</p>
+        <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232290/mod_page/content/3/image.png" alt="">
+        <h5>Barra de navegación</h5>
+        <p>A continuación citamos las principales reglas para el uso de la barra de navegación:</p>
+        <ul>
+            <li>Las barras de navegación requieren comenzar con la clase .navbar</li>
+            <li>Las barras de navegación y su contenido son fluidos por defecto.</li>
+            <li>Las barras de navegación responden de forma predeterminada, pero se pueden modificar fácilmente para cambiar su comportamiento.</li>
+            <li>Garantice la accesibilidad mediante el uso de un elemento &lt;nav&gt; o, si usa un elemento más genérico como &lt;div&gt;, agregue a role="navigation" a cada barra de navegación.</li>
+        </ul>
+    </section>
+</body>
+</html>

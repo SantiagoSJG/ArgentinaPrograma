@@ -1298,6 +1298,189 @@
             </ul>
             <h3>Github</h3>
             <p>Github es una plataforma de colaboración formal e informal de desarrollo de software  (conocida también como plataforma de social coding), en esta se pueden publicar repositorios remotos que funcionan bajo el sistema de control de versiones Git. La plataforma configura los proyectos nuevos como de código abierto, por lo que cualquier persona puede verlos, pero esto es configurable.</p>
+            <h5>Incidencias</h5>
+            <p>Una incidencia o asunto (issue) es una unidad de trabajo designada para realizar alguna mejora en un sistema informático. Puede ser el arreglo de un fallo, una característica pedida, una tarea, una solicitud de documentación específica y todo tipo de ideas o sugerencias al equipo de desarrollo.</p>
+            <p>Obligatoriamente una incidencia debe tener un titulo y una descripción, es muy importante adjuntar toda la información que pueda ser relevante para atender o resolver esta incidencia. La información adjuntada puede ser un documento, imagen, video, audio, etc.</p>
+            <h5>Hitos</h5>
+            <p>Los hitos (milestones) son grupos de incidencias y que ayudan a seguir el progreso de estas.</p>
+            <p>Desde la página de detalle de un hito se pueden observar los siguientes datos:</p>
+            <ul>
+                <li>Una descripción del hito proporcionado por el usuario, que puede incluir información como una descripción general del proyecto, equipos relevantes y fechas de vencimiento proyectadas.</li>
+                <li>La fecha de vencimiento del hito.</li>
+                <li>El porcentaje de finalización del hito.</li>
+                <li>La cantidad de inceidencias abiertas y cerradas asociadas con el hito.</li>
+                <li>Una lista de incidencias abiertas y cerradas asociadas con el hito.</li>
+            </ul>
+            <h5>Etiquetas</h5>
+            <p>Cada incidencia puede ser etiquetada bajo categoría (error, documentación, duplicado, inválido, etc) de manera que estas etiquetas pueden identificar rápidamente a qué grupo o tipo de tarea corresponde cada incidencia. Además del conjunto por defecto de etiquetas que tiene GitHub, se pueden crear otras que sean específicas para la organización o del proyecto.
+            </p>
+            <h3>Proyectos Github</h3>
+            <p>Los proyectos en GitHub permiten organizar incidencias y notas en categorías mediante tarjetas en columnas. Estas tarjetas se pueden arrastrar entre las columnas según los estados en los que se encuentran las tareas que representan.</p>
+            <p>Los paneles de proyectos osn personalizables y por lo tanto,  adaptables a las necesidades de cada proyecto. Dentro de los paneles se pueden reordenar columnas y cartas según los criterios que mejor se adapten al proyecto o la organización. Dentro de las columnas o incluso de las tarejtas se pueden crear notas o comentarios que ayuden a entender las incidencias asociadas o que aporten información relevante al proyecto.</p>
+            <p>En GitHub existen tres tipos de tableros de proyectos:</p>
+            <ul>
+                <li><b>Pertenecientes al usuario</b>: pueden tener incidencias de cualqueir repositorio personal.</li>
+                <li><b>De proyectos a nivel de organización</b>: pueden contener incidencias de cualquier repositorio que pertenezca a una organización.</li>
+                <li><b>Tableros por repositorio</b>: están enfocados en las incidencias de un único repositorio. Pueden incluir referencias o notas a incidencias de otros repositorios.</li>
+            </ul>
+            <p>Se pueden vincular hasta 25 repositorios a cada tablero de proyecot. Vincular repositorios a proyectos facilita agregar informes de problemas al tablero a través del botón + o desde la barra lateral de la pestaña <i>Issues</i>.</p>
+            <p>Para crear un tablero de proyecto hay que:</p>
+            <ul>
+                <li>Hacer click en la pestaña Proyecto.</li>
+                <li>Hacer click en el botón <b>New project</b>. Esta acción redigirá a un formulario como el siguiente:</li>
+                <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232237/mod_page/content/8/Imagen28.png" alt="">
+                <li>Completar con un nombre, una descripción y elegir una plantilla. Lo más común es usar un tablero de tipo <i>Basic Kanban</i>.</li>
+                <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232237/mod_page/content/8/Imagen29.png" alt="">
+                <li>Ahora ya se pueden agregar incidencias a las columnas del proyecto, es importante mencionar que este tablero se asocia automáticamente al repositorio en cuestión. Para agregar tarjetas a este tablero se puede utilizar el botón <b>+Add cards</b> ubicadas a la derecha de la pantalla, en la barra superior y luego arrastrar la tarjeta a la columna deseada.</li>
+                <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232237/mod_page/content/8/Imagen31.png" alt="">
+                <li>Además se las columnas por defecto, se pueden agregar otras que se adapten al flujo de trabajo del equipo, esto se hace con el botón <b>+Add column</b></li>
+            </ul>
+            <h3>Flujos de trabajo GitHub</h3>
+            <h5>Flujos de Trabajo</h5>
+            <h6>Ramas</h6>
+            <p>La creación de ramas es una función disponible en la mayoria de los sistemas de control de versiones modernos. La creación de ramas en otros sistemas de control de versiones puede tanto llevar mucho tiempo como ocupar mucho espacio de almacenamiento. En Git, las ramas son parte del proceso de desarrollo diario. Las ramas de Git son un puntero eficaz para las instantáneas de tus cambios. Cuando quieres añadir una nueva función o solucionar un error, independientemente de su tamaño, generas una nueva rama para aflojar estos cambios. Esto hace que resulte más complicado que el código inestable se fusione con el código base principal, y te da la oportunidad de limpiar tu historial futuro antes de fusionarlo con la rama principal. Con git, la gesti´pon de ramas se hace a través del comando git branch.</p>
+            <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232238/mod_page/content/7/Recurso%2023.png" alt="">
+            <center><small><p>Representación de un repositorio con dos líneas de desarrollo aisladas, una para una función pequeña y otra para una función más extensa.</p></small></center>
+            <p>La implementación que subyace a las ramas de Git es mucho más sencilla que la de otros modelos de sistemas de control de versiones. En lugar de copiar archivos entre directorios, Git almacena una rama como referencia a una confirmación. En este sentido, una rama representa el extremo de una serie de confirmaciones, es decir, no es un contenedor de confirmaciones. El historial de una rama se extrapola de las relaciones de confirmación.</p>
+            <p>Durante la lectura, recuerda que las ramas de Git no son como las ramas de de SVN. Las ramas de SVN solo se usan para capturar el esfuero de desarrollo a gran escala ocasional, mientras que las ramas de Git son una parte integral del flujo de trabajo diario. El siguiente contenido amplía la información sobre la arquitectura interna de creación de ramas de Git.</p>
+            <h6>Funcionamiento</h6>
+            <p>Una rama representa una línea independiente de desarrollo. Las ramas sirven como una abstracción de los procesos de cambio, preparación y confirmación. Pueden concebirse como una forma de solicitar un nuevo directorio de trabajo, un nuevo entorno de ensayo o un nuevo historial de proyecto. Las nuevas confirmaciones se registran en el historial de la rama actual, lo que crea una bifurcación en el historial del proyecto.</p>
+            <p>El comando <b>git branch</b> te permite crear, enumerar, cambiar el nombre y eliminar ramas. No te permite cambiar entre ramas o volver a unir un historial bifurcado. No te permite cambiar entre ramas o volver a unir un historial bifurcado. Por este motivo, <b>git branch</b> está estrechamente relacionado con los comandos <b>checkout</b> y <b>git merge</b>.</p>
+            <h6>Opciones comunes</h6>
+            <p>El comando principal, sin parámetros, permite listar todas las ramas del repositorio</p>
+            <p><b>git <i>branch</i></b></p>
+            <p>Para crear una rama nueva se usa el comando como se muestra a continuación</p>:
+            <p><b>git <i>branch &lt;branch&gt;</i></b></p>
+            <p>Para eliminar una rama, es necesario agregar la opción <b>-d</b>:</p>
+            <p><b>git <i>branch -d &lt;branch&gt;</i></b></p>
+            <p>Si se desea cambiar el nombre de una rama, se puede utilizar la opción <b>-m</b>, es importante mencionar que cambia el nombre de la rama sobre la cual se está trabajando.</p>
+            <p><b>git <i>branch -m &lt;branch&gt;</i></b></p>
+            <p>Finalmente, para listar todas las ramas en el repositorio remoto se puede utilizar el comando:</p>
+            <p><b>git <i>branch -a</i></b></p>
+            <h5>Creación de ramas</h5>
+            <p>Es importante comprender que las ramas son solo punteros a las confirmaciones. Cuando creas una rama son solo punteros a las confirmaciones. Cuando creas una rama, todo lo que Git tiene que hacer es crear un nuevo puntero, no modifica el repositorio de ninguna otra forma. Si empiezas con un repositorio que tiene este aspecto:</p>
+            <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232239/mod_page/content/6/Recurso%2039.png" alt="">
+            <p>Y, a continuación, creas una rama con el siguiente comando:</p>
+            <p><b>git <i>branch crazy-experiment</i></b></p>
+            <p>El historial del repositorio no se modificará. Todo lo que necesitas es un nuevo puntero de la confirmación actual:</p>
+            <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232239/mod_page/content/6/Recurso%2040.png" alt="">
+            <p>Ten en cuenta que este comando solo crea la nueva rama, Para empezar a añadir confirmaciones, necesitas seleccionarla con el comando <b>git checkout</b> y, a continuación, utilizar los comando estándar <b>git add</b> y <b>git commit</b>.</p>
+            <h4>Creación de ramas remotas</h4>
+            <p>Por ahora, todos los ejemplos han ilustrado operaciones de ramas locales. El comando <b>git branch</b> también funciona con ramas remotas. Para trabajar en ramas remotas, primero hay que configurar un repositorio remoto y añadirlo a la configuración del repositorio local.</p>
+            <p><b>git <i>remote add &lt;remote-repo&gt; &lt;remote-repo-URL&gt;</i></b></p>
+            <p><b>git <i>&lt;remote-repo&gt; crazy-experiment</i></b></p>
+            <p>Este comando enviará una copia de la rama local crazy-experiment al repositorio remoto &lt;remote-repo&gt;</p>
+            <h5>Eliminación de ramas</h5>
+            <p>Una vez que hayas terminado de trabajar en una rama y la hayas fusionado con el código base principal, puedes eliminar la rama sin perder ninguna historia:</p>
+            <p><b>git <i>branch -d crazy-experiment</i></b></p>
+            <p>No obstante, si la rama no se ha fusionado, el comando anterior mostrará un mensaje de error: <i>"error: The branch 'crazy-experiment' is not fully merged. If you are sure you want to delete it, run 'git branch -D crazy-experiment'"</i>.</p>
+            <p>Esto te protege ante la pérdida de acceso a una línea de desarrollo completa. Si realmente quieres eliminar la rama (por ejemplo, si se trata de un experimento fallido), puedes usar el indicador -D (en mayúscula):</p>
+            <p><b>git <i>branch -D crazy-experiment</i></b></p>
+            <p>Este comando elimina la rama independientemente de su estado y sin avisos previos, así que úsalo con cuidado.</p>
+            <p>Los comandos anteriores eliminarán una copia local de la rama. La rama seguirá existiendo en el repositorio remoto. Para emilinar una rama remota, ejecuta estos comandos.</p>
+            <p><b>git <i>push origin --delete crazy-experiment</i></b></p>
+            <p>o bien cone l comando:</p>
+            <p><b>git <i>push origin :crazy-experiment</i></b></p>
+            <p>Enviarán una señal de eliminación al repositorio de origen remoto que desencadena la eliminación de la rama remota crazy-experiment.</p>
+            <h3>GitFlow</h3>
+            <p>El flujo de trabajo Gitflow, propuesto por Vincent Driessen en nvie, define un modelo de creación de ramas estricto diseeñado con la publicación del proyecto como fundamento. Proporciona un marco sólido para gestionar proyecto más grandes.</p>
+            <p>Gitflow es ideal para los proyectos que tienen un ciclo de publicación programado, así como para la práctica recomendada de DevOps de entrega continua, así como para la práctica recomendada de DevOps de entrega continua. Este flujo de trabajo no añade ningún concepto o comando nuevo, aparte de los que se necesitan para el flujo de trabajo de ramas de función. Lo que hace es asignar funciones muy específicas a las distintas ramas y definir cómo y cuándo deben estas interactuar. Además de las ramas feature utiliza ramas individuales para preparar, mantener y registrar publicaciones. Por supuesto, también te aprovechas de todas las ventajas que aporta el flujo de trabajo de ramas de función: solicitudes de incorporación de cambios, experimentos aislados y una colaboración más eficaz.</p>
+            <p>Podemos decir que la implementación consiste en tener varias ramas o branches dedicados para funciones y usos especificas con sus respectivos procedimiento para cada una de ellas, en la siguiente imagen podemos ver cómo la suma de las ramas componen el modelo Gitflow.</p>
+            <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232241/mod_page/content/9/Captura%20de%20Pantalla%202022-06-28%20a%20la%28s%29%202.20.44.png" alt="">
+            <p>Existe un conjunto de herramientas de línea de comandos para gestionar este tipo de flujo de trabajo. El proceso de instalación de Gitflow es sencillo. Los paquetes de git-flow están disponibles en varios sistemas operativos. En sistemas OSX, puedes ejecutar:</p>
+            <p><b>bre install git-flow</b></p>
+            <p>En Windows, tendrás que descargar e instalar git-flow. Después de instalar git-flow puedes utilizarlo en tu proyecto ejecutando:</p>
+            <p><b>git <i>flow init</i></b></p>
+            <p>Git-flow es un contenedor para Git. El comando <b>git flow init</b> es una prolongación del comando predeterminado git init y no cambia nada de tu repositorio además de crear ramas para ti.</p>
+            <h4>Ramas en desarrollo y maestras</h4>
+            <p>En vez de una única rama master, este flujo de trabajo utiliza dos ramas para registrar el historial del proyecto. La rama master almacena el historial de publicación oficial y la rama desarrollar sirve como rama de integración para las funciones. Asimismo, conviene etiquetar todas las confirmaciones de la rama master con un número de versión.</p>
+            <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232241/mod_page/content/9/Captura%20de%20Pantalla%202022-06-28%20a%20la%28s%29%202.31.56.png" alt="">
+            <p>El primer paso es complementar la master predeterminada con una rama develop. Una forma sencilla de hacerlo es que un desarrollador cree un rama develop vacía localmente y la envie al servidor:</p>
+            <p><b>git <i>branch develop</i></b></p>
+            <p><b>git <i>push -u origin develop</i></b></p>
+            <p>Esta rama contendrá el historial completo del proyecto, mientras que la <b>master</b> (rama maestra) contendrá una versión abreviada. Otros desarrolladores deben clonar el repositorio central y crear una rama de seguimiento para <b>develop</b>.</p>
+            <p>A la hora de utilizar la biblioteca de extensiones de git-flow, ejecutar git flow init en un repositorio existente creará la rama develop.</p>
+            <h4>Ramas de función</h4>
+            <p>Todas las funciones nuevas deben residir en su propia rama, que se pueden enviar al repositorio central para copia de seguridad/colaboración. Sin embargo, en vez de ramificarse de la <b>master</b>, las ramas <b>feature</b> utilizan la <b>develop</b> como rama primaria. Cuando una función está terminada, se vuelve a fusionar en el de desarrollo. Las funciones no deben interactuar nunca directamente con la master.</p>
+            <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232241/mod_page/content/9/Captura%20de%20Pantalla%202022-06-28%20a%20la%28s%29%202.34.27.png" alt="">
+            <p>Ten en cuenta que las ramas <b>feature</b> combinadas con la rama <b>develop</b> conforman, a todos efectos, el flujo de trabajo de ramas de función. Sin embargo, el flujo de trabajo Gitflow no termina aquí.</p>
+            <p>Las ramas feature suelen crearse a partir de la última rama <b>develop</b>.</p>
+            <p>Para crear una rama de función sin las extensiones git-flow se pueden ejecutar los comandos:</p>
+            <p><b>git checkout develop</b></p>
+            <p><b>git checkout -b feature_branch</b></p>
+            <p>O bien utilizando la extensión, con el comando:</p>
+            <p><b>git flow feature start feature_branch</b></p>
+            <p>Luego de esto se continúa trabajando normalmente con Git.</p>
+            <p>Para finalizar una rama de función, cuando el desarrollo de esto haya culminado, hay que fusionar la rama con la rama <b>develop</b>, y para esto tenemos dos opciones, sin la extension git-flow:</p>
+            <p><b>git checkout develop</b></p>
+            <p><b>git merge feature_branch</b></p>
+            <p>O bien con la extensión:</p>
+            <p><b>git flow feature finish feature_branch</b></p>
+            <h4>Ramas de publicación</h4>
+            <p>Cuando develop haya adquirido suficientes funciones para una publicación (o se acerque una fecha de publicación predeterminada), debes bifurcar una rama release a partir de una develop. Al crear esta rama, se inicia el siguiente ciclo de publicación, por lo que no pueden añadirse nuevas funciones una vez pasado este punto (en esta rama solo deben producirse las soluciones de errores, la generación de documentación y otras tareas orientadas a la publicación). Cuando está lista para el lanzamiento, la rama release se fusiona en la master y se etiqueta con un número de versión. Además, debería volver a fusionarse en develop, que podría haber progresado desde que se iniciara la publicación.</p>
+            <p>Utilizar una rama específica para preparar publicaciones hace posible que un equipo perfeccione la publicación actual mientras otro equipo sigue trabajando en las funciones para la siguiente publicación. Asimismo, crea fases de desarrollo bien definidas (por ejemplo, es fácil decir: "Esta semana nos estamos preparando para la versión 4.0" y verlo escrito en la estructura del repositorio).</p>
+            <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232241/mod_page/content/9/Captura%20de%20Pantalla%202022-06-28%20a%20la%28s%29%202.35.54.png" alt="">
+            <p>Crear ramas <b>release</b> es otra operación de ramificación sencilla. Al igual que las ramas <b>feature</b>, las ramas <b>release</b> en sí se basan en la rama <b>develop</b>. Se pueden crear una nueva rama <b>release</b> utilizando los siguientes métodos. Sin las extensiones de git-flow:</p>
+            <p><b>git checkout develop</b></p>
+            <p><b>git checkout -b release/0.1.0</b></p>
+            <p>O bien con las extensiones:</p>
+            <p><b>git flow release start 0.1.0</b></p>
+            <p><b>Switched to a new branch 'release/0.1.0'</b></p>
+            <p>En cuanto la publicación esté lista para su lanzamiento, publicación se fusionará en la <b>master</b> y la <b>develop</b>; y luego se eliminará la rama <b>release</b>. Es importante volver a fusionarla en <b>develop</b> porque podrían incluir actualizaciones críticas a la rama <b>release</b>, y las funciones nuevas tienen poder acceder a ellas. Si tu organización enfatiza la revisión de código, este sería el lugar ideal para una solicitud de incorporación de cambios.</p>
+            <p>Para finalizar una rama release, utiliza los métodos siguientes. Sin las extensiones de git-flow:</p>
+            <p><b>git checkout main</b></p>
+            <p><b>git merge release / 0.1.0</b></p>
+            <p>O con la extensión:</p>
+            <p><b>git flow release finish '0.1.0</b></p>
+            <h4>Ramas de corrección</h4>
+            <p>Las ramas de mantenimiento o de "corrección" (hotfix) sirven para reparar rápidamente las publicaciones de producción. Las ramas hotfix son muy similares a las ramas release y feature, salvo por el hecho de que se basan en la master, no en la de develop. Esta es la única rama que debería bifurcarse directamente a partir de la master. Cuando se haya terminado de aplicar la corrección, debería fusionarse en la master y la develop (o la rama release actual), y la master debería etiquetarse un número de versión actualizada.</p>
+            <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232241/mod_page/content/9/Captura%20de%20Pantalla%202022-06-28%20a%20la%28s%29%202.37.14.png" alt="">
+            <p>Tener una línea de desarrollo específico para la corrección de errores permite que tu equipo aborde las incidencias sin interrumpir el resto del flujo de trabajo ni esperar al sigueinte ciclo de publicación. Puedes concebir las ramas de mantenimiento como ramas release ad hoc que trabajan directamente con la master. Se puede crear una nueva rama hotfix utilizando los siguientes métodos. Sin las extensiones de git-flow:</p>
+            <p><b>git checkout main</b></p>
+            <p><b>git checkout -b hotfix_branch</b></p>
+            <p>O bien utilizando las extensiones:</p>
+            <p><b>git flow hotfix start hotfix_branch</b></p>
+            <p>Al igual que al finalizar una rama de liberación, una rama revisión se fusiona tanto en la <b>master</b> como en la <b>develop</b>.</p>
+            <p>Sin las extensiones:</p>
+            <p><b>git checkout main</b></p>
+            <p><b>git merge hotfix_branch</b></p>
+            <p><b>git checkout develop</b></p>
+            <p><b>git merge hotfix_branch</b></p>
+            <p><b>git branch -D hotfix_branch</b></p>
+            <p>O con las extensiones:</p>
+            <p><b>git flow hotfix finish hotfix_branch</b></p>
+            <h3>GitHub Flow</h3>
+            <h4>Flujo de GitHub</h4>
+            <p>El flujo de GitHub es un flujo de trabajo ligero basado en ramas que admite equipos y proyectos en los que se realizan despliegues con regularidad. Esta guía explica cómo y por qué funciona el flujo de GitHub.</p>
+            <h5>Crear una rama</h5>
+            <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232243/mod_page/content/8/Imagen7sdfdsgfd.png" alt="">
+            <p>Cuando esté trabajando en un proyecto, tendrá un montón de caracte´risticas o ideas diferentes en progreso en un momento dado, algunas de las cuales están listas para funcionar y otras no. La ramificación existe para ayudar a administrar este flujo de trabajo.</p>
+            <p>Cuando crea una rama en su proyecto, está creando un entorno en el que puede probar nuevas ideas. Los cambios que realiza en una rama no se fusionará hasta que esté lista para ser revisada por alguien con quien colabora.</p>
+            <p>La ramificación es un concepto central en Git, y todo el flujo de GitHub se basa en él. Solo hay una regla: cualquier cosa en la rama principal siempre se puede desplegar.</p>
+            <p>Debido a esto, es extremadamente importante que su nueva rama se cree a partir de la principal cuando se trabaja en una función o una solución. El nombre de su rama debe ser descriptivo (por ejemplo, <b>refactor-authentication</b>, <b>user-content-cache-key</b>, <b>make-retina-avatars</b>), para que otros puedan ver en qué se está trabajando.</p>
+            <h5>Agregar confirmaciones</h5>
+            <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232243/mod_page/content/8/Imagen8sdfsd.png" alt="">
+            <p>Una vez que se haya creado su rama, es hora de comenzar a hacer cambios. Siempre que agrega, edita o elimina un archivo, está realizando una confirmación (commit) y agregándola a su rama. Este proceso de agregar confirmaciones realiza un seguimiento de su progreso a medida que trabaja en una rama de funciones.</p>
+            <p>Las confirmaciones también crean un historial transparente de su trabajo que otros pueden seguir para comprender lo que ha hecho y por qué. Cada confirmación de un mensaje asociado, que es una descripción que explica por qué se realizó un cambio en particular. Además, cada confirmación se considera una unidad de cambio separada. Esto le permite revertir los cambios si se encuentra un error o si decide ir en una dirección diferente.</p>
+            <p>Los mensajes de confirmación son importantes, especialmente porque Git rastrea sus cambios y luego los muestra como confirmaciones una vez que se envían al servidor. Al escribir mensajes de compromiso claros, puede facilitar que otras personas lo sigan y brinden comentarios.</p>
+            <h5>Abrir una solicitud de incorporación</h5>
+            <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232243/mod_page/content/8/Imagen9fsddhjhgf.png" alt="">
+            <p>Las solicitudes de incorporación (pull requests) inician la discusión sobre sus confirmaciones. Debido a que están estrechamente integrados con el repositorio de Git subyacente, cualquiera puede ver exactamente qué cambios se fusionarán si aceptan su solicitud.</p>
+            <p>Puede abrir una solicitud de incorporación en caulquier momento durante el proceso de desarrollo: cuando tieen poco o ningún código pero desea compartir algunas capturas de pantalla o ideas generales, cuando está atascado y necesita ayuda o consejo, o cuando está listo para que alguien revise su trabajo. Al usar el sistema @menciones de GitHub en su mensaje de <i>Pull Request</i>, puede solicitar comentarios de personas o equipos específicos, ya sea que estén al final del pasillo o diez zonas horarias de distancia.</p>
+            <h5>Discutir y revisar el código</h5>
+            <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232243/mod_page/content/8/Imagen10fgtuytfrcd.png" alt="">
+            <p>Una vez que se ha abierto una solicitud de incorporación, la persona o el equipo que revisa sus cambios puede tener preguntas o comentarios. Quizás el estilo de codificación no coincida con las pautas del proyecto, al cambio le faltan pruebas unitarias o tal vez todo se ve bien y los accesorios están en orden. Las solicitudes de incorporación están diseñadas para fomentar y capturar este tipo de discusiones.</p>
+            <p>También puede continuar fusionando su rama luego de la discusión y los comentarios sobre sus confirmaciones. Si alguien comenta que se olvidó de hacer algo o si hay un error en el código, puede solucionarlo en su rama y fusionar el cambio. GitHub mostrará sus nuevas confirmaciones y cualquier comentario adicional que pueda recibir en la vista <i>Pull Request</i> unificada.</p>
+            <h5>Desplegar</h5>
+            <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232243/mod_page/content/8/Imagen11dsvygfd.png" alt="">
+            <p>Con GitHub, se pueden desplegar desde una rama para la prueba final en producción antes de fusionarse con <b>main</b>.</p>
+            <p>Una vez que se haya revisado su solicitud de incorporación y la rama pase las pruebas, puede desplegar sus cambios para verificarlos en producción. Si su rama causa problemas, puede revertirla implemtando la rama principal existente en producción.</p>
+            <p>Los diferentes equipos pueden tener diferentes estrategias de despliegue. Para algunos, puede ser mejor desplegar en un entorno de prueba especialmente provisto. Para otros, el despliegue directamente en la producción puede ser la mejor opción en función de los otros elementos de su flujo de trabajo.</p>
+            <h5>Fusionar</h5>
+            <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232243/mod_page/content/8/Imagen12dvsfvh.png" alt="">
+            <p>Ahora que sus cambios se han verificado en producción, es hora de fusionar su código en la rama <b>main</b>.</p>
+            <p>Una vez fusionadas, las solicitudes de incorporación conservan un registro de los cambios históricos en su código. Debido a que se pueden buscar, permite que cualquiera retroceda en el tiempo para comprender por qué y cómo se tomó una decisión.</p>
+            <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/232244/mod_page/content/5/roadmap_intro.png" alt="">
         </section>
     </body>
 </html>
